@@ -1,0 +1,9 @@
+{
+ "fetched_at": "2026-10-26T00:46:24",
+ "area_source": "Khon Kaen University",
+ "osmnx_version": "2.1.1",
+ "networkx_version": "3.7",
+ "nodes": 1567,
+ "edges": 4458,
+ "attribution": "Map data © OpenStreetMap contributors (ODbL)"
+}

@@ -1,0 +1,818 @@
+[
+ {
+  "name": "ศูนย์อาหารและบริการ 1 (Complex)",
+  "name_en": "KKU Complex",
+  "kind": "amenity=food_court",
+  "lat": 16.4777087,
+  "lon": 102.8231931,
+  "node": 12293479942
+ },
+ {
+  "name": "โรงพยาบาลศรีนครินทร์",
+  "name_en": "Srinagarind Hospital",
+  "kind": "amenity=hospital",
+  "lat": 16.4682595,
+  "lon": 102.8302327,
+  "node": 2713542008
+ },
+ {
+  "name": "ธนาคารไทยพาณิชย์",
+  "name_en": "Siam Commercial Bank",
+  "kind": "amenity=bank",
+  "lat": 16.468625,
+  "lon": 102.8318343,
+  "node": 10138284413
+ },
+ {
+  "name": "ศูนย์อาหาร หนองแวง",
+  "name_en": "Nong Waeng Food Center",
+  "kind": "amenity=restaurant",
+  "lat": 16.4656228,
+  "lon": 102.8253074,
+  "node": 3884860786
+ },
+ {
+  "name": "โรงอาหารหอพักนักศึกษา คณะแพทย์ศาสตร์",
+  "name_en": "",
+  "kind": "amenity=fast_food",
+  "lat": 16.4703608,
+  "lon": 102.8243958,
+  "node": 12551745225
+ },
+ {
+  "name": "ไปรษณีย์ มหาวิทยาลัยขอนแก่น",
+  "name_en": "Khon Kaen University Post Office",
+  "kind": "amenity=post_office",
+  "lat": 16.4778679,
+  "lon": 102.8235588,
+  "node": 5269544125
+ },
+ {
+  "name": "ธนาคารกรุงไทย",
+  "name_en": "Krung Thai Bank",
+  "kind": "amenity=bank",
+  "lat": 16.4774071,
+  "lon": 102.822912,
+  "node": 6425374245
+ },
+ {
+  "name": "กรุงศรี",
+  "name_en": "Bank of Ayudhya",
+  "kind": "amenity=bank",
+  "lat": 16.4773976,
+  "lon": 102.8230278,
+  "node": 12293479942
+ },
+ {
+  "name": "Open-air Theatre",
+  "name_en": "",
+  "kind": "amenity=theatre",
+  "lat": 16.4459481,
+  "lon": 102.8145068,
+  "node": 376257629
+ },
+ {
+  "name": "โรงอาหารคณะนิติศาสตร์",
+  "name_en": "Canteen @ Law",
+  "kind": "amenity=restaurant",
+  "lat": 16.4507618,
+  "lon": 102.814582,
+  "node": 827111841
+ },
+ {
+  "name": "coffee at law",
+  "name_en": "",
+  "kind": "amenity=cafe",
+  "lat": 16.4506864,
+  "lon": 102.8152004,
+  "node": 827111984
+ },
+ {
+  "name": "ตลาดหอแปดหลัง",
+  "name_en": "",
+  "kind": "amenity=restaurant",
+  "lat": 16.479286,
+  "lon": 102.8100072,
+  "node": 833702808
+ },
+ {
+  "name": "ไก่ย่างปรีชา",
+  "name_en": "Pricha Grilled Chicken",
+  "kind": "amenity=restaurant",
+  "lat": 16.4674894,
+  "lon": 102.8134566,
+  "node": 833702888
+ },
+ {
+  "name": "กลิ่น",
+  "name_en": "Klin",
+  "kind": "amenity=cafe",
+  "lat": 16.4735064,
+  "lon": 102.8263071,
+  "node": 12185819532
+ },
+ {
+  "name": "Ori Cafe",
+  "name_en": "Ori Cafe",
+  "kind": "amenity=cafe",
+  "lat": 16.4712004,
+  "lon": 102.8263942,
+  "node": 12551745528
+ },
+ {
+  "name": "ธนาคารกรุงเทพ",
+  "name_en": "Bangkok Bank",
+  "kind": "amenity=bank",
+  "lat": 16.4679329,
+  "lon": 102.8300857,
+  "node": 2713541955
+ },
+ {
+  "name": "Coffee Der La",
+  "name_en": "",
+  "kind": "amenity=cafe",
+  "lat": 16.4770079,
+  "lon": 102.8261501,
+  "node": 8633243961
+ },
+ {
+  "name": "โรงอาหาร",
+  "name_en": "Cafeteria",
+  "kind": "amenity=food_court",
+  "lat": 16.4662646,
+  "lon": 102.8290169,
+  "node": 809114909
+ },
+ {
+  "name": "ร้านนันทนา",
+  "name_en": "คณะศึกษาศาสตร์ มข.",
+  "kind": "amenity=restaurant",
+  "lat": 16.4740849,
+  "lon": 102.8266491,
+  "node": 12185819535
+ },
+ {
+  "name": "Sports Complex",
+  "name_en": "",
+  "kind": "leisure=sports_centre",
+  "lat": 16.4768872,
+  "lon": 102.8139937,
+  "node": 13597110347
+ },
+ {
+  "name": "ธนาคารออมสิน",
+  "name_en": "Government Savings Bank",
+  "kind": "amenity=bank",
+  "lat": 16.4774612,
+  "lon": 102.8228069,
+  "node": 6425374245
+ },
+ {
+  "name": "Beehive by Caffeine",
+  "name_en": "",
+  "kind": "amenity=cafe",
+  "lat": 16.4559423,
+  "lon": 102.819426,
+  "node": 798866698
+ },
+ {
+  "name": "สวนกวี",
+  "name_en": "Kavi Garden",
+  "kind": "leisure=park",
+  "lat": 16.4677383,
+  "lon": 102.8150346,
+  "node": 833702894
+ },
+ {
+  "name": "คาเฟ่ อเมซอน",
+  "name_en": "Café Amazon",
+  "kind": "amenity=cafe",
+  "lat": 16.4778984,
+  "lon": 102.8232578,
+  "node": 378025954
+ },
+ {
+  "name": "คาเฟ่ เดอ ฟอเรสต์",
+  "name_en": "Cafe de Forest",
+  "kind": "amenity=cafe",
+  "lat": 16.4754515,
+  "lon": 102.8187689,
+  "node": 821470324
+ },
+ {
+  "name": "สนามกีฬาสีฐาน",
+  "name_en": "Sithan Sports Around",
+  "kind": "leisure=sports_centre",
+  "lat": 16.45401709225716,
+  "lon": 102.8173545755936,
+  "node": 832348126
+ },
+ {
+  "name": "สนามกีฬามหาวิทยาลัย",
+  "name_en": "KKU Sports Complex",
+  "kind": "leisure=sports_centre",
+  "lat": 16.47647847809142,
+  "lon": 102.81770610648246,
+  "node": 821470133
+ },
+ {
+  "name": "อาคารเรียนและปฏิบัติการ คณะวิทยาศาสตร์",
+  "name_en": "SC. 08",
+  "kind": "building=university",
+  "lat": 16.475708951248016,
+  "lon": 102.82317162850701,
+  "node": 12293479939
+ },
+ {
+  "name": "หอสมุดกลาง มหาวิทยาลัยขอนแก่น",
+  "name_en": "Khon Kaen University Library",
+  "kind": "amenity=library",
+  "lat": 16.476553793933743,
+  "lon": 102.82323265042623,
+  "node": 12293479941
+ },
+ {
+  "name": "อาคารศูนย์สารสนเทศ",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.476599093984156,
+  "lon": 102.82363547879203,
+  "node": 4348036501
+ },
+ {
+  "name": "SC. 07",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.476487565286316,
+  "lon": 102.82421693799108,
+  "node": 819938212
+ },
+ {
+  "name": "สาขาวิชาวิศวกรรมคอมพิวเตอร์, สาขาวิชาวิศวกรรมไฟฟ้า, EN04",
+  "name_en": "Department of Computer Engineering, Department of Electrical Engineering",
+  "kind": "building=university",
+  "lat": 16.472240765458867,
+  "lon": 102.8258068352348,
+  "node": 812663700
+ },
+ {
+  "name": "อาคารปฏิบัติการวิศวกรรมอุตสาหการ",
+  "name_en": "Industrial Engineering Laboratory Building",
+  "kind": "building=university",
+  "lat": 16.472965640908257,
+  "lon": 102.82540104211914,
+  "node": 1223114376
+ },
+ {
+  "name": "อาคารพิมล กลกิจ",
+  "name_en": "Bimala Kalakicha Building",
+  "kind": "building=university",
+  "lat": 16.474442949101206,
+  "lon": 102.82716842220465,
+  "node": 12551745258
+ },
+ {
+  "name": "คณะศึกษาศาสตร์",
+  "name_en": "Faculty of Education",
+  "kind": "building=university",
+  "lat": 16.473100305996393,
+  "lon": 102.82668602808403,
+  "node": 10138177037
+ },
+ {
+  "name": "สำนักเทคโนโลยีดิจิทัล มข.",
+  "name_en": "Office of Digital Technology KKU",
+  "kind": "building=university",
+  "lat": 16.474020340542552,
+  "lon": 102.82475044746555,
+  "node": 812663752
+ },
+ {
+  "name": "สิม",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47184942430943,
+  "lon": 102.82718438793692,
+  "node": 1264625652
+ },
+ {
+  "name": "สำนักงานคณบดี คณะสถาปัตยกรรมศาสตร์",
+  "name_en": "Dean Office of the Faculty of Architecture",
+  "kind": "building=university",
+  "lat": 16.472190977906273,
+  "lon": 102.82744261854133,
+  "node": 1264625612
+ },
+ {
+  "name": "สาขาวิชาการออกแบบอุตสาหกรรม",
+  "name_en": "Industrial Design Program",
+  "kind": "building=university",
+  "lat": 16.47175777185726,
+  "lon": 102.82636244566395,
+  "node": 1264625662
+ },
+ {
+  "name": "อคร ฟู้ดเซ็นเตอร์",
+  "name_en": "SC05 Food Center",
+  "kind": "amenity=fast_food",
+  "lat": 16.475142304198375,
+  "lon": 102.82435647756685,
+  "node": 812663679
+ },
+ {
+  "name": "คณะเทคนิคการแพทย์",
+  "name_en": "Faculty of Associated Medical Sciences",
+  "kind": "building=university",
+  "lat": 16.468811433878034,
+  "lon": 102.82743108622658,
+  "node": 12551745496
+ },
+ {
+  "name": "HS.02",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47459384117402,
+  "lon": 102.82646995781754,
+  "node": 819938215
+ },
+ {
+  "name": "HS.03",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47535495387232,
+  "lon": 102.82640469773965,
+  "node": 819938245
+ },
+ {
+  "name": "HS.04",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.475383250000004,
+  "lon": 102.82600550000001,
+  "node": 819938285
+ },
+ {
+  "name": "HS.05",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.475756928984943,
+  "lon": 102.8266661206931,
+  "node": 819938238
+ },
+ {
+  "name": "HS.06",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.4752683,
+  "lon": 102.82576605000003,
+  "node": 819938270
+ },
+ {
+  "name": "วิทยาลัยการปกครองท้องถิ่น",
+  "name_en": "College of Local Administration",
+  "kind": "building=university",
+  "lat": 16.47368567609891,
+  "lon": 102.83118761511233,
+  "node": 11098686598
+ },
+ {
+  "name": "SC. 03",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47651211569905,
+  "lon": 102.82526090006985,
+  "node": 819938183
+ },
+ {
+  "name": "สวนรุกขชาติ มข.",
+  "name_en": "",
+  "kind": "leisure=park",
+  "lat": 16.477785566923803,
+  "lon": 102.82436406177175,
+  "node": 822478627
+ },
+ {
+  "name": "สวนสาธารณะบึงสีฐาน",
+  "name_en": "Bueng Si Than Public Park",
+  "kind": "leisure=park",
+  "lat": 16.445025299659527,
+  "lon": 102.81673216816785,
+  "node": 10138441437
+ },
+ {
+  "name": "สวนสุขภาพ โรงพยาบาลศรีนครินทร์",
+  "name_en": "",
+  "kind": "leisure=park",
+  "lat": 16.469197510539438,
+  "lon": 102.83146126430127,
+  "node": 10138284422
+ },
+ {
+  "name": "โรงอาหารมัธยม",
+  "name_en": "",
+  "kind": "amenity=fast_food",
+  "lat": 16.480150033739243,
+  "lon": 102.82960705217097,
+  "node": 8606823611
+ },
+ {
+  "name": "สนามกีฬากลาง มหาวิทยาลัยขอนแก่น",
+  "name_en": "Khon Kaen University Stadium",
+  "kind": "leisure=stadium",
+  "lat": 16.47666393563871,
+  "lon": 102.81770477255343,
+  "node": 821470133
+ },
+ {
+  "name": "อาคารเรียนรวมและปฏิบัติการ SC. 09",
+  "name_en": "SC. 09",
+  "kind": "building=university",
+  "lat": 16.475699595613243,
+  "lon": 102.8251025094115,
+  "node": 819938213
+ },
+ {
+  "name": "วิทยาลัยนานาชาติ",
+  "name_en": "International College",
+  "kind": "building=university",
+  "lat": 16.474207218777984,
+  "lon": 102.82912332256386,
+  "node": 9925286064
+ },
+ {
+  "name": "คณะเศรษฐศาสตร์",
+  "name_en": "Faculty of Economic",
+  "kind": "building=university",
+  "lat": 16.47419550763425,
+  "lon": 102.82965935283839,
+  "node": 9925286073
+ },
+ {
+  "name": "อาคารสิริคุณากร",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.470771311926242,
+  "lon": 102.81512297428624,
+  "node": 831219899
+ },
+ {
+  "name": "องค์การนักศึกษา มหาวิทยาลัยขอนแก่น",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47778086945432,
+  "lon": 102.8211125971678,
+  "node": 9925286116
+ },
+ {
+  "name": "กองป้องกันและรักษาความปลอดภัย มหาวิทยาลัยขอนแก่น",
+  "name_en": "Security Division Khon Kaen University",
+  "kind": "building=university",
+  "lat": 16.477957221297437,
+  "lon": 102.81911555483765,
+  "node": 14183456929
+ },
+ {
+  "name": "สหกรณ์ออมทรัพย์ มหาวิทยาลัยขอนแก่น",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.478850391556485,
+  "lon": 102.81309791270328,
+  "node": 257288852
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 7",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47886440510328,
+  "lon": 102.81838995012976,
+  "node": 824039246
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 9",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47922929772127,
+  "lon": 102.81845227191694,
+  "node": 391199208
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 10",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479600578076354,
+  "lon": 102.81849652210305,
+  "node": 378028983
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 11",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479507150000003,
+  "lon": 102.8177635,
+  "node": 378028983
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 12",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479122474185516,
+  "lon": 102.81771575394313,
+  "node": 391215659
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 15",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.478666377837797,
+  "lon": 102.81766327018397,
+  "node": 824039109
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 16",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.4783011741728,
+  "lon": 102.81762993843383,
+  "node": 257326437
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 26",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47890949431338,
+  "lon": 102.82058132673261,
+  "node": 9157591727
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 4",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47859204281664,
+  "lon": 102.82010535947411,
+  "node": 736418039
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 3",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.478496221477837,
+  "lon": 102.82096272763022,
+  "node": 377994113
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 27",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479513502650228,
+  "lon": 102.81703051585147,
+  "node": 824039136
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 22",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47989368663179,
+  "lon": 102.81936476789596,
+  "node": 831219765
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 5",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479371924903724,
+  "lon": 102.81956861700367,
+  "node": 377994031
+ },
+ {
+  "name": "ศูนย์อาหารและบริการ 4 (อาคารที่จอดรถ 1)",
+  "name_en": "",
+  "kind": "amenity=fast_food",
+  "lat": 16.47379357371677,
+  "lon": 102.82643566828882,
+  "node": 12185819532
+ },
+ {
+  "name": "สถาบันขงจื่อ มหาวิทยาลัยขอนแก่น",
+  "name_en": "Confucius Institute at Khon Kaen University",
+  "kind": "building=university",
+  "lat": 16.47396687220484,
+  "lon": 102.83022114215109,
+  "node": 12185819509
+ },
+ {
+  "name": "Mekong Institute",
+  "name_en": "Mekong Institute",
+  "kind": "building=university",
+  "lat": 16.473856055936608,
+  "lon": 102.82870127085125,
+  "node": 9925286064
+ },
+ {
+  "name": "อาคารพจน์ สารสิน",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.47328181845634,
+  "lon": 102.82889899977489,
+  "node": 14254252098
+ },
+ {
+  "name": "ศาลา 25 ปี มหาวิทยาลัยขอนแก่น",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.472589696157875,
+  "lon": 102.83008097273306,
+  "node": 14254252094
+ },
+ {
+  "name": "สถาบันวิจัยและพัฒนาวิชาชีพครูสำหรับอาเซียน",
+  "name_en": "Institute for Research and Development in Teaching Profession for ASEAN",
+  "kind": "building=university",
+  "lat": 16.47894263066735,
+  "lon": 102.82859456615152,
+  "node": 8636479065
+ },
+ {
+  "name": "SC. 06 (ตึกหลอด)",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.474385003712843,
+  "lon": 102.82334289608855,
+  "node": 819938208
+ },
+ {
+  "name": "สโมสรอาจารย์ มหาวิทยาลัยขอนแก่น",
+  "name_en": "",
+  "kind": "building=university",
+  "lat": 16.474449649999997,
+  "lon": 102.82765655000001,
+  "node": 2696331284
+ },
+ {
+  "name": "คณะสัตวแพทย์สาสตร์",
+  "name_en": "Faculty of Veterinary Medicine",
+  "kind": "building=university",
+  "lat": 16.478370498073048,
+  "lon": 102.83131095337458,
+  "node": 822478684
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 18",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.4788608,
+  "lon": 102.82483805000001,
+  "node": 5269544129
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 1",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.478577923896434,
+  "lon": 102.82436389533424,
+  "node": 7390266744
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 17",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47917025061462,
+  "lon": 102.8244228451573,
+  "node": 4348036522
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 13",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.478646340024532,
+  "lon": 102.82338936431175,
+  "node": 10138384509
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 2",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47833175080258,
+  "lon": 102.82245789709856,
+  "node": 824039220
+ },
+ {
+  "name": "ตลาดมอดินแดง",
+  "name_en": "Modindaeng Market",
+  "kind": "amenity=marketplace",
+  "lat": 16.47952719074101,
+  "lon": 102.82295350178082,
+  "node": 12185338969
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 19",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47969157677608,
+  "lon": 102.82348985311884,
+  "node": 822478717
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 20",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.480396334636374,
+  "lon": 102.82358893444544,
+  "node": 377994623
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 14",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479091373878674,
+  "lon": 102.82339583092472,
+  "node": 10138384509
+ },
+ {
+  "name": "คณะเภสัขศาสตร์",
+  "name_en": "Faculty of Pharmaceutical Sciences",
+  "kind": "building=university",
+  "lat": 16.470584799912274,
+  "lon": 102.82769337955348,
+  "node": 810792033
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 8",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.478294149999996,
+  "lon": 102.81865234999998,
+  "node": 824039161
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 24",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47075935,
+  "lon": 102.82285007587437,
+  "node": 12375887747
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 25",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.470521249999997,
+  "lon": 102.82285012585653,
+  "node": 12375887747
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 23",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.470241724995496,
+  "lon": 102.82287393164056,
+  "node": 4348036400
+ },
+ {
+  "name": "หอพักนักศึกษาที่ 21",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.470095450000002,
+  "lon": 102.82287726335491,
+  "node": 4348036400
+ },
+ {
+  "name": "Wora-International Building A",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47924323016295,
+  "lon": 102.8117906830967,
+  "node": 14230091703
+ },
+ {
+  "name": "Wora-International Building B",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479014632374067,
+  "lon": 102.81208345436764,
+  "node": 14230091704
+ },
+ {
+  "name": "Wora-International Building C",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.47961330876538,
+  "lon": 102.81182430248825,
+  "node": 14230091703
+ },
+ {
+  "name": "Wora-International Building D",
+  "name_en": "",
+  "kind": "building=dormitory",
+  "lat": 16.479761862794113,
+  "lon": 102.81217585210231,
+  "node": 14230091704
+ },
+ {
+  "name": "HEYDAY",
+  "name_en": "",
+  "kind": "amenity=restaurant",
+  "lat": 16.479703126802963,
+  "lon": 102.81190103849579,
+  "node": 14230091703
+ }
+]

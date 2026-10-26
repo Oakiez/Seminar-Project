@@ -1,0 +1,73 @@
+# Experiment configuration for the demo. Every value is traced to a section of the
+# proposal (เค้าโครงโครงงานฉบับสมบูรณ์, Oct 2026). Values marked "author choice" are not
+# given numerically in the proposal and were set by the authors of the demo.
+
+graph:                                   # 5.2.1
+  source: "OpenStreetMap via OSMnx, network_type=walk, Khon Kaen University polygon"
+  largest_component: true
+
+routes:                                  # 5.2.2
+  method: "K-Shortest Loopless Paths (Yen, 1971) via networkx.shortest_simple_paths"
+  k: 5                                   # "กำหนด K เบื้องต้นเท่ากับ 5"
+  max_overlap: 0.8                       # "ตัดเส้นทางที่ซ้อนทับ ... เกินร้อยละ 80 ของความยาว"
+  min_routes: 3                          # "อย่างน้อย 3 เส้นหลังการกรอง"
+  max_paths_enumerated: 300              # author choice: search limit for Yen enumeration
+  od_pairs_file: "data/od_pairs.json"    # "คู่ต้นทาง–ปลายทางจะกำหนดและบันทึกในไฟล์กำหนดค่า"
+
+context:                                 # 5.3
+  rounds_per_day: 96                     # "96 รอบเท่ากับ 1 วันจำลอง"
+  edge_noise_sd: 0.05                    # author choice: sd of epsilon_e in rho_e(t)
+  hotspot_decay_m: 120                   # author choice: base density decays with distance from hotspots
+  daily_peaks_hour: [8, 12, 17]          # author choice: "ช่วงเช้า กลางวัน เย็น"
+
+reward:                                  # 5.4
+  noise_sd: 0.1                          # "σ (กำหนดเบื้องต้นเท่ากับ 0.1)"
+  extra_noise_levels: [0.05, 0.1, 0.2]   # 5.6 "ส่วนเพิ่มเติมเมื่อเวลาเอื้ออำนวย"
+
+experiment:                              # 5.6, Table 4
+  T: 2000
+  # Table 4 writes theta as (length weight, crowd weight) = (-0.3, -0.7) -> (-0.7, -0.3).
+  # Two scenario sets are run: "doc" uses 0.3 exactly; "calibrated" uses the weight chosen in
+  # calibration (5.6: "ค่าทั้งหมดเป็นค่ากำหนดเบื้องต้น ปรับได้จากช่วงสอบเทียบก่อนการทดลองจริง").
+  theta_length_weight_doc: 0.3
+  scenarios:
+    S1: {label: "S1: Context เปลี่ยน ความชอบคงที่", theta_start: [-0.3, -0.7], mode: constant}
+    S2: {label: "S2: Reward เปลี่ยนฉับพลัน", theta_start: [-0.3, -0.7], theta_end: [-0.7, -0.3], mode: abrupt, change_at: 1000}
+    S3: {label: "S3: Reward เปลี่ยนค่อยเป็นค่อยไป", theta_start: [-0.3, -0.7], theta_end: [-0.7, -0.3], mode: gradual, change_at: 750, change_end: 1250}
+    CTRL: {label: "กรณีควบคุม: θ = w", theta_start: [-0.5, -0.5], mode: constant}
+
+policies:                                # 5.5, Table 3
+  fixed_w: [-0.5, -0.5]                  # "w = (−0.5, −0.5) ก่อนการทดลอง"
+  lambda: 1.0                            # ridge regularisation (LinUCB and dLinUCB slaves)
+  dlinucb_tau: 200                       # Wu et al. (2018) simulation setting "τ ... set to 200"
+  dlinucb_noise_sd_assumed: 0.1          # noise bound used inside dLinUCB's error test (Eq. 4)
+  calibrated_file: "data/calibrated.yaml"
+
+calibration:                             # 5.5, 5.7
+  # Rule for the scenario weight (environment only, no policy results): take the largest weight
+  # (closest to Table 4) for which, in at least 3 of the 5 OD pairs, (1) in S1 the best route is
+  # not the shortest route in at least 10% of rounds, and (2) in S2 the share of rounds whose best
+  # route is not the shortest differs by at least 10 points before and after the change.
+  # Revision note (2026-10-26): the first version of (2) compared the most frequent best route
+  # before and after the change. The quiet route is best only at peak hours (under 50% of rounds),
+  # so that test could never pass; it was replaced before any policy result was looked at.
+  theta_length_weight_candidates: [0.3, 0.25, 0.2, 0.15, 0.1, 0.05]
+  theta_rule_min_pairs: 3
+  theta_rule_min_share: 0.10
+  seeds: [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009]
+  scenarios: [S1, S2, S3]
+  budget_per_policy: 4                   # "ให้งบการปรับค่าเท่ากันทุกนโยบาย"
+  linucb_grid: [{alpha: 0.05}, {alpha: 0.1}, {alpha: 0.25}, {alpha: 0.5}]
+  dlinucb_grid:                          # alpha for arm selection; detection test uses the paper's bound
+    - {alpha: 0.05, delta1: 0.05, delta1_tilde: 0.025, delta2: 0.05}
+    - {alpha: 0.05, delta1: 0.10, delta1_tilde: 0.05, delta2: 0.05}
+    - {alpha: 0.1, delta1: 0.05, delta1_tilde: 0.025, delta2: 0.05}
+    - {alpha: 0.1, delta1: 0.10, delta1_tilde: 0.05, delta2: 0.05}
+
+evaluation:                              # 5.7, 5.8, 5.9, Tables 5-6
+  test_seeds: 30                         # seeds 0..29, disjoint from calibration seeds
+  adaptation_eps: 0.05                   # "ค่าเบื้องต้น ε = 0.05"
+  adaptation_window: 50                  # "W = 50"
+  bootstrap_resamples: 10000             # "Bootstrap (10,000 ครั้ง)"
+  h1_margin: 0.05                        # "ไม่เกินร้อยละ 5 ของค่าเฉลี่ย R_LinUCB(T)"
+  results_dir: "results"

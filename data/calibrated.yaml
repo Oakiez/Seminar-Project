@@ -1,0 +1,209 @@
+theta_rule:
+- length_weight: 0.3
+  pairs_ok: 1
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.0
+      s2_share_change: 0.0
+      ok: false
+    1:
+      s1_share_best_not_shortest: 0.005
+      s2_share_change: 0.004
+      ok: false
+    2:
+      s1_share_best_not_shortest: 0.0
+      s2_share_change: 0.0
+      ok: false
+    3:
+      s1_share_best_not_shortest: 0.132
+      s2_share_change: 0.133
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.001
+      s2_share_change: 0.001
+      ok: false
+- length_weight: 0.25
+  pairs_ok: 1
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.002
+      s2_share_change: 0.002
+      ok: false
+    1:
+      s1_share_best_not_shortest: 0.023
+      s2_share_change: 0.02
+      ok: false
+    2:
+      s1_share_best_not_shortest: 0.009
+      s2_share_change: 0.007
+      ok: false
+    3:
+      s1_share_best_not_shortest: 0.192
+      s2_share_change: 0.192
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.006
+      s2_share_change: 0.007
+      ok: false
+- length_weight: 0.2
+  pairs_ok: 1
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.07
+      s2_share_change: 0.07
+      ok: false
+    1:
+      s1_share_best_not_shortest: 0.066
+      s2_share_change: 0.065
+      ok: false
+    2:
+      s1_share_best_not_shortest: 0.055
+      s2_share_change: 0.052
+      ok: false
+    3:
+      s1_share_best_not_shortest: 0.257
+      s2_share_change: 0.257
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.025
+      s2_share_change: 0.025
+      ok: false
+- length_weight: 0.15
+  pairs_ok: 4
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.185
+      s2_share_change: 0.182
+      ok: true
+    1:
+      s1_share_best_not_shortest: 0.149
+      s2_share_change: 0.147
+      ok: true
+    2:
+      s1_share_best_not_shortest: 0.153
+      s2_share_change: 0.151
+      ok: true
+    3:
+      s1_share_best_not_shortest: 0.32
+      s2_share_change: 0.319
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.081
+      s2_share_change: 0.079
+      ok: false
+- length_weight: 0.1
+  pairs_ok: 5
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.291
+      s2_share_change: 0.285
+      ok: true
+    1:
+      s1_share_best_not_shortest: 0.27
+      s2_share_change: 0.267
+      ok: true
+    2:
+      s1_share_best_not_shortest: 0.321
+      s2_share_change: 0.316
+      ok: true
+    3:
+      s1_share_best_not_shortest: 0.386
+      s2_share_change: 0.384
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.188
+      s2_share_change: 0.184
+      ok: true
+- length_weight: 0.05
+  pairs_ok: 5
+  detail:
+    0:
+      s1_share_best_not_shortest: 0.538
+      s2_share_change: 0.536
+      ok: true
+    1:
+      s1_share_best_not_shortest: 0.423
+      s2_share_change: 0.422
+      ok: true
+    2:
+      s1_share_best_not_shortest: 0.592
+      s2_share_change: 0.586
+      ok: true
+    3:
+      s1_share_best_not_shortest: 0.451
+      s2_share_change: 0.451
+      ok: true
+    4:
+      s1_share_best_not_shortest: 0.344
+      s2_share_change: 0.338
+      ok: true
+sets:
+  doc:
+    length_weight: 0.3
+    chosen:
+      LinUCB: &id001
+        alpha: 0.05
+      dLinUCB: &id002
+        alpha: 0.05
+        delta1: 0.05
+        delta1_tilde: 0.025
+        delta2: 0.05
+    grid_results:
+      LinUCB:
+      - params: *id001
+        mean_cum_regret: 1.8319
+      - params: &id004
+          alpha: 0.1
+        mean_cum_regret: 2.082
+      - params: &id005
+          alpha: 0.25
+        mean_cum_regret: 2.9512
+      - params: &id006
+          alpha: 0.5
+        mean_cum_regret: 4.2523
+      dLinUCB:
+      - params: *id002
+        mean_cum_regret: 1.9506
+      - params: &id003
+          alpha: 0.05
+          delta1: 0.1
+          delta1_tilde: 0.05
+          delta2: 0.05
+        mean_cum_regret: 2.1316
+      - params: &id007
+          alpha: 0.1
+          delta1: 0.05
+          delta1_tilde: 0.025
+          delta2: 0.05
+        mean_cum_regret: 2.2197
+      - params: &id008
+          alpha: 0.1
+          delta1: 0.1
+          delta1_tilde: 0.05
+          delta2: 0.05
+        mean_cum_regret: 2.442
+  calibrated:
+    length_weight: 0.15
+    chosen:
+      LinUCB: *id001
+      dLinUCB: *id003
+    grid_results:
+      LinUCB:
+      - params: *id001
+        mean_cum_regret: 3.0866
+      - params: *id004
+        mean_cum_regret: 3.3083
+      - params: *id005
+        mean_cum_regret: 4.8101
+      - params: *id006
+        mean_cum_regret: 7.8
+      dLinUCB:
+      - params: *id002
+        mean_cum_regret: 3.5007
+      - params: *id003
+        mean_cum_regret: 3.4306
+      - params: *id007
+        mean_cum_regret: 3.6722
+      - params: *id008
+        mean_cum_regret: 3.5945
+note: selected on calibration seeds 1000-1009 only; test seeds 0-29 unused
