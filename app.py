@@ -52,26 +52,39 @@ SET_TH = {"doc": "ค่าตามเอกสาร (ตารางที่
 # --------------------------------------------------------------------------- cached data
 @st.cache_resource(show_spinner="กำลังโหลดโครงข่ายทางเดินของ มข. ...")
 def campus():
+    """Walking graph plus the places and routes prepared in advance (5.1.2, 5.2.2)."""
     G, D, places, meta = sim.load_campus()
     base = sim.edge_base_density(D, places, CFG["context"]["hotspot_decay_m"])
-    pairs, routes = sim.load_pair_routes(D, base)
-    by_node = {p["node"]: p for p in places}
+    exp_pairs, exp_routes = sim.load_pair_routes(D, base)            # the 5 pairs of the main experiment
+    cat = json.loads((sim.DATA / "route_catalog.json").read_text(encoding="utf-8"))
+    cat_places = {p["name"]: p for p in cat["places"]}
+    cat_pairs = {(p["origin"], p["destination"]): p for p in cat["pairs"] if p["ok"]}
+    exp_index = {(p["origin"], p["destination"]): i for i, p in enumerate(exp_pairs)}
     background = [[(D.nodes[u]["y"], D.nodes[u]["x"]), (D.nodes[v]["y"], D.nodes[v]["x"])]
                   for u, v in D.edges() if u < v]
-    lines = {i: [sim.route_latlon(G, r.nodes) for r in rs] for i, rs in routes.items()}
-    return pairs, by_node, background, routes, lines, meta
+    return G, D, base, cat_places, cat_pairs, exp_pairs, exp_routes, exp_index, background, meta
+
+
+@st.cache_resource(show_spinner="กำลังเตรียมเส้นทาง ...")
+def routes_for(o_name, d_name):
+    G, D, base, cat_places, cat_pairs, exp_pairs, exp_routes, exp_index, background, meta = campus()
+    if (o_name, d_name) in exp_index:
+        rs = exp_routes[exp_index[(o_name, d_name)]]
+    else:
+        rs = sim.routes_from_nodes(D, base, cat_pairs[(o_name, d_name)]["routes"])
+    return rs, [sim.route_latlon(G, r.nodes) for r in rs]
 
 
 @st.cache_data(show_spinner="กำลังจำลอง ...")
-def simulate(set_name, pair_id, sc_key, seed, noise_sd):
-    pairs, by_node, background, routes, lines, meta = campus()
+def simulate(set_name, o_name, d_name, sc_key, seed, noise_sd):
+    rs, _ = routes_for(o_name, d_name)
     s = CAL["sets"][set_name]
     sc = sim.scenario_set(CFG, s["length_weight"])[sc_key]
     c = CFG["context"]
-    out = sim.run(routes[pair_id], sc, T=T, seed=seed, noise_sd=noise_sd, edge_noise_sd=c["edge_noise_sd"],
+    out = sim.run(rs, sc, T=T, seed=seed, noise_sd=noise_sd, edge_noise_sd=c["edge_noise_sd"],
                   policies=sim.make_policies(CFG, s["chosen"], seed), rounds_per_day=c["rounds_per_day"],
                   peaks=tuple(c["daily_peaks_hour"]))
-    metrics = sim.run_metrics(out, sc, CFG, routes[pair_id])
+    metrics = sim.run_metrics(out, sc, CFG, rs)
     return out, metrics, sc
 
 
@@ -92,8 +105,7 @@ def base_map(background, show_tiles):
     return m
 
 
-def add_od(m, pair, by_node):
-    o, d = by_node[pair["origin_node"]], by_node[pair["dest_node"]]
+def add_od(m, o, d):
     folium.Marker([o["lat"], o["lon"]], tooltip="ต้นทาง: " + o["name"], icon=folium.Icon(color="green", icon="play")).add_to(m)
     folium.Marker([d["lat"], d["lon"]], tooltip="ปลายทาง: " + d["name"], icon=folium.Icon(color="red", icon="flag")).add_to(m)
 
@@ -119,13 +131,23 @@ def fmt(v, nd=2):
 
 
 # --------------------------------------------------------------------------- sidebar: proposal 5.1.2
-pairs, by_node, background, routes, lines, meta = campus()
+G, D, base, cat_places, cat_pairs, exp_pairs, exp_routes, exp_index, background, meta = campus()
 st.sidebar.title("ข้อมูลนำเข้าของต้นแบบ")
 st.sidebar.caption("ตามเอกสารข้อ 5.1.2: เลือกจากรายการที่เตรียมไว้ล่วงหน้า ไม่รับพิกัดอิสระ")
 set_name = st.sidebar.radio("ชุดค่าสถานการณ์", list(CAL["sets"]), format_func=lambda k: SET_TH[k],
                             help="ค่าตามเอกสารทำให้ทางสั้นที่สุดดีที่สุดเกือบทุกรอบ จึงมีชุดที่สอบเทียบตามข้อ 5.6 เพิ่ม")
-pair_labels = [f"{p['origin']} → {p['destination']}" for p in pairs]
-pair_id = st.sidebar.selectbox("(ก) คู่ต้นทาง–ปลายทาง", range(len(pairs)), format_func=lambda i: ("[หลัก] " if i == 0 else "") + pair_labels[i])
+names = list(cat_places)
+EXP_MARK = " ★"
+o_name = st.sidebar.selectbox("(ก) ต้นทาง", names, index=names.index(exp_pairs[0]["origin"]))
+dest_ok = [n for n in names if (o_name, n) in cat_pairs]
+d_default = exp_pairs[0]["destination"] if exp_pairs[0]["destination"] in dest_ok else dest_ok[0]
+d_name = st.sidebar.selectbox("(ก) ปลายทาง", dest_ok, index=dest_ok.index(d_default),
+                              format_func=lambda n: n + (EXP_MARK if (o_name, n) in exp_index else ""),
+                              help="แสดงเฉพาะปลายทางที่มีเส้นทางทางเลือกอย่างน้อย 3 เส้นหลังการกรอง (ข้อ 5.2.2) · "
+                                   "★ = คู่ที่บันทึกไว้สำหรับการทดลองหลัก มีผล 30 Seed")
+exp_labels = [f"{p['origin']} → {p['destination']}" for p in exp_pairs]
+pair_label = f"{o_name} → {d_name}"
+pair_id = exp_index.get((o_name, d_name))
 sc_key = st.sidebar.radio("(ข) สถานการณ์", list(CFG["experiment"]["scenarios"]),
                           format_func=lambda k: CFG["experiment"]["scenarios"][k]["label"])
 seed = st.sidebar.selectbox("(ค) Random Seed (ชุดทดลองจริง 0–29)", list(range(CFG["evaluation"]["test_seeds"])), index=0)
@@ -135,9 +157,11 @@ noise_sd = st.sidebar.select_slider("ส่วนเพิ่มเติม (�
                                     value=CFG["reward"]["noise_sd"])
 show_tiles = st.sidebar.checkbox("แสดงแผนที่พื้นหลัง (ต้องใช้อินเทอร์เน็ต)", True)
 
-routes_p, lines_p, pair = routes[pair_id], lines[pair_id], pairs[pair_id]
+routes_p, lines_p = routes_for(o_name, d_name)
+o_place, d_place = cat_places[o_name], cat_places[d_name]
 K = len(routes_p)
-out, metrics, sc = simulate(set_name, pair_id, sc_key, seed, noise_sd)
+key = f"{names.index(o_name)}_{names.index(d_name)}"
+out, metrics, sc = simulate(set_name, o_name, d_name, sc_key, seed, noise_sd)
 pol = out["policies"]
 env = out["env"]
 a_w = CAL["sets"][set_name]["length_weight"]
@@ -151,17 +175,21 @@ step = st.radio("ขั้นตอน", STEPS, horizontal=True, label_visibilit
 
 # --------------------------------------------------------------------------- ① system and routes
 if step == STEPS[0]:
+    show_route = st.radio("แสดงเส้นทาง", ["ทั้งหมด"] + ROUTE_NAMES[:K], horizontal=True,
+                          format_func=lambda x: x if x == "ทั้งหมด" else f"เส้นทาง {x}")
     c1, c2 = st.columns([3, 2])
     with c1:
         m = base_map(background, show_tiles)
         for i, line in enumerate(lines_p):
+            if show_route != "ทั้งหมด" and ROUTE_NAMES[i] != show_route:
+                continue
             folium.PolyLine(line, color=ROUTE_COLORS[i], weight=6, opacity=0.85,
                             tooltip=f"เส้นทาง {ROUTE_NAMES[i]}: {routes_p[i].length_m:.0f} ม.").add_to(m)
-        add_od(m, pair, by_node)
+        add_od(m, o_place, d_place)
         fit(m, lines_p)
-        st_folium(m, height=520, returned_objects=[], use_container_width=True, key=f"m1_{pair_id}")
+        st_folium(m, height=520, returned_objects=[], use_container_width=True, key=f"m1_{key}_{show_route}")
     with c2:
-        st.markdown(f"**{pair_labels[pair_id]}**")
+        st.markdown(f"**{pair_label}**")
         st.markdown(f"เส้นทางทางเลือก {K} เส้น จากวิธี K-Shortest Loopless Paths ของ Yen (1971) "
                     f"K = {CFG['routes']['k']} ตัดเส้นทางที่ซ้อนทับเกินร้อยละ {int(CFG['routes']['max_overlap'] * 100)} (ข้อ 5.2.2) "
                     "แต่ละเส้นคือทางเลือก (Arm) หนึ่งตัว นโยบายเห็นเพียง 2 ค่าต่อเส้นทาง (ตารางที่ 2)")
@@ -188,7 +216,10 @@ if step == STEPS[1]:
         if col.button(lab):
             st.session_state.t = int(np.clip(st.session_state.t + dv, r0, r1))
     t = st.slider("รอบที่", r0, r1, key="t")
-    learner = st.radio("ดูการตัดสินใจของ", ["LinUCB", "dLinUCB"], horizontal=True)
+    cc = st.columns([2, 2, 2])
+    learner = cc[0].radio("ดูการตัดสินใจของ", ["LinUCB", "dLinUCB"], horizontal=True)
+    show_all2 = cc[1].checkbox("แสดงเส้นทางทางเลือกอื่นแบบจาง", False)
+    show_best2 = cc[2].checkbox("แสดงเส้นทางที่ดีที่สุดจริง (Oracle)", True)
     P = pol[learner]
     a, best, mu_t = int(P["choice"][t]), int(out["oracle"][t]), env.mu[t]
     st.markdown(f"**รอบ {t}** · เวลา {sim.hour_label(t)} น. · g(t) = {env.g[t]:.2f} · "
@@ -211,13 +242,15 @@ if step == STEPS[1]:
         st.caption("นโยบายเลือกเส้นทางที่ขอบบนสูงที่สุด (Upper Confidence Bound) เส้นแนวตั้งยาวแปลว่ายังไม่แน่ใจ จึงคุ้มที่จะลอง")
     with c1:
         m = base_map(background, show_tiles)
-        for i, line in enumerate(lines_p):
-            folium.PolyLine(line, color=ROUTE_COLORS[i], weight=3, opacity=0.35).add_to(m)
-        folium.PolyLine(lines_p[best], color="black", weight=9, opacity=0.35, tooltip="เส้นทางที่ดีที่สุดจริง (Oracle)").add_to(m)
+        if show_all2:
+            for i, line in enumerate(lines_p):
+                folium.PolyLine(line, color=ROUTE_COLORS[i], weight=3, opacity=0.35).add_to(m)
+        if show_best2:
+            folium.PolyLine(lines_p[best], color="black", weight=9, opacity=0.35, tooltip="เส้นทางที่ดีที่สุดจริง (Oracle)").add_to(m)
         folium.PolyLine(lines_p[a], color=ROUTE_COLORS[a], weight=6, opacity=1, tooltip=f"{learner} เลือกเส้นทาง {ROUTE_NAMES[a]}").add_to(m)
-        add_od(m, pair, by_node)
+        add_od(m, o_place, d_place)
         fit(m, lines_p)
-        st_folium(m, height=440, returned_objects=[], use_container_width=True, key=f"m2_{pair_id}_{learner}_{t}")
+        st_folium(m, height=440, returned_objects=[], use_container_width=True, key=f"m2_{key}_{learner}_{t}_{show_all2}_{show_best2}")
         st.caption(f"เส้นสี = เส้นทางที่ {learner} เลือก · เงาสีดำ = เส้นทางที่ดีที่สุดจริง (Oracle ใช้ประเมินผลเท่านั้น)")
     verdict = "ตรงกับเส้นทางที่ดีที่สุด" if a == best else f"เส้นทางที่ดีที่สุดคือ {ROUTE_NAMES[best]}"
     st.info(f"{learner} เลือกเส้นทาง {ROUTE_NAMES[a]} → ได้ Feedback = {P['reward'][t]:.3f} (เห็นเฉพาะเส้นทางที่เลือก) · "
@@ -293,27 +326,33 @@ if step == STEPS[2]:
                                  "reward": p["reward"], "regret": p["regret"], "cum_regret": p["cum_regret"],
                                  "oracle_route": [ROUTE_NAMES[i] for i in out["oracle"]]}))
     csv = pd.concat(log).to_csv(index=False).encode("utf-8-sig")
-    run_cfg = {"set": set_name, "length_weight": a_w, "pair": pair_labels[pair_id], "scenario": sc_key, "scenario_definition": sc,
+    run_cfg = {"set": set_name, "length_weight": a_w, "pair": pair_label, "scenario": sc_key, "scenario_definition": sc,
                "seed": seed, "noise_sd": noise_sd, "T": T, "policy_params": CAL["sets"][set_name]["chosen"],
                "routes": CFG["routes"], "context": CFG["context"], "evaluation": CFG["evaluation"]}
     d1, d2 = st.columns(2)
-    d1.download_button("ดาวน์โหลดผลทุกรอบ (CSV)", csv, file_name=f"run_{set_name}_p{pair_id}_{sc_key}_s{seed}.csv", mime="text/csv")
+    d1.download_button("ดาวน์โหลดผลทุกรอบ (CSV)", csv, file_name=f"run_{set_name}_{key}_{sc_key}_s{seed}.csv", mime="text/csv")
     d2.download_button("ดาวน์โหลดไฟล์กำหนดค่าของรันนี้ (YAML)", yaml.safe_dump(run_cfg, allow_unicode=True, sort_keys=False),
-                       file_name=f"run_{set_name}_p{pair_id}_{sc_key}_s{seed}.yaml", mime="text/yaml")
+                       file_name=f"run_{set_name}_{key}_{sc_key}_s{seed}.yaml", mime="text/yaml")
 
     st.subheader("เส้นทางที่แต่ละนโยบายเลือกในรอบสุดท้ายของช่วงที่ดู")
+    show_pol = st.radio("แสดงเส้นทางของ", ["ทั้งหมด"] + list(pol) + ["Oracle"], horizontal=True,
+                        format_func=lambda x: {"ทั้งหมด": "ทั้งหมด", "Oracle": "ที่ดีที่สุดจริง (Oracle)"}.get(x, x))
     m = base_map(background, show_tiles)
     last = r1
-    folium.PolyLine(lines_p[int(out["oracle"][last])], color="black", weight=12, opacity=0.25, tooltip="ดีที่สุดจริง (Oracle)").add_to(m)
+    if show_pol in ("ทั้งหมด", "Oracle"):
+        folium.PolyLine(lines_p[int(out["oracle"][last])], color="black", weight=12, opacity=0.25 if show_pol == "ทั้งหมด" else 0.6,
+                        tooltip="ดีที่สุดจริง (Oracle)").add_to(m)
     for j, (n, p) in enumerate(pol.items()):
+        if show_pol not in ("ทั้งหมด", n):
+            continue
         i = int(p["choice"][last])
         folium.PolyLine(lines_p[i], color=POLICY_COLORS[n], weight=5, opacity=0.9, dash_array=None if j % 2 == 0 else "8,6",
                         tooltip=f"{POLICY_TH[n]}: เส้นทาง {ROUTE_NAMES[i]}").add_to(m)
-    add_od(m, pair, by_node)
+    add_od(m, o_place, d_place)
     fit(m, lines_p)
     cm, cl = st.columns([3, 2])
     with cm:
-        st_folium(m, height=420, returned_objects=[], use_container_width=True, key=f"m3_{pair_id}_{last}")
+        st_folium(m, height=420, returned_objects=[], use_container_width=True, key=f"m3_{key}_{last}_{show_pol}")
     with cl:
         for n, p in pol.items():
             i = int(p["choice"][last])
@@ -327,16 +366,22 @@ if step == STEPS[3]:
     if df is None:
         st.warning("ยังไม่มีผล 30 Seed ให้รัน `python experiments.py run` และ `python experiments.py analyze` ก่อน")
         st.stop()
+    if pair_id is None:
+        st.info("คู่นี้ไม่อยู่ใน 5 คู่ที่บันทึกไว้สำหรับการทดลองหลัก (ข้อ 5.2.2) จึงไม่มีผล 30 Seed "
+                "ดูผลรายรันได้ในหน้า ② และ ③ หรือเลือกคู่ที่มีเครื่องหมาย ★")
+        for lab in exp_labels:
+            st.markdown(f"- {lab}")
+        st.stop()
     st.subheader(f"ผล 30 Seed: {SET_TH[set_name]} · {sc['label']} · σ = {noise_sd}")
     fig, ax = plt.subplots(figsize=(11, 4.2))
     for n in POLICY_COLORS:
-        key = f"{set_name}|{pair_id}|{sc_key}|{noise_sd}|{n}"
-        if key + "|mean" not in curves:
+        ck = f"{set_name}|{pair_id}|{sc_key}|{noise_sd}|{n}"
+        if ck + "|mean" not in curves:
             continue
-        xx = np.arange(len(curves[key + "|mean"])) * 10
+        xx = np.arange(len(curves[ck + "|mean"])) * 10
         keep = (xx >= r0) & (xx <= r1)
-        ax.plot(xx[keep], curves[key + "|mean"][keep], color=POLICY_COLORS[n], lw=2.2, label=POLICY_TH[n])
-        ax.fill_between(xx[keep], curves[key + "|lo"][keep], curves[key + "|hi"][keep], color=POLICY_COLORS[n], alpha=0.15)
+        ax.plot(xx[keep], curves[ck + "|mean"][keep], color=POLICY_COLORS[n], lw=2.2, label=POLICY_TH[n])
+        ax.fill_between(xx[keep], curves[ck + "|lo"][keep], curves[ck + "|hi"][keep], color=POLICY_COLORS[n], alpha=0.15)
     mark_change(ax, sc)
     ax.set_xlabel("รอบ")
     ax.set_ylabel("Dynamic Cumulative Regret")
@@ -385,7 +430,7 @@ if step == STEPS[3]:
     st.markdown("**ภาพรวมทุกคู่ (σ = 0.1)**")
     over = []
     for pid, hh in hyp[set_name].items():
-        over.append({"คู่": pair_labels[int(pid)], "H1": yes(hh["H1"]["supported"]), "H2": yes(hh["H2"]["supported"]),
+        over.append({"คู่": exp_labels[int(pid)], "H1": yes(hh["H1"]["supported"]), "H2": yes(hh["H2"]["supported"]),
                      "H3 ส่วนแรก": yes(hh["H3"]["supported_first_part"])})
     st.dataframe(pd.DataFrame(over), hide_index=True, width="stretch")
 
@@ -400,7 +445,7 @@ if step == STEPS[4]:
 | 3.2 4 นโยบาย × 3 สถานการณ์ × 30 Seed | ครบ และเพิ่มกรณีควบคุมตามตารางที่ 4 · รายงานค่าเฉลี่ยพร้อม 95% CI |
 | 3.3 ตัดสิน H1–H3 ตามเกณฑ์ล่วงหน้า | หน้า ④ ใช้เกณฑ์ตามตารางที่ 6 และ Bootstrap จับคู่ 10,000 ครั้ง |
 | 3.4, 5.1.3 แผนที่เส้นทางของ 4 นโยบาย | หน้า ③ จากผลการรันจริง |
-| 5.1.2 ข้อมูลนำเข้าของต้นแบบ | แถบซ้าย: (ก) คู่จากรายการ (ข) สถานการณ์ (ค) Seed (ง) ช่วงรอบ · ไม่รับพิกัดอิสระ |
+| 5.1.2 ข้อมูลนำเข้าของต้นแบบ | แถบซ้าย: (ก) ต้นทางและปลายทางจากรายการสถานที่ที่เตรียมไว้ (เฉพาะคู่ที่ผ่านเกณฑ์ 3 เส้นของข้อ 5.2.2, เตรียมเส้นทางล่วงหน้าใน `data/route_catalog.json`) (ข) สถานการณ์ (ค) Seed (ง) ช่วงรอบ · ไม่รับพิกัดอิสระ · ผล 30 Seed มีเฉพาะ 5 คู่ที่บันทึกไว้สำหรับการทดลองหลัก (★) |
 | 5.1.3–5.1.4 CSV, YAML, Matplotlib, Folium, pytest, Python 3.12+ | ดาวน์โหลด CSV/YAML ในหน้า ③ · กราฟ Matplotlib · แผนที่ Folium · Python 3.13 |
 | 5.2.1 กราฟทางเดินเท้า ส่วนเชื่อมต่อใหญ่สุด เก็บเมตาดาตา | `data/kku_walk.graphml` และ `data/meta.json` |
 | 5.2.2 Yen, K = 5, ตัดซ้อนทับ > 80%, ≥ 3 เส้น, บันทึกคู่ล่วงหน้า | `data/od_pairs.json` 5 คู่ (คู่หลัก + 4 คู่) เลือกด้วยระยะทางและการกระจายพื้นที่ ไม่ใช้ผลของนโยบาย |
