@@ -106,6 +106,11 @@ def base_map(background, show_tiles):
 
 
 def add_od(m, o, d):
+    # dashed link from each pin to the walking-graph node the routes start or end at
+    for p in (o, d):
+        nd = D.nodes[p["node"]]
+        folium.PolyLine([(p["lat"], p["lon"]), (nd["y"], nd["x"])], color="#555", weight=2, dash_array="4,4",
+                        tooltip="ระยะจากหมุดถึงทางเดินที่ใกล้ที่สุด").add_to(m)
     folium.Marker([o["lat"], o["lon"]], tooltip="ต้นทาง: " + o["name"], icon=folium.Icon(color="green", icon="play")).add_to(m)
     folium.Marker([d["lat"], d["lon"]], tooltip="ปลายทาง: " + d["name"], icon=folium.Icon(color="red", icon="flag")).add_to(m)
 
