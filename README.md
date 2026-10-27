@@ -3,6 +3,18 @@
 ต้นแบบตามเอกสาร `เค้าโครงโครงงานฉบับสมบูรณ์` (ข้อ 3.1–3.4, 5.1–5.9, 6) แนะนำเส้นทางเดินภายในมหาวิทยาลัยขอนแก่น
 เปรียบเทียบ Shortest Path, Fixed Context-Weighted Score, LinUCB และการปรับใช้ตามแนวคิด dLinUCB บนข้อมูลจำลอง
 
+## ติดตั้ง (ครั้งแรกบนเครื่องใหม่)
+
+ต้องมี Python 3.12 ขึ้นไป (ทดสอบบน 3.13) แล้วรันในโฟลเดอร์นี้:
+
+```bash
+python -m venv .venv
+.venv/Scripts/python -m pip install -r requirements.txt
+```
+
+บน macOS หรือ Linux ใช้ `.venv/bin/python` แทน `.venv/Scripts/python`
+ข้อมูลกราฟ มข. ผลทดลอง และค่าที่สอบเทียบอยู่ใน `data/` กับ `results/` แล้ว ไม่ต้องรันใหม่ก็เปิด demo ได้
+
 ## วิธีเปิด
 
 ดับเบิลคลิก `run_demo.bat` เบราว์เซอร์จะเปิดที่ http://localhost:8501
