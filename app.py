@@ -114,7 +114,9 @@ def results():
 
 # --------------------------------------------------------------------------- helpers
 def base_map(background, show_tiles):
-    m = folium.Map(location=[16.4746, 102.823], zoom_start=16, tiles="OpenStreetMap" if show_tiles else None, control_scale=True)
+    # no wheel zoom: scrolling the page over a map must scroll the page (zoom stays on the +/- buttons)
+    m = folium.Map(location=[16.4746, 102.823], zoom_start=16, tiles="OpenStreetMap" if show_tiles else None, control_scale=True,
+                   scrollWheelZoom=False)
     folium.PolyLine(background, color="#c8c8c8", weight=1, opacity=0.8).add_to(m)
     return m
 
@@ -179,8 +181,7 @@ def pref_text(theta):
 G, D, base, cat_places, cat_pairs, exp_pairs, exp_routes, exp_index, background, meta = campus()
 names = list(cat_places)
 exp_labels = [f"{p['origin']} → {p['destination']}" for p in exp_pairs]
-COLLEGE = "วิทยาลัยการคอมพิวเตอร์"
-MAIN_D = exp_pairs[0]["destination"]
+MAIN_O, MAIN_D = exp_pairs[0]["origin"], exp_pairs[0]["destination"]   # main pair of the experiment (5.2.2)
 
 st.title("ระบบแนะนำเส้นทางเดินใน มข. ที่เรียนรู้จากผู้ใช้ได้")
 st.markdown("#### ถ้าแอปนำทางไม่รู้ว่าคุณชอบทางแบบไหน มันจะเรียนรู้จากคะแนนที่คุณให้ได้ไหม และถ้าคุณเปลี่ยนใจ มันจะตามทันไหม")
@@ -200,8 +201,8 @@ with st.expander("4 วิธีที่นำมาเทียบกัน"):
 st.divider()
 st.header("ขั้นที่ 1 · เลือกจุดเริ่มต้นและจุดหมาย")
 c1, c2 = st.columns(2)
-o_default = COLLEGE if COLLEGE in names else exp_pairs[0]["origin"]
-o_name = c1.selectbox("เดินจาก", names, index=names.index(o_default))
+o_name = c1.selectbox("เดินจาก", names, index=names.index(MAIN_O),
+                      help="ค่าเริ่มต้นคือคู่หลักของการทดลอง ซึ่งมีผลเฉลี่ย 30 ชุดเลขสุ่มให้เทียบ")
 dest_ok = [n for n in names if (o_name, n) in cat_pairs]
 d_default = MAIN_D if MAIN_D in dest_ok else dest_ok[0]
 d_name = c2.selectbox("ไปที่", dest_ok, index=dest_ok.index(d_default),
@@ -239,11 +240,12 @@ with c2:
     show_route = st.radio("ดูบนแผนที่", ["ทุกทาง"] + RN, label_visibility="collapsed")
     rows = []
     for i, r in enumerate(routes_p):
-        rows.append({"ทาง": f"ทางที่ {i + 1}", "ระยะทาง (ม.)": round(r.length_m), "ยาวกว่าทางที่สั้นที่สุด (ม.)": round(r.length_m - routes_p[0].length_m),
-                     "คนเยอะแค่ไหน ตอน 8 โมงเช้า": round(r.base_crowd * sim.daily_pattern(32), 2),
-                     "ตอนบ่าย 2": round(r.base_crowd * sim.daily_pattern(56), 2)})
+        rows.append({"ทาง": i + 1, "ยาว (ม.)": round(r.length_m), "ยาวกว่าทางที่ 1": f"+{r.length_m - routes_p[0].length_m:.0f} ม.",
+                     "คน 8 โมง": round(r.base_crowd * sim.daily_pattern(32), 2),
+                     "คนบ่าย 2": round(r.base_crowd * sim.daily_pattern(56), 2)})
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
-    st.caption("ความแออัด 0 = ว่าง 1 = แน่นที่สุดในมหาวิทยาลัย คนจะเยอะตอน 8 โมง เที่ยง และ 5 โมงเย็น (ค่าจำลองตามข้อ 5.3) · "
+    st.caption("ช่อง \"คน\" คือความแออัด 0 = ว่าง 1 = แน่นที่สุดในมหาวิทยาลัย คนจะเยอะตอน 8 โมง เที่ยง และ 5 โมงเย็น "
+               "ทางที่ผ่านใกล้โรงอาหาร ห้องสมุด หรือร้านอาหารจะมีคนเยอะกว่า (ตำแหน่งจริงจาก OpenStreetMap จำนวนคนเป็นค่าจำลองตามข้อ 5.3) · "
                "ทางทั้งหมดหามาด้วยวิธีหาทางที่สั้นที่สุด 5 อันดับแรกของ Yen แล้วตัดทางที่ทับกันเกิน 80% (ข้อ 5.2.2)")
 with c1:
     m = base_map(background, show_tiles)
@@ -272,7 +274,7 @@ if sc["mode"] == "constant":
     st.info(f"ตลอด 2,000 เที่ยว ผู้ใช้ {pref_text(t_start)} ({SC_DOC[sc_key]} ในตารางที่ 4)")
 elif sc["mode"] == "abrupt":
     st.info(f"เที่ยวที่ 1 ถึง {sc['change_at']:,}: ผู้ใช้ {pref_text(t_start)}  \n"
-            f"ตั้งแต่เที่ยวที่ {sc['change_at']:,} ผู้ใช้เปลี่ยนใจทันที: {pref_text(t_end)} ({SC_DOC[sc_key]} ในตารางที่ 4)")
+            f"ตั้งแต่เที่ยวที่ {sc['change_at'] + 1:,} ผู้ใช้เปลี่ยนใจทันที: {pref_text(t_end)} ({SC_DOC[sc_key]} ในตารางที่ 4)")
 else:
     st.info(f"ช่วงแรก: ผู้ใช้ {pref_text(t_start)}  \n"
             f"ระหว่างเที่ยวที่ {sc['change_at']:,} ถึง {sc['change_end']:,} ผู้ใช้ค่อยๆ เปลี่ยนใจ จนเป็น: {pref_text(t_end)} ({SC_DOC[sc_key]} ในตารางที่ 4)")
@@ -297,21 +299,51 @@ st.markdown("ทุกเที่ยว เราเทียบทางที
             "ถ้าเลือกไม่ตรง ผู้ใช้เสียคะแนนไปเท่ากับส่วนต่าง เรียกว่า **ความเสียดาย (Regret)** "
             "กราฟนี้รวมความเสียดายตั้งแต่เที่ยวแรก **เส้นยิ่งต่ำ ยิ่งเลือกทางได้ตรงใจผู้ใช้** "
             "ถ้าเส้นเริ่มแบน แปลว่าวิธีนั้นเลือกถูกเกือบทุกเที่ยวแล้ว")
-trip = st.slider("เลื่อนเพื่อดูเที่ยวที่ต้องการ", 1, T, 1 if sc["mode"] == "constant" else sc["change_at"] + 50, 1)
+# shortcut trips, so the presenter does not have to aim a 2,000-step slider on a projector
+if sc["mode"] == "constant":
+    jumps = [("ช่วงแรก", 100), ("กลางทาง", T // 2), ("ตอนท้าย", T)]
+else:
+    end = sc["change_at"] if sc["mode"] == "abrupt" else sc["change_end"]
+    jumps = [("ก่อนผู้ใช้เปลี่ยนใจ", sc["change_at"] - 50), ("หลังเปลี่ยนใจไม่นาน", end + 20),
+             ("หลังเปลี่ยนใจ 200 เที่ยว", end + 200), ("ตอนท้าย", T)]
+trip_key = f"trip_{sc_key}"
+if trip_key not in st.session_state:
+    st.session_state[trip_key] = jumps[1][1] if sc["mode"] == "constant" else jumps[2][1]
+
+
+def _jump(v):
+    st.session_state[trip_key] = v
+
+
+bc = st.columns(len(jumps) + 1)
+bc[0].markdown("**ไปที่เที่ยว:**")
+for col, (lab, v) in zip(bc[1:], jumps):
+    col.button(f"{lab} ({v:,})", on_click=_jump, args=(v,), width="stretch")
+trip = st.slider("หรือเลื่อนเพื่อเลือกเที่ยวเอง", 1, T, key=trip_key)
 t = trip - 1
-fig, ax = plt.subplots(figsize=(11, 4.2))
+fig, ax = plt.subplots(figsize=(11, 4.8))
 x = np.arange(1, T + 1)
 for n, p in pol.items():
-    ax.plot(x, p["cum_regret"], color=POLICY_COLORS[n], lw=2.4, label=POLICY_TH[n])
-mark_change(ax, sc)
-ax.axvline(trip, color="#444", lw=1, alpha=0.6)
+    ax.plot(x, p["cum_regret"], color=POLICY_COLORS[n], lw=2.6, label=POLICY_TH[n],
+            ls=(0, (6, 3)) if n == "Shortest Path" else "-")
+ax.set_ylim(0, max(p["cum_regret"][-1] for p in pol.values()) * 1.12)
+mark_change(ax, sc, label=False)
+TRIP_C = "#6a3d9a"
+ax.axvline(trip, color=TRIP_C, lw=2.2)
+ax.text(trip, ax.get_ylim()[1], f" เที่ยวที่ {trip:,} ", color="white", fontsize=15, va="top",
+        ha="left" if trip < T * 0.85 else "right", bbox=dict(facecolor=TRIP_C, edgecolor="none", pad=2))
+if sc["mode"] != "constant":
+    # above the plot area, so the label never covers a line
+    ax.text(sc["change_at"], 1.01, "ผู้ใช้เปลี่ยนใจ ▾", fontsize=15, va="bottom", ha="center",
+            transform=ax.get_xaxis_transform())
 ax.set_xlabel("เที่ยวที่")
-ax.set_ylabel("ความเสียดายรวม (คะแนน)")
-ax.set_title("ความเสียดายรวม: เส้นยิ่งต่ำยิ่งดี · เส้นตั้งสีเทา = เที่ยวที่กำลังดู")
-ax.legend(fontsize=14, frameon=False, loc="upper left")
+ax.set_ylabel("ความเสียดายรวม (คะแนน)", labelpad=10)
+ax.set_title("ความเสียดายรวม: เส้นยิ่งต่ำยิ่งดี", loc="left")
+ax.legend(fontsize=14, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2)
+fig.tight_layout()
 st.pyplot(fig, clear_figure=True)
 if np.array_equal(pol["Shortest Path"]["choice"], pol["Fixed Context-Weighted Score"]["choice"]):
-    st.caption("มองไม่เห็นเส้นสีเทา เพราะซ้อนอยู่ใต้เส้นสูตรคงที่ สองวิธีนี้เลือกทางเดียวกันทุกเที่ยว")
+    st.caption("เส้นประสีเทา (ทางสั้นที่สุดเสมอ) ทับอยู่บนเส้นสูตรคงที่ เพราะสองวิธีนี้เลือกทางเดียวกันทุกเที่ยว")
 
 best = int(oracle[t])
 c1, c2 = st.columns([3, 2])
@@ -321,9 +353,10 @@ with c2:
     rows = []
     for n, p in pol.items():
         a = int(p["choice"][t])
-        rows.append({"วิธี": POLICY_SHORT[n], "เลือก": f"ทางที่ {a + 1}", "ตรงใจไหม": "ตรง ✓" if a == best else "ไม่ตรง",
-                     "เสียดายเที่ยวนี้": round(float(p["regret"][t]), 3), "เสียดายรวมถึงตอนนี้": round(float(p["cum_regret"][t]), 2)})
+        rows.append({"วิธี": POLICY_SHORT[n], "เลือก": f"ทาง {a + 1}", "ตรงใจ": "✓" if a == best else "✗",
+                     "เสียดาย": round(float(p["regret"][t]), 3), "รวม": round(float(p["cum_regret"][t]), 2)})
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
+    st.caption("เสียดาย = เฉพาะเที่ยวนี้ · รวม = รวมตั้งแต่เที่ยวแรกถึงเที่ยวนี้")
     show_pol = st.radio("ดูบนแผนที่ว่าวิธีไหนเลือกทางอะไร", list(pol), index=3, format_func=lambda n: POLICY_SHORT[n])
     det = [d for d in pol["dLinUCB"]["detections"] if d <= t]
     if det:
@@ -353,8 +386,13 @@ with k1, st.container(border=True):
     st.markdown("ความเสียดายรวมทั้ง 2,000 เที่ยว (น้อยไปมาก)  \n" + "  \n".join(f"{i + 1}. {POLICY_SHORT[n]}: {final[n]:.2f}" for i, n in enumerate(order)))
 with k2, st.container(border=True):
     st.markdown("**500 เที่ยวสุดท้าย เลือกตรงใจกี่ %**")
-    top = max(hit, key=hit.get)
-    st.markdown(f"### {POLICY_SHORT[top]} {hit[top]:.0f}%")
+    tops = [n for n in pol if round(hit[n]) == round(max(hit.values()))]
+    if len(tops) == len(pol):
+        st.markdown(f"### ทุกวิธีเท่ากัน {max(hit.values()):.0f}%")
+    elif len(tops) > 1:
+        st.markdown(f"### เสมอกัน {len(tops)} วิธี {max(hit.values()):.0f}%")
+    else:
+        st.markdown(f"### {POLICY_SHORT[tops[0]]} {hit[tops[0]]:.0f}%")
     st.markdown("  \n".join(f"{POLICY_SHORT[n]}: {hit[n]:.0f}%" for n in pol))
 with k3, st.container(border=True):
     md = metrics["dLinUCB"]
@@ -373,13 +411,27 @@ with k3, st.container(border=True):
             st.markdown(f"### เริ่มเรียนรู้ใหม่ {len(pol['dLinUCB']['detections'])} ครั้ง")
         tt = lambda v: "ยังไม่กลับมาดีภายใน 2,000 เที่ยว" if v is None else f"{v} เที่ยว"
         st.markdown(f"กลับมาเลือกได้ดีหลังเปลี่ยนใจ (Adaptation Time)  \n{POLICY_SHORT['dLinUCB']}: {tt(tau_d)}  \n{POLICY_SHORT['LinUCB']}: {tt(tau_l)}")
+# the single run next to the 30-seed mean of the same setting, so one lucky seed is never the whole story
 learn_best = min(final["LinUCB"], final["dLinUCB"]) < min(final["Shortest Path"], final["Fixed Context-Weighted Score"])
-if learn_best:
-    st.success("รอบนี้ วิธีที่เรียนรู้จากคะแนนของผู้ใช้ เลือกทางได้ตรงใจกว่าวิธีที่ไม่เรียนรู้")
-else:
-    st.warning("รอบนี้ วิธีที่ไม่เรียนรู้ยังทำได้ดีกว่า ผลแบบนี้เราก็รายงานตามจริง (ข้อ 5.9) "
-               "เพราะเป็นข้อค้นพบว่าระบบเรียนรู้ยังมีข้อจำกัดในสถานการณ์นี้")
-st.caption("นี่คือผลจากชุดเลขสุ่มชุดเดียว ผลเฉลี่ยจาก 30 ชุดและการตัดสินสมมติฐาน อยู่ในส่วนรายละเอียดด้านล่าง")
+s1, s2 = st.columns(2)
+with s1:
+    msg = (f"รอบนี้ (ชุดเลขสุ่ม {seed}): ผู้ชนะคือ {POLICY_SHORT[order[0]]} "
+           + ("วิธีที่เรียนรู้จากคะแนนของผู้ใช้ เลือกทางได้ตรงใจกว่าวิธีที่ไม่เรียนรู้" if learn_best
+              else "วิธีที่ไม่เรียนรู้ยังทำได้ดีกว่า ผลแบบนี้เราก็รายงานตามจริง (ข้อ 5.9)"))
+    (st.success if learn_best else st.warning)(msg)
+with s2:
+    df30, _, _ = results()
+    if pair_id is None or df30 is None:
+        st.info("คู่นี้ไม่มีผลเฉลี่ย 30 ชุด (มีเฉพาะ 5 คู่ที่บันทึกไว้สำหรับการทดลองหลัก)")
+    else:
+        g30 = df30[(df30["set"] == set_name) & (df30["pair"] == pair_id) & (df30["scenario"] == sc_key) & (df30["noise_sd"] == noise_sd)]
+        mean30 = g30.groupby("policy")["dynamic_cumulative_regret"].mean()
+        order30 = sorted(mean30.index, key=mean30.get)
+        same = order30[0] == order[0]
+        st.info(f"เฉลี่ยจาก 30 ชุดเลขสุ่ม: ผู้ชนะคือ {POLICY_SHORT[order30[0]]}  \n"
+                + " · ".join(f"{POLICY_SHORT[n]} {mean30[n]:.2f}" for n in order30)
+                + ("" if same else "  \nผู้ชนะต่างจากรอบนี้ เพราะผลรอบเดียวแกว่งตามเลขสุ่ม ใช้ผลเฉลี่ยนี้ในการสรุป"))
+st.caption("ตัวเลขคือความเสียดายรวม (น้อยกว่าดีกว่า) · ผลตัดสินสมมติฐาน H1–H3 อยู่ในส่วนรายละเอียดด้านล่าง")
 
 # --------------------------------------------------------------------------- committee details
 st.divider()
@@ -420,7 +472,8 @@ if page == PAGES[0]:
         ax.plot(xr, env.g[r0:r1 + 1], label="g(t) ความแออัดตามเวลา", color="#ff7f0e", lw=0.8)
         ax.set_title("θ และ g(t) ในตัวจำลอง (นโยบายไม่เห็น)")
         ax.set_xlabel("รอบ")
-        ax.legend(fontsize=12, frameon=False)
+        ax.legend(fontsize=12, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=3)
+        fig.tight_layout()
         st.pyplot(fig, clear_figure=True)
     with c2:
         fig, ax = plt.subplots(figsize=(6, 3.4))
@@ -471,7 +524,8 @@ if page == PAGES[1]:
     ax.set_xlabel("รอบ")
     ax.set_ylabel("Dynamic Cumulative Regret")
     ax.set_title("ค่าเฉลี่ยจาก 30 Seed (แถบสี = ช่วง 2.5–97.5 เปอร์เซ็นไทล์ระหว่าง Seed)")
-    ax.legend(fontsize=13, frameon=False)
+    ax.legend(fontsize=13, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2)
+    fig.tight_layout()
     st.pyplot(fig, clear_figure=True)
 
     d = df[(df["set"] == set_name) & (df["pair"] == pid) & (df["scenario"] == sc_key) & (df["noise_sd"] == noise_sd)]
@@ -548,7 +602,7 @@ if page == PAGES[1]:
                      f"LinUCB ชนะตั้งแต่รอบ {h3['CTRL']['linucb_wins_from_round'] if h3['CTRL']['linucb_wins_from_round'] is not None else 'ไม่ชนะ'}",
          "ผลตัดสิน": "Fixed ชนะ" if h3["CTRL"]["fixed_better"] else ("LinUCB ชนะ" if h3["CTRL"]["learning_better"] else "ไม่ต่างกัน")},
     ]
-    st.dataframe(pd.DataFrame(table), hide_index=True, width="stretch")
+    st.dataframe(pd.DataFrame(table)[["สมมติฐาน", "ผลตัดสิน", "ผลที่ได้", "เกณฑ์"]], hide_index=True, width="stretch")
     st.caption("ตารางที่ 6 ให้วิเคราะห์ H2 ตามขนาดการเปลี่ยนของ θ ด้วย แต่ตารางที่ 4 มีขนาดการเปลี่ยนแบบเดียว จึงยังไม่ได้วิเคราะห์ส่วนนี้ "
                "ผลที่ไม่สนับสนุนสมมติฐานถือเป็นข้อค้นพบตามข้อ 5.9")
     st.markdown("**ภาพรวมทุกคู่ (σ = 0.1)**")
