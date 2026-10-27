@@ -82,6 +82,12 @@ def main():
         "nodes": G.number_of_nodes(),
         "edges": G.number_of_edges(),
         "attribution": "Map data © OpenStreetMap contributors (ODbL)",
+        # proposal 5.2.1: record the area (ขอบเขตพื้นที่) with the fetch date and tool versions
+        "bbox": {"south": round(min(d["y"] for _, d in G.nodes(data=True)), 6),
+                 "west": round(min(d["x"] for _, d in G.nodes(data=True)), 6),
+                 "north": round(max(d["y"] for _, d in G.nodes(data=True)), 6),
+                 "east": round(max(d["x"] for _, d in G.nodes(data=True)), 6),
+                 "note": "extent of the walking-graph nodes (WGS84); area queried = OpenStreetMap polygon of \"Khon Kaen University\""},
     }
     (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(meta, ensure_ascii=False))

@@ -103,3 +103,24 @@ def test_adaptation_time_definition():
 
 def test_false_alarm_rate_per_thousand_rounds():
     assert sim.false_alarm_rate([10, 500, 1500], np.arange(1000)) == 2.0
+
+
+def test_same_seed_same_regret_and_metrics():
+    """Objective 3.1 (1): with the same configuration and seed, the choices, the regret and every
+    metric repeat exactly. Computation Time is measured wall-clock time and is excluded."""
+    params = {"LinUCB": {"alpha": 0.1}, "dLinUCB": {"alpha": 0.1, "delta1": 0.1, "delta1_tilde": 0.05, "delta2": 0.05}}
+    sc = dict(SC["S2"], change_at=150)
+    routes = toy_routes()
+
+    def once():
+        out = sim.run(routes, sc, T=300, seed=21, noise_sd=0.1, edge_noise_sd=0.05,
+                      policies=sim.make_policies(CFG, params, 21))
+        return out, sim.run_metrics(out, sc, CFG, routes)
+
+    (a, ma), (b, mb) = once(), once()
+    for name in a["policies"]:
+        assert np.array_equal(a["policies"][name]["regret"], b["policies"][name]["regret"])
+        assert a["policies"][name]["detections"] == b["policies"][name]["detections"]
+        for k, v in ma[name].items():
+            if k != "ms_per_round":
+                assert v == mb[name][k], (name, k)

@@ -1,0 +1,4001 @@
+﻿set,pair,scenario,seed,policy,eps,adaptation_time
+doc,0,S2,1000,Shortest Path,0.05,50.0
+doc,0,S2,1000,Shortest Path,0.03,50.0
+doc,0,S2,1000,Shortest Path,0.02,50.0
+doc,0,S2,1000,Shortest Path,0.01,50.0
+doc,0,S2,1000,Shortest Path,0.005,50.0
+doc,0,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1000,LinUCB,0.05,50.0
+doc,0,S2,1000,LinUCB,0.03,50.0
+doc,0,S2,1000,LinUCB,0.02,50.0
+doc,0,S2,1000,LinUCB,0.01,50.0
+doc,0,S2,1000,LinUCB,0.005,50.0
+doc,0,S2,1000,dLinUCB,0.05,50.0
+doc,0,S2,1000,dLinUCB,0.03,50.0
+doc,0,S2,1000,dLinUCB,0.02,50.0
+doc,0,S2,1000,dLinUCB,0.01,50.0
+doc,0,S2,1000,dLinUCB,0.005,50.0
+doc,0,S2,1001,Shortest Path,0.05,50.0
+doc,0,S2,1001,Shortest Path,0.03,50.0
+doc,0,S2,1001,Shortest Path,0.02,50.0
+doc,0,S2,1001,Shortest Path,0.01,50.0
+doc,0,S2,1001,Shortest Path,0.005,50.0
+doc,0,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1001,LinUCB,0.05,50.0
+doc,0,S2,1001,LinUCB,0.03,50.0
+doc,0,S2,1001,LinUCB,0.02,50.0
+doc,0,S2,1001,LinUCB,0.01,50.0
+doc,0,S2,1001,LinUCB,0.005,50.0
+doc,0,S2,1001,dLinUCB,0.05,50.0
+doc,0,S2,1001,dLinUCB,0.03,50.0
+doc,0,S2,1001,dLinUCB,0.02,50.0
+doc,0,S2,1001,dLinUCB,0.01,50.0
+doc,0,S2,1001,dLinUCB,0.005,50.0
+doc,0,S2,1002,Shortest Path,0.05,50.0
+doc,0,S2,1002,Shortest Path,0.03,50.0
+doc,0,S2,1002,Shortest Path,0.02,50.0
+doc,0,S2,1002,Shortest Path,0.01,50.0
+doc,0,S2,1002,Shortest Path,0.005,50.0
+doc,0,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1002,LinUCB,0.05,50.0
+doc,0,S2,1002,LinUCB,0.03,50.0
+doc,0,S2,1002,LinUCB,0.02,50.0
+doc,0,S2,1002,LinUCB,0.01,50.0
+doc,0,S2,1002,LinUCB,0.005,50.0
+doc,0,S2,1002,dLinUCB,0.05,50.0
+doc,0,S2,1002,dLinUCB,0.03,50.0
+doc,0,S2,1002,dLinUCB,0.02,50.0
+doc,0,S2,1002,dLinUCB,0.01,50.0
+doc,0,S2,1002,dLinUCB,0.005,50.0
+doc,0,S2,1003,Shortest Path,0.05,50.0
+doc,0,S2,1003,Shortest Path,0.03,50.0
+doc,0,S2,1003,Shortest Path,0.02,50.0
+doc,0,S2,1003,Shortest Path,0.01,50.0
+doc,0,S2,1003,Shortest Path,0.005,50.0
+doc,0,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1003,LinUCB,0.05,50.0
+doc,0,S2,1003,LinUCB,0.03,50.0
+doc,0,S2,1003,LinUCB,0.02,50.0
+doc,0,S2,1003,LinUCB,0.01,50.0
+doc,0,S2,1003,LinUCB,0.005,59.0
+doc,0,S2,1003,dLinUCB,0.05,50.0
+doc,0,S2,1003,dLinUCB,0.03,50.0
+doc,0,S2,1003,dLinUCB,0.02,50.0
+doc,0,S2,1003,dLinUCB,0.01,50.0
+doc,0,S2,1003,dLinUCB,0.005,59.0
+doc,0,S2,1004,Shortest Path,0.05,50.0
+doc,0,S2,1004,Shortest Path,0.03,50.0
+doc,0,S2,1004,Shortest Path,0.02,50.0
+doc,0,S2,1004,Shortest Path,0.01,50.0
+doc,0,S2,1004,Shortest Path,0.005,50.0
+doc,0,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1004,LinUCB,0.05,50.0
+doc,0,S2,1004,LinUCB,0.03,50.0
+doc,0,S2,1004,LinUCB,0.02,50.0
+doc,0,S2,1004,LinUCB,0.01,50.0
+doc,0,S2,1004,LinUCB,0.005,50.0
+doc,0,S2,1004,dLinUCB,0.05,50.0
+doc,0,S2,1004,dLinUCB,0.03,50.0
+doc,0,S2,1004,dLinUCB,0.02,50.0
+doc,0,S2,1004,dLinUCB,0.01,50.0
+doc,0,S2,1004,dLinUCB,0.005,50.0
+doc,0,S2,1005,Shortest Path,0.05,50.0
+doc,0,S2,1005,Shortest Path,0.03,50.0
+doc,0,S2,1005,Shortest Path,0.02,50.0
+doc,0,S2,1005,Shortest Path,0.01,50.0
+doc,0,S2,1005,Shortest Path,0.005,50.0
+doc,0,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1005,LinUCB,0.05,50.0
+doc,0,S2,1005,LinUCB,0.03,50.0
+doc,0,S2,1005,LinUCB,0.02,50.0
+doc,0,S2,1005,LinUCB,0.01,50.0
+doc,0,S2,1005,LinUCB,0.005,50.0
+doc,0,S2,1005,dLinUCB,0.05,50.0
+doc,0,S2,1005,dLinUCB,0.03,50.0
+doc,0,S2,1005,dLinUCB,0.02,50.0
+doc,0,S2,1005,dLinUCB,0.01,50.0
+doc,0,S2,1005,dLinUCB,0.005,50.0
+doc,0,S2,1006,Shortest Path,0.05,50.0
+doc,0,S2,1006,Shortest Path,0.03,50.0
+doc,0,S2,1006,Shortest Path,0.02,50.0
+doc,0,S2,1006,Shortest Path,0.01,50.0
+doc,0,S2,1006,Shortest Path,0.005,50.0
+doc,0,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1006,LinUCB,0.05,50.0
+doc,0,S2,1006,LinUCB,0.03,50.0
+doc,0,S2,1006,LinUCB,0.02,50.0
+doc,0,S2,1006,LinUCB,0.01,50.0
+doc,0,S2,1006,LinUCB,0.005,50.0
+doc,0,S2,1006,dLinUCB,0.05,50.0
+doc,0,S2,1006,dLinUCB,0.03,50.0
+doc,0,S2,1006,dLinUCB,0.02,50.0
+doc,0,S2,1006,dLinUCB,0.01,50.0
+doc,0,S2,1006,dLinUCB,0.005,50.0
+doc,0,S2,1007,Shortest Path,0.05,50.0
+doc,0,S2,1007,Shortest Path,0.03,50.0
+doc,0,S2,1007,Shortest Path,0.02,50.0
+doc,0,S2,1007,Shortest Path,0.01,50.0
+doc,0,S2,1007,Shortest Path,0.005,50.0
+doc,0,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1007,LinUCB,0.05,50.0
+doc,0,S2,1007,LinUCB,0.03,50.0
+doc,0,S2,1007,LinUCB,0.02,50.0
+doc,0,S2,1007,LinUCB,0.01,50.0
+doc,0,S2,1007,LinUCB,0.005,50.0
+doc,0,S2,1007,dLinUCB,0.05,50.0
+doc,0,S2,1007,dLinUCB,0.03,50.0
+doc,0,S2,1007,dLinUCB,0.02,50.0
+doc,0,S2,1007,dLinUCB,0.01,50.0
+doc,0,S2,1007,dLinUCB,0.005,50.0
+doc,0,S2,1008,Shortest Path,0.05,50.0
+doc,0,S2,1008,Shortest Path,0.03,50.0
+doc,0,S2,1008,Shortest Path,0.02,50.0
+doc,0,S2,1008,Shortest Path,0.01,50.0
+doc,0,S2,1008,Shortest Path,0.005,50.0
+doc,0,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1008,LinUCB,0.05,50.0
+doc,0,S2,1008,LinUCB,0.03,50.0
+doc,0,S2,1008,LinUCB,0.02,50.0
+doc,0,S2,1008,LinUCB,0.01,50.0
+doc,0,S2,1008,LinUCB,0.005,50.0
+doc,0,S2,1008,dLinUCB,0.05,50.0
+doc,0,S2,1008,dLinUCB,0.03,50.0
+doc,0,S2,1008,dLinUCB,0.02,50.0
+doc,0,S2,1008,dLinUCB,0.01,50.0
+doc,0,S2,1008,dLinUCB,0.005,50.0
+doc,0,S2,1009,Shortest Path,0.05,50.0
+doc,0,S2,1009,Shortest Path,0.03,50.0
+doc,0,S2,1009,Shortest Path,0.02,50.0
+doc,0,S2,1009,Shortest Path,0.01,50.0
+doc,0,S2,1009,Shortest Path,0.005,50.0
+doc,0,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S2,1009,LinUCB,0.05,50.0
+doc,0,S2,1009,LinUCB,0.03,50.0
+doc,0,S2,1009,LinUCB,0.02,50.0
+doc,0,S2,1009,LinUCB,0.01,50.0
+doc,0,S2,1009,LinUCB,0.005,50.0
+doc,0,S2,1009,dLinUCB,0.05,50.0
+doc,0,S2,1009,dLinUCB,0.03,50.0
+doc,0,S2,1009,dLinUCB,0.02,50.0
+doc,0,S2,1009,dLinUCB,0.01,50.0
+doc,0,S2,1009,dLinUCB,0.005,50.0
+doc,0,S3,1000,Shortest Path,0.05,50.0
+doc,0,S3,1000,Shortest Path,0.03,50.0
+doc,0,S3,1000,Shortest Path,0.02,50.0
+doc,0,S3,1000,Shortest Path,0.01,50.0
+doc,0,S3,1000,Shortest Path,0.005,50.0
+doc,0,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1000,LinUCB,0.05,50.0
+doc,0,S3,1000,LinUCB,0.03,50.0
+doc,0,S3,1000,LinUCB,0.02,50.0
+doc,0,S3,1000,LinUCB,0.01,50.0
+doc,0,S3,1000,LinUCB,0.005,50.0
+doc,0,S3,1000,dLinUCB,0.05,50.0
+doc,0,S3,1000,dLinUCB,0.03,50.0
+doc,0,S3,1000,dLinUCB,0.02,50.0
+doc,0,S3,1000,dLinUCB,0.01,50.0
+doc,0,S3,1000,dLinUCB,0.005,50.0
+doc,0,S3,1001,Shortest Path,0.05,50.0
+doc,0,S3,1001,Shortest Path,0.03,50.0
+doc,0,S3,1001,Shortest Path,0.02,50.0
+doc,0,S3,1001,Shortest Path,0.01,50.0
+doc,0,S3,1001,Shortest Path,0.005,50.0
+doc,0,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1001,LinUCB,0.05,50.0
+doc,0,S3,1001,LinUCB,0.03,50.0
+doc,0,S3,1001,LinUCB,0.02,50.0
+doc,0,S3,1001,LinUCB,0.01,50.0
+doc,0,S3,1001,LinUCB,0.005,50.0
+doc,0,S3,1001,dLinUCB,0.05,50.0
+doc,0,S3,1001,dLinUCB,0.03,50.0
+doc,0,S3,1001,dLinUCB,0.02,50.0
+doc,0,S3,1001,dLinUCB,0.01,50.0
+doc,0,S3,1001,dLinUCB,0.005,50.0
+doc,0,S3,1002,Shortest Path,0.05,50.0
+doc,0,S3,1002,Shortest Path,0.03,50.0
+doc,0,S3,1002,Shortest Path,0.02,50.0
+doc,0,S3,1002,Shortest Path,0.01,50.0
+doc,0,S3,1002,Shortest Path,0.005,50.0
+doc,0,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1002,LinUCB,0.05,50.0
+doc,0,S3,1002,LinUCB,0.03,50.0
+doc,0,S3,1002,LinUCB,0.02,50.0
+doc,0,S3,1002,LinUCB,0.01,50.0
+doc,0,S3,1002,LinUCB,0.005,50.0
+doc,0,S3,1002,dLinUCB,0.05,50.0
+doc,0,S3,1002,dLinUCB,0.03,50.0
+doc,0,S3,1002,dLinUCB,0.02,50.0
+doc,0,S3,1002,dLinUCB,0.01,50.0
+doc,0,S3,1002,dLinUCB,0.005,50.0
+doc,0,S3,1003,Shortest Path,0.05,50.0
+doc,0,S3,1003,Shortest Path,0.03,50.0
+doc,0,S3,1003,Shortest Path,0.02,50.0
+doc,0,S3,1003,Shortest Path,0.01,50.0
+doc,0,S3,1003,Shortest Path,0.005,50.0
+doc,0,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1003,LinUCB,0.05,50.0
+doc,0,S3,1003,LinUCB,0.03,50.0
+doc,0,S3,1003,LinUCB,0.02,50.0
+doc,0,S3,1003,LinUCB,0.01,50.0
+doc,0,S3,1003,LinUCB,0.005,50.0
+doc,0,S3,1003,dLinUCB,0.05,50.0
+doc,0,S3,1003,dLinUCB,0.03,50.0
+doc,0,S3,1003,dLinUCB,0.02,50.0
+doc,0,S3,1003,dLinUCB,0.01,50.0
+doc,0,S3,1003,dLinUCB,0.005,50.0
+doc,0,S3,1004,Shortest Path,0.05,50.0
+doc,0,S3,1004,Shortest Path,0.03,50.0
+doc,0,S3,1004,Shortest Path,0.02,50.0
+doc,0,S3,1004,Shortest Path,0.01,50.0
+doc,0,S3,1004,Shortest Path,0.005,50.0
+doc,0,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1004,LinUCB,0.05,50.0
+doc,0,S3,1004,LinUCB,0.03,50.0
+doc,0,S3,1004,LinUCB,0.02,50.0
+doc,0,S3,1004,LinUCB,0.01,50.0
+doc,0,S3,1004,LinUCB,0.005,50.0
+doc,0,S3,1004,dLinUCB,0.05,50.0
+doc,0,S3,1004,dLinUCB,0.03,50.0
+doc,0,S3,1004,dLinUCB,0.02,50.0
+doc,0,S3,1004,dLinUCB,0.01,50.0
+doc,0,S3,1004,dLinUCB,0.005,50.0
+doc,0,S3,1005,Shortest Path,0.05,50.0
+doc,0,S3,1005,Shortest Path,0.03,50.0
+doc,0,S3,1005,Shortest Path,0.02,50.0
+doc,0,S3,1005,Shortest Path,0.01,50.0
+doc,0,S3,1005,Shortest Path,0.005,50.0
+doc,0,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1005,LinUCB,0.05,50.0
+doc,0,S3,1005,LinUCB,0.03,50.0
+doc,0,S3,1005,LinUCB,0.02,50.0
+doc,0,S3,1005,LinUCB,0.01,50.0
+doc,0,S3,1005,LinUCB,0.005,50.0
+doc,0,S3,1005,dLinUCB,0.05,50.0
+doc,0,S3,1005,dLinUCB,0.03,50.0
+doc,0,S3,1005,dLinUCB,0.02,50.0
+doc,0,S3,1005,dLinUCB,0.01,50.0
+doc,0,S3,1005,dLinUCB,0.005,50.0
+doc,0,S3,1006,Shortest Path,0.05,50.0
+doc,0,S3,1006,Shortest Path,0.03,50.0
+doc,0,S3,1006,Shortest Path,0.02,50.0
+doc,0,S3,1006,Shortest Path,0.01,50.0
+doc,0,S3,1006,Shortest Path,0.005,50.0
+doc,0,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1006,LinUCB,0.05,50.0
+doc,0,S3,1006,LinUCB,0.03,50.0
+doc,0,S3,1006,LinUCB,0.02,50.0
+doc,0,S3,1006,LinUCB,0.01,50.0
+doc,0,S3,1006,LinUCB,0.005,50.0
+doc,0,S3,1006,dLinUCB,0.05,50.0
+doc,0,S3,1006,dLinUCB,0.03,50.0
+doc,0,S3,1006,dLinUCB,0.02,50.0
+doc,0,S3,1006,dLinUCB,0.01,94.0
+doc,0,S3,1006,dLinUCB,0.005,94.0
+doc,0,S3,1007,Shortest Path,0.05,50.0
+doc,0,S3,1007,Shortest Path,0.03,50.0
+doc,0,S3,1007,Shortest Path,0.02,50.0
+doc,0,S3,1007,Shortest Path,0.01,50.0
+doc,0,S3,1007,Shortest Path,0.005,50.0
+doc,0,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1007,LinUCB,0.05,50.0
+doc,0,S3,1007,LinUCB,0.03,50.0
+doc,0,S3,1007,LinUCB,0.02,50.0
+doc,0,S3,1007,LinUCB,0.01,50.0
+doc,0,S3,1007,LinUCB,0.005,50.0
+doc,0,S3,1007,dLinUCB,0.05,50.0
+doc,0,S3,1007,dLinUCB,0.03,50.0
+doc,0,S3,1007,dLinUCB,0.02,50.0
+doc,0,S3,1007,dLinUCB,0.01,50.0
+doc,0,S3,1007,dLinUCB,0.005,50.0
+doc,0,S3,1008,Shortest Path,0.05,50.0
+doc,0,S3,1008,Shortest Path,0.03,50.0
+doc,0,S3,1008,Shortest Path,0.02,50.0
+doc,0,S3,1008,Shortest Path,0.01,50.0
+doc,0,S3,1008,Shortest Path,0.005,50.0
+doc,0,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1008,LinUCB,0.05,50.0
+doc,0,S3,1008,LinUCB,0.03,50.0
+doc,0,S3,1008,LinUCB,0.02,50.0
+doc,0,S3,1008,LinUCB,0.01,50.0
+doc,0,S3,1008,LinUCB,0.005,50.0
+doc,0,S3,1008,dLinUCB,0.05,50.0
+doc,0,S3,1008,dLinUCB,0.03,50.0
+doc,0,S3,1008,dLinUCB,0.02,50.0
+doc,0,S3,1008,dLinUCB,0.01,50.0
+doc,0,S3,1008,dLinUCB,0.005,50.0
+doc,0,S3,1009,Shortest Path,0.05,50.0
+doc,0,S3,1009,Shortest Path,0.03,50.0
+doc,0,S3,1009,Shortest Path,0.02,50.0
+doc,0,S3,1009,Shortest Path,0.01,50.0
+doc,0,S3,1009,Shortest Path,0.005,50.0
+doc,0,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,0,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,0,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,0,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,0,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,0,S3,1009,LinUCB,0.05,50.0
+doc,0,S3,1009,LinUCB,0.03,50.0
+doc,0,S3,1009,LinUCB,0.02,50.0
+doc,0,S3,1009,LinUCB,0.01,50.0
+doc,0,S3,1009,LinUCB,0.005,50.0
+doc,0,S3,1009,dLinUCB,0.05,50.0
+doc,0,S3,1009,dLinUCB,0.03,50.0
+doc,0,S3,1009,dLinUCB,0.02,50.0
+doc,0,S3,1009,dLinUCB,0.01,50.0
+doc,0,S3,1009,dLinUCB,0.005,50.0
+doc,1,S2,1000,Shortest Path,0.05,50.0
+doc,1,S2,1000,Shortest Path,0.03,50.0
+doc,1,S2,1000,Shortest Path,0.02,50.0
+doc,1,S2,1000,Shortest Path,0.01,50.0
+doc,1,S2,1000,Shortest Path,0.005,50.0
+doc,1,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1000,LinUCB,0.05,50.0
+doc,1,S2,1000,LinUCB,0.03,50.0
+doc,1,S2,1000,LinUCB,0.02,50.0
+doc,1,S2,1000,LinUCB,0.01,50.0
+doc,1,S2,1000,LinUCB,0.005,56.0
+doc,1,S2,1000,dLinUCB,0.05,50.0
+doc,1,S2,1000,dLinUCB,0.03,50.0
+doc,1,S2,1000,dLinUCB,0.02,50.0
+doc,1,S2,1000,dLinUCB,0.01,50.0
+doc,1,S2,1000,dLinUCB,0.005,56.0
+doc,1,S2,1001,Shortest Path,0.05,50.0
+doc,1,S2,1001,Shortest Path,0.03,50.0
+doc,1,S2,1001,Shortest Path,0.02,50.0
+doc,1,S2,1001,Shortest Path,0.01,50.0
+doc,1,S2,1001,Shortest Path,0.005,50.0
+doc,1,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1001,LinUCB,0.05,50.0
+doc,1,S2,1001,LinUCB,0.03,50.0
+doc,1,S2,1001,LinUCB,0.02,50.0
+doc,1,S2,1001,LinUCB,0.01,50.0
+doc,1,S2,1001,LinUCB,0.005,50.0
+doc,1,S2,1001,dLinUCB,0.05,50.0
+doc,1,S2,1001,dLinUCB,0.03,50.0
+doc,1,S2,1001,dLinUCB,0.02,50.0
+doc,1,S2,1001,dLinUCB,0.01,50.0
+doc,1,S2,1001,dLinUCB,0.005,50.0
+doc,1,S2,1002,Shortest Path,0.05,50.0
+doc,1,S2,1002,Shortest Path,0.03,50.0
+doc,1,S2,1002,Shortest Path,0.02,50.0
+doc,1,S2,1002,Shortest Path,0.01,50.0
+doc,1,S2,1002,Shortest Path,0.005,50.0
+doc,1,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1002,LinUCB,0.05,50.0
+doc,1,S2,1002,LinUCB,0.03,50.0
+doc,1,S2,1002,LinUCB,0.02,50.0
+doc,1,S2,1002,LinUCB,0.01,50.0
+doc,1,S2,1002,LinUCB,0.005,133.0
+doc,1,S2,1002,dLinUCB,0.05,50.0
+doc,1,S2,1002,dLinUCB,0.03,50.0
+doc,1,S2,1002,dLinUCB,0.02,50.0
+doc,1,S2,1002,dLinUCB,0.01,50.0
+doc,1,S2,1002,dLinUCB,0.005,183.0
+doc,1,S2,1003,Shortest Path,0.05,50.0
+doc,1,S2,1003,Shortest Path,0.03,50.0
+doc,1,S2,1003,Shortest Path,0.02,50.0
+doc,1,S2,1003,Shortest Path,0.01,50.0
+doc,1,S2,1003,Shortest Path,0.005,50.0
+doc,1,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1003,LinUCB,0.05,50.0
+doc,1,S2,1003,LinUCB,0.03,50.0
+doc,1,S2,1003,LinUCB,0.02,50.0
+doc,1,S2,1003,LinUCB,0.01,50.0
+doc,1,S2,1003,LinUCB,0.005,67.0
+doc,1,S2,1003,dLinUCB,0.05,50.0
+doc,1,S2,1003,dLinUCB,0.03,50.0
+doc,1,S2,1003,dLinUCB,0.02,50.0
+doc,1,S2,1003,dLinUCB,0.01,50.0
+doc,1,S2,1003,dLinUCB,0.005,50.0
+doc,1,S2,1004,Shortest Path,0.05,50.0
+doc,1,S2,1004,Shortest Path,0.03,50.0
+doc,1,S2,1004,Shortest Path,0.02,50.0
+doc,1,S2,1004,Shortest Path,0.01,50.0
+doc,1,S2,1004,Shortest Path,0.005,50.0
+doc,1,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1004,LinUCB,0.05,50.0
+doc,1,S2,1004,LinUCB,0.03,50.0
+doc,1,S2,1004,LinUCB,0.02,50.0
+doc,1,S2,1004,LinUCB,0.01,50.0
+doc,1,S2,1004,LinUCB,0.005,134.0
+doc,1,S2,1004,dLinUCB,0.05,50.0
+doc,1,S2,1004,dLinUCB,0.03,50.0
+doc,1,S2,1004,dLinUCB,0.02,50.0
+doc,1,S2,1004,dLinUCB,0.01,50.0
+doc,1,S2,1004,dLinUCB,0.005,134.0
+doc,1,S2,1005,Shortest Path,0.05,50.0
+doc,1,S2,1005,Shortest Path,0.03,50.0
+doc,1,S2,1005,Shortest Path,0.02,50.0
+doc,1,S2,1005,Shortest Path,0.01,50.0
+doc,1,S2,1005,Shortest Path,0.005,50.0
+doc,1,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1005,LinUCB,0.05,50.0
+doc,1,S2,1005,LinUCB,0.03,50.0
+doc,1,S2,1005,LinUCB,0.02,50.0
+doc,1,S2,1005,LinUCB,0.01,50.0
+doc,1,S2,1005,LinUCB,0.005,50.0
+doc,1,S2,1005,dLinUCB,0.05,50.0
+doc,1,S2,1005,dLinUCB,0.03,50.0
+doc,1,S2,1005,dLinUCB,0.02,50.0
+doc,1,S2,1005,dLinUCB,0.01,50.0
+doc,1,S2,1005,dLinUCB,0.005,50.0
+doc,1,S2,1006,Shortest Path,0.05,50.0
+doc,1,S2,1006,Shortest Path,0.03,50.0
+doc,1,S2,1006,Shortest Path,0.02,50.0
+doc,1,S2,1006,Shortest Path,0.01,50.0
+doc,1,S2,1006,Shortest Path,0.005,50.0
+doc,1,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1006,LinUCB,0.05,50.0
+doc,1,S2,1006,LinUCB,0.03,50.0
+doc,1,S2,1006,LinUCB,0.02,50.0
+doc,1,S2,1006,LinUCB,0.01,50.0
+doc,1,S2,1006,LinUCB,0.005,50.0
+doc,1,S2,1006,dLinUCB,0.05,50.0
+doc,1,S2,1006,dLinUCB,0.03,50.0
+doc,1,S2,1006,dLinUCB,0.02,50.0
+doc,1,S2,1006,dLinUCB,0.01,50.0
+doc,1,S2,1006,dLinUCB,0.005,50.0
+doc,1,S2,1007,Shortest Path,0.05,50.0
+doc,1,S2,1007,Shortest Path,0.03,50.0
+doc,1,S2,1007,Shortest Path,0.02,50.0
+doc,1,S2,1007,Shortest Path,0.01,50.0
+doc,1,S2,1007,Shortest Path,0.005,50.0
+doc,1,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1007,LinUCB,0.05,50.0
+doc,1,S2,1007,LinUCB,0.03,50.0
+doc,1,S2,1007,LinUCB,0.02,50.0
+doc,1,S2,1007,LinUCB,0.01,50.0
+doc,1,S2,1007,LinUCB,0.005,50.0
+doc,1,S2,1007,dLinUCB,0.05,50.0
+doc,1,S2,1007,dLinUCB,0.03,50.0
+doc,1,S2,1007,dLinUCB,0.02,50.0
+doc,1,S2,1007,dLinUCB,0.01,50.0
+doc,1,S2,1007,dLinUCB,0.005,50.0
+doc,1,S2,1008,Shortest Path,0.05,50.0
+doc,1,S2,1008,Shortest Path,0.03,50.0
+doc,1,S2,1008,Shortest Path,0.02,50.0
+doc,1,S2,1008,Shortest Path,0.01,50.0
+doc,1,S2,1008,Shortest Path,0.005,50.0
+doc,1,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1008,LinUCB,0.05,50.0
+doc,1,S2,1008,LinUCB,0.03,50.0
+doc,1,S2,1008,LinUCB,0.02,50.0
+doc,1,S2,1008,LinUCB,0.01,50.0
+doc,1,S2,1008,LinUCB,0.005,155.0
+doc,1,S2,1008,dLinUCB,0.05,50.0
+doc,1,S2,1008,dLinUCB,0.03,50.0
+doc,1,S2,1008,dLinUCB,0.02,50.0
+doc,1,S2,1008,dLinUCB,0.01,50.0
+doc,1,S2,1008,dLinUCB,0.005,155.0
+doc,1,S2,1009,Shortest Path,0.05,50.0
+doc,1,S2,1009,Shortest Path,0.03,50.0
+doc,1,S2,1009,Shortest Path,0.02,50.0
+doc,1,S2,1009,Shortest Path,0.01,50.0
+doc,1,S2,1009,Shortest Path,0.005,50.0
+doc,1,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S2,1009,LinUCB,0.05,50.0
+doc,1,S2,1009,LinUCB,0.03,50.0
+doc,1,S2,1009,LinUCB,0.02,50.0
+doc,1,S2,1009,LinUCB,0.01,50.0
+doc,1,S2,1009,LinUCB,0.005,67.0
+doc,1,S2,1009,dLinUCB,0.05,50.0
+doc,1,S2,1009,dLinUCB,0.03,50.0
+doc,1,S2,1009,dLinUCB,0.02,50.0
+doc,1,S2,1009,dLinUCB,0.01,50.0
+doc,1,S2,1009,dLinUCB,0.005,67.0
+doc,1,S3,1000,Shortest Path,0.05,50.0
+doc,1,S3,1000,Shortest Path,0.03,50.0
+doc,1,S3,1000,Shortest Path,0.02,50.0
+doc,1,S3,1000,Shortest Path,0.01,50.0
+doc,1,S3,1000,Shortest Path,0.005,50.0
+doc,1,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1000,LinUCB,0.05,50.0
+doc,1,S3,1000,LinUCB,0.03,50.0
+doc,1,S3,1000,LinUCB,0.02,50.0
+doc,1,S3,1000,LinUCB,0.01,50.0
+doc,1,S3,1000,LinUCB,0.005,50.0
+doc,1,S3,1000,dLinUCB,0.05,50.0
+doc,1,S3,1000,dLinUCB,0.03,50.0
+doc,1,S3,1000,dLinUCB,0.02,50.0
+doc,1,S3,1000,dLinUCB,0.01,50.0
+doc,1,S3,1000,dLinUCB,0.005,50.0
+doc,1,S3,1001,Shortest Path,0.05,50.0
+doc,1,S3,1001,Shortest Path,0.03,50.0
+doc,1,S3,1001,Shortest Path,0.02,50.0
+doc,1,S3,1001,Shortest Path,0.01,50.0
+doc,1,S3,1001,Shortest Path,0.005,50.0
+doc,1,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1001,LinUCB,0.05,50.0
+doc,1,S3,1001,LinUCB,0.03,50.0
+doc,1,S3,1001,LinUCB,0.02,50.0
+doc,1,S3,1001,LinUCB,0.01,50.0
+doc,1,S3,1001,LinUCB,0.005,50.0
+doc,1,S3,1001,dLinUCB,0.05,50.0
+doc,1,S3,1001,dLinUCB,0.03,50.0
+doc,1,S3,1001,dLinUCB,0.02,50.0
+doc,1,S3,1001,dLinUCB,0.01,50.0
+doc,1,S3,1001,dLinUCB,0.005,50.0
+doc,1,S3,1002,Shortest Path,0.05,50.0
+doc,1,S3,1002,Shortest Path,0.03,50.0
+doc,1,S3,1002,Shortest Path,0.02,50.0
+doc,1,S3,1002,Shortest Path,0.01,50.0
+doc,1,S3,1002,Shortest Path,0.005,50.0
+doc,1,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1002,LinUCB,0.05,50.0
+doc,1,S3,1002,LinUCB,0.03,50.0
+doc,1,S3,1002,LinUCB,0.02,50.0
+doc,1,S3,1002,LinUCB,0.01,50.0
+doc,1,S3,1002,LinUCB,0.005,50.0
+doc,1,S3,1002,dLinUCB,0.05,50.0
+doc,1,S3,1002,dLinUCB,0.03,50.0
+doc,1,S3,1002,dLinUCB,0.02,50.0
+doc,1,S3,1002,dLinUCB,0.01,50.0
+doc,1,S3,1002,dLinUCB,0.005,50.0
+doc,1,S3,1003,Shortest Path,0.05,50.0
+doc,1,S3,1003,Shortest Path,0.03,50.0
+doc,1,S3,1003,Shortest Path,0.02,50.0
+doc,1,S3,1003,Shortest Path,0.01,50.0
+doc,1,S3,1003,Shortest Path,0.005,50.0
+doc,1,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1003,LinUCB,0.05,50.0
+doc,1,S3,1003,LinUCB,0.03,50.0
+doc,1,S3,1003,LinUCB,0.02,50.0
+doc,1,S3,1003,LinUCB,0.01,50.0
+doc,1,S3,1003,LinUCB,0.005,99.0
+doc,1,S3,1003,dLinUCB,0.05,50.0
+doc,1,S3,1003,dLinUCB,0.03,50.0
+doc,1,S3,1003,dLinUCB,0.02,50.0
+doc,1,S3,1003,dLinUCB,0.01,78.0
+doc,1,S3,1003,dLinUCB,0.005,100.0
+doc,1,S3,1004,Shortest Path,0.05,50.0
+doc,1,S3,1004,Shortest Path,0.03,50.0
+doc,1,S3,1004,Shortest Path,0.02,50.0
+doc,1,S3,1004,Shortest Path,0.01,50.0
+doc,1,S3,1004,Shortest Path,0.005,50.0
+doc,1,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1004,LinUCB,0.05,50.0
+doc,1,S3,1004,LinUCB,0.03,50.0
+doc,1,S3,1004,LinUCB,0.02,50.0
+doc,1,S3,1004,LinUCB,0.01,50.0
+doc,1,S3,1004,LinUCB,0.005,50.0
+doc,1,S3,1004,dLinUCB,0.05,50.0
+doc,1,S3,1004,dLinUCB,0.03,50.0
+doc,1,S3,1004,dLinUCB,0.02,50.0
+doc,1,S3,1004,dLinUCB,0.01,50.0
+doc,1,S3,1004,dLinUCB,0.005,50.0
+doc,1,S3,1005,Shortest Path,0.05,50.0
+doc,1,S3,1005,Shortest Path,0.03,50.0
+doc,1,S3,1005,Shortest Path,0.02,50.0
+doc,1,S3,1005,Shortest Path,0.01,50.0
+doc,1,S3,1005,Shortest Path,0.005,50.0
+doc,1,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1005,LinUCB,0.05,50.0
+doc,1,S3,1005,LinUCB,0.03,50.0
+doc,1,S3,1005,LinUCB,0.02,50.0
+doc,1,S3,1005,LinUCB,0.01,50.0
+doc,1,S3,1005,LinUCB,0.005,50.0
+doc,1,S3,1005,dLinUCB,0.05,50.0
+doc,1,S3,1005,dLinUCB,0.03,50.0
+doc,1,S3,1005,dLinUCB,0.02,50.0
+doc,1,S3,1005,dLinUCB,0.01,50.0
+doc,1,S3,1005,dLinUCB,0.005,50.0
+doc,1,S3,1006,Shortest Path,0.05,50.0
+doc,1,S3,1006,Shortest Path,0.03,50.0
+doc,1,S3,1006,Shortest Path,0.02,50.0
+doc,1,S3,1006,Shortest Path,0.01,50.0
+doc,1,S3,1006,Shortest Path,0.005,50.0
+doc,1,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1006,LinUCB,0.05,50.0
+doc,1,S3,1006,LinUCB,0.03,50.0
+doc,1,S3,1006,LinUCB,0.02,50.0
+doc,1,S3,1006,LinUCB,0.01,50.0
+doc,1,S3,1006,LinUCB,0.005,51.0
+doc,1,S3,1006,dLinUCB,0.05,50.0
+doc,1,S3,1006,dLinUCB,0.03,50.0
+doc,1,S3,1006,dLinUCB,0.02,50.0
+doc,1,S3,1006,dLinUCB,0.01,50.0
+doc,1,S3,1006,dLinUCB,0.005,50.0
+doc,1,S3,1007,Shortest Path,0.05,50.0
+doc,1,S3,1007,Shortest Path,0.03,50.0
+doc,1,S3,1007,Shortest Path,0.02,50.0
+doc,1,S3,1007,Shortest Path,0.01,50.0
+doc,1,S3,1007,Shortest Path,0.005,50.0
+doc,1,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1007,LinUCB,0.05,50.0
+doc,1,S3,1007,LinUCB,0.03,50.0
+doc,1,S3,1007,LinUCB,0.02,50.0
+doc,1,S3,1007,LinUCB,0.01,50.0
+doc,1,S3,1007,LinUCB,0.005,50.0
+doc,1,S3,1007,dLinUCB,0.05,50.0
+doc,1,S3,1007,dLinUCB,0.03,50.0
+doc,1,S3,1007,dLinUCB,0.02,50.0
+doc,1,S3,1007,dLinUCB,0.01,50.0
+doc,1,S3,1007,dLinUCB,0.005,50.0
+doc,1,S3,1008,Shortest Path,0.05,50.0
+doc,1,S3,1008,Shortest Path,0.03,50.0
+doc,1,S3,1008,Shortest Path,0.02,50.0
+doc,1,S3,1008,Shortest Path,0.01,50.0
+doc,1,S3,1008,Shortest Path,0.005,50.0
+doc,1,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1008,LinUCB,0.05,50.0
+doc,1,S3,1008,LinUCB,0.03,50.0
+doc,1,S3,1008,LinUCB,0.02,50.0
+doc,1,S3,1008,LinUCB,0.01,50.0
+doc,1,S3,1008,LinUCB,0.005,50.0
+doc,1,S3,1008,dLinUCB,0.05,50.0
+doc,1,S3,1008,dLinUCB,0.03,50.0
+doc,1,S3,1008,dLinUCB,0.02,50.0
+doc,1,S3,1008,dLinUCB,0.01,50.0
+doc,1,S3,1008,dLinUCB,0.005,50.0
+doc,1,S3,1009,Shortest Path,0.05,50.0
+doc,1,S3,1009,Shortest Path,0.03,50.0
+doc,1,S3,1009,Shortest Path,0.02,50.0
+doc,1,S3,1009,Shortest Path,0.01,50.0
+doc,1,S3,1009,Shortest Path,0.005,50.0
+doc,1,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,1,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,1,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,1,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,1,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,1,S3,1009,LinUCB,0.05,50.0
+doc,1,S3,1009,LinUCB,0.03,50.0
+doc,1,S3,1009,LinUCB,0.02,50.0
+doc,1,S3,1009,LinUCB,0.01,50.0
+doc,1,S3,1009,LinUCB,0.005,50.0
+doc,1,S3,1009,dLinUCB,0.05,50.0
+doc,1,S3,1009,dLinUCB,0.03,50.0
+doc,1,S3,1009,dLinUCB,0.02,50.0
+doc,1,S3,1009,dLinUCB,0.01,50.0
+doc,1,S3,1009,dLinUCB,0.005,50.0
+doc,2,S2,1000,Shortest Path,0.05,50.0
+doc,2,S2,1000,Shortest Path,0.03,50.0
+doc,2,S2,1000,Shortest Path,0.02,50.0
+doc,2,S2,1000,Shortest Path,0.01,50.0
+doc,2,S2,1000,Shortest Path,0.005,50.0
+doc,2,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1000,LinUCB,0.05,50.0
+doc,2,S2,1000,LinUCB,0.03,50.0
+doc,2,S2,1000,LinUCB,0.02,50.0
+doc,2,S2,1000,LinUCB,0.01,50.0
+doc,2,S2,1000,LinUCB,0.005,50.0
+doc,2,S2,1000,dLinUCB,0.05,50.0
+doc,2,S2,1000,dLinUCB,0.03,50.0
+doc,2,S2,1000,dLinUCB,0.02,50.0
+doc,2,S2,1000,dLinUCB,0.01,50.0
+doc,2,S2,1000,dLinUCB,0.005,50.0
+doc,2,S2,1001,Shortest Path,0.05,50.0
+doc,2,S2,1001,Shortest Path,0.03,50.0
+doc,2,S2,1001,Shortest Path,0.02,50.0
+doc,2,S2,1001,Shortest Path,0.01,50.0
+doc,2,S2,1001,Shortest Path,0.005,50.0
+doc,2,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1001,LinUCB,0.05,50.0
+doc,2,S2,1001,LinUCB,0.03,50.0
+doc,2,S2,1001,LinUCB,0.02,50.0
+doc,2,S2,1001,LinUCB,0.01,50.0
+doc,2,S2,1001,LinUCB,0.005,50.0
+doc,2,S2,1001,dLinUCB,0.05,50.0
+doc,2,S2,1001,dLinUCB,0.03,50.0
+doc,2,S2,1001,dLinUCB,0.02,50.0
+doc,2,S2,1001,dLinUCB,0.01,50.0
+doc,2,S2,1001,dLinUCB,0.005,50.0
+doc,2,S2,1002,Shortest Path,0.05,50.0
+doc,2,S2,1002,Shortest Path,0.03,50.0
+doc,2,S2,1002,Shortest Path,0.02,50.0
+doc,2,S2,1002,Shortest Path,0.01,50.0
+doc,2,S2,1002,Shortest Path,0.005,50.0
+doc,2,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1002,LinUCB,0.05,50.0
+doc,2,S2,1002,LinUCB,0.03,50.0
+doc,2,S2,1002,LinUCB,0.02,50.0
+doc,2,S2,1002,LinUCB,0.01,50.0
+doc,2,S2,1002,LinUCB,0.005,50.0
+doc,2,S2,1002,dLinUCB,0.05,50.0
+doc,2,S2,1002,dLinUCB,0.03,50.0
+doc,2,S2,1002,dLinUCB,0.02,50.0
+doc,2,S2,1002,dLinUCB,0.01,50.0
+doc,2,S2,1002,dLinUCB,0.005,50.0
+doc,2,S2,1003,Shortest Path,0.05,50.0
+doc,2,S2,1003,Shortest Path,0.03,50.0
+doc,2,S2,1003,Shortest Path,0.02,50.0
+doc,2,S2,1003,Shortest Path,0.01,50.0
+doc,2,S2,1003,Shortest Path,0.005,50.0
+doc,2,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1003,LinUCB,0.05,50.0
+doc,2,S2,1003,LinUCB,0.03,50.0
+doc,2,S2,1003,LinUCB,0.02,50.0
+doc,2,S2,1003,LinUCB,0.01,50.0
+doc,2,S2,1003,LinUCB,0.005,50.0
+doc,2,S2,1003,dLinUCB,0.05,50.0
+doc,2,S2,1003,dLinUCB,0.03,50.0
+doc,2,S2,1003,dLinUCB,0.02,50.0
+doc,2,S2,1003,dLinUCB,0.01,50.0
+doc,2,S2,1003,dLinUCB,0.005,50.0
+doc,2,S2,1004,Shortest Path,0.05,50.0
+doc,2,S2,1004,Shortest Path,0.03,50.0
+doc,2,S2,1004,Shortest Path,0.02,50.0
+doc,2,S2,1004,Shortest Path,0.01,50.0
+doc,2,S2,1004,Shortest Path,0.005,50.0
+doc,2,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1004,LinUCB,0.05,50.0
+doc,2,S2,1004,LinUCB,0.03,50.0
+doc,2,S2,1004,LinUCB,0.02,50.0
+doc,2,S2,1004,LinUCB,0.01,50.0
+doc,2,S2,1004,LinUCB,0.005,50.0
+doc,2,S2,1004,dLinUCB,0.05,50.0
+doc,2,S2,1004,dLinUCB,0.03,50.0
+doc,2,S2,1004,dLinUCB,0.02,50.0
+doc,2,S2,1004,dLinUCB,0.01,50.0
+doc,2,S2,1004,dLinUCB,0.005,50.0
+doc,2,S2,1005,Shortest Path,0.05,50.0
+doc,2,S2,1005,Shortest Path,0.03,50.0
+doc,2,S2,1005,Shortest Path,0.02,50.0
+doc,2,S2,1005,Shortest Path,0.01,50.0
+doc,2,S2,1005,Shortest Path,0.005,50.0
+doc,2,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1005,LinUCB,0.05,50.0
+doc,2,S2,1005,LinUCB,0.03,50.0
+doc,2,S2,1005,LinUCB,0.02,50.0
+doc,2,S2,1005,LinUCB,0.01,50.0
+doc,2,S2,1005,LinUCB,0.005,50.0
+doc,2,S2,1005,dLinUCB,0.05,50.0
+doc,2,S2,1005,dLinUCB,0.03,50.0
+doc,2,S2,1005,dLinUCB,0.02,50.0
+doc,2,S2,1005,dLinUCB,0.01,50.0
+doc,2,S2,1005,dLinUCB,0.005,50.0
+doc,2,S2,1006,Shortest Path,0.05,50.0
+doc,2,S2,1006,Shortest Path,0.03,50.0
+doc,2,S2,1006,Shortest Path,0.02,50.0
+doc,2,S2,1006,Shortest Path,0.01,50.0
+doc,2,S2,1006,Shortest Path,0.005,50.0
+doc,2,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1006,LinUCB,0.05,50.0
+doc,2,S2,1006,LinUCB,0.03,50.0
+doc,2,S2,1006,LinUCB,0.02,50.0
+doc,2,S2,1006,LinUCB,0.01,60.0
+doc,2,S2,1006,LinUCB,0.005,77.0
+doc,2,S2,1006,dLinUCB,0.05,50.0
+doc,2,S2,1006,dLinUCB,0.03,50.0
+doc,2,S2,1006,dLinUCB,0.02,50.0
+doc,2,S2,1006,dLinUCB,0.01,136.0
+doc,2,S2,1006,dLinUCB,0.005,138.0
+doc,2,S2,1007,Shortest Path,0.05,50.0
+doc,2,S2,1007,Shortest Path,0.03,50.0
+doc,2,S2,1007,Shortest Path,0.02,50.0
+doc,2,S2,1007,Shortest Path,0.01,50.0
+doc,2,S2,1007,Shortest Path,0.005,50.0
+doc,2,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1007,LinUCB,0.05,50.0
+doc,2,S2,1007,LinUCB,0.03,50.0
+doc,2,S2,1007,LinUCB,0.02,50.0
+doc,2,S2,1007,LinUCB,0.01,50.0
+doc,2,S2,1007,LinUCB,0.005,50.0
+doc,2,S2,1007,dLinUCB,0.05,50.0
+doc,2,S2,1007,dLinUCB,0.03,50.0
+doc,2,S2,1007,dLinUCB,0.02,50.0
+doc,2,S2,1007,dLinUCB,0.01,50.0
+doc,2,S2,1007,dLinUCB,0.005,50.0
+doc,2,S2,1008,Shortest Path,0.05,50.0
+doc,2,S2,1008,Shortest Path,0.03,50.0
+doc,2,S2,1008,Shortest Path,0.02,50.0
+doc,2,S2,1008,Shortest Path,0.01,50.0
+doc,2,S2,1008,Shortest Path,0.005,50.0
+doc,2,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1008,LinUCB,0.05,50.0
+doc,2,S2,1008,LinUCB,0.03,50.0
+doc,2,S2,1008,LinUCB,0.02,50.0
+doc,2,S2,1008,LinUCB,0.01,50.0
+doc,2,S2,1008,LinUCB,0.005,50.0
+doc,2,S2,1008,dLinUCB,0.05,50.0
+doc,2,S2,1008,dLinUCB,0.03,50.0
+doc,2,S2,1008,dLinUCB,0.02,50.0
+doc,2,S2,1008,dLinUCB,0.01,50.0
+doc,2,S2,1008,dLinUCB,0.005,50.0
+doc,2,S2,1009,Shortest Path,0.05,50.0
+doc,2,S2,1009,Shortest Path,0.03,50.0
+doc,2,S2,1009,Shortest Path,0.02,50.0
+doc,2,S2,1009,Shortest Path,0.01,50.0
+doc,2,S2,1009,Shortest Path,0.005,50.0
+doc,2,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S2,1009,LinUCB,0.05,50.0
+doc,2,S2,1009,LinUCB,0.03,50.0
+doc,2,S2,1009,LinUCB,0.02,50.0
+doc,2,S2,1009,LinUCB,0.01,50.0
+doc,2,S2,1009,LinUCB,0.005,50.0
+doc,2,S2,1009,dLinUCB,0.05,50.0
+doc,2,S2,1009,dLinUCB,0.03,50.0
+doc,2,S2,1009,dLinUCB,0.02,50.0
+doc,2,S2,1009,dLinUCB,0.01,50.0
+doc,2,S2,1009,dLinUCB,0.005,50.0
+doc,2,S3,1000,Shortest Path,0.05,50.0
+doc,2,S3,1000,Shortest Path,0.03,50.0
+doc,2,S3,1000,Shortest Path,0.02,50.0
+doc,2,S3,1000,Shortest Path,0.01,50.0
+doc,2,S3,1000,Shortest Path,0.005,50.0
+doc,2,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1000,LinUCB,0.05,50.0
+doc,2,S3,1000,LinUCB,0.03,50.0
+doc,2,S3,1000,LinUCB,0.02,50.0
+doc,2,S3,1000,LinUCB,0.01,50.0
+doc,2,S3,1000,LinUCB,0.005,50.0
+doc,2,S3,1000,dLinUCB,0.05,50.0
+doc,2,S3,1000,dLinUCB,0.03,50.0
+doc,2,S3,1000,dLinUCB,0.02,50.0
+doc,2,S3,1000,dLinUCB,0.01,50.0
+doc,2,S3,1000,dLinUCB,0.005,50.0
+doc,2,S3,1001,Shortest Path,0.05,50.0
+doc,2,S3,1001,Shortest Path,0.03,50.0
+doc,2,S3,1001,Shortest Path,0.02,50.0
+doc,2,S3,1001,Shortest Path,0.01,50.0
+doc,2,S3,1001,Shortest Path,0.005,50.0
+doc,2,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1001,LinUCB,0.05,50.0
+doc,2,S3,1001,LinUCB,0.03,50.0
+doc,2,S3,1001,LinUCB,0.02,50.0
+doc,2,S3,1001,LinUCB,0.01,50.0
+doc,2,S3,1001,LinUCB,0.005,50.0
+doc,2,S3,1001,dLinUCB,0.05,50.0
+doc,2,S3,1001,dLinUCB,0.03,50.0
+doc,2,S3,1001,dLinUCB,0.02,50.0
+doc,2,S3,1001,dLinUCB,0.01,50.0
+doc,2,S3,1001,dLinUCB,0.005,50.0
+doc,2,S3,1002,Shortest Path,0.05,50.0
+doc,2,S3,1002,Shortest Path,0.03,50.0
+doc,2,S3,1002,Shortest Path,0.02,50.0
+doc,2,S3,1002,Shortest Path,0.01,50.0
+doc,2,S3,1002,Shortest Path,0.005,50.0
+doc,2,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1002,LinUCB,0.05,50.0
+doc,2,S3,1002,LinUCB,0.03,50.0
+doc,2,S3,1002,LinUCB,0.02,50.0
+doc,2,S3,1002,LinUCB,0.01,50.0
+doc,2,S3,1002,LinUCB,0.005,50.0
+doc,2,S3,1002,dLinUCB,0.05,50.0
+doc,2,S3,1002,dLinUCB,0.03,50.0
+doc,2,S3,1002,dLinUCB,0.02,50.0
+doc,2,S3,1002,dLinUCB,0.01,50.0
+doc,2,S3,1002,dLinUCB,0.005,50.0
+doc,2,S3,1003,Shortest Path,0.05,50.0
+doc,2,S3,1003,Shortest Path,0.03,50.0
+doc,2,S3,1003,Shortest Path,0.02,50.0
+doc,2,S3,1003,Shortest Path,0.01,50.0
+doc,2,S3,1003,Shortest Path,0.005,50.0
+doc,2,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1003,LinUCB,0.05,50.0
+doc,2,S3,1003,LinUCB,0.03,50.0
+doc,2,S3,1003,LinUCB,0.02,50.0
+doc,2,S3,1003,LinUCB,0.01,50.0
+doc,2,S3,1003,LinUCB,0.005,50.0
+doc,2,S3,1003,dLinUCB,0.05,50.0
+doc,2,S3,1003,dLinUCB,0.03,50.0
+doc,2,S3,1003,dLinUCB,0.02,50.0
+doc,2,S3,1003,dLinUCB,0.01,50.0
+doc,2,S3,1003,dLinUCB,0.005,50.0
+doc,2,S3,1004,Shortest Path,0.05,50.0
+doc,2,S3,1004,Shortest Path,0.03,50.0
+doc,2,S3,1004,Shortest Path,0.02,50.0
+doc,2,S3,1004,Shortest Path,0.01,50.0
+doc,2,S3,1004,Shortest Path,0.005,50.0
+doc,2,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1004,LinUCB,0.05,50.0
+doc,2,S3,1004,LinUCB,0.03,50.0
+doc,2,S3,1004,LinUCB,0.02,50.0
+doc,2,S3,1004,LinUCB,0.01,50.0
+doc,2,S3,1004,LinUCB,0.005,50.0
+doc,2,S3,1004,dLinUCB,0.05,50.0
+doc,2,S3,1004,dLinUCB,0.03,50.0
+doc,2,S3,1004,dLinUCB,0.02,50.0
+doc,2,S3,1004,dLinUCB,0.01,50.0
+doc,2,S3,1004,dLinUCB,0.005,50.0
+doc,2,S3,1005,Shortest Path,0.05,50.0
+doc,2,S3,1005,Shortest Path,0.03,50.0
+doc,2,S3,1005,Shortest Path,0.02,50.0
+doc,2,S3,1005,Shortest Path,0.01,50.0
+doc,2,S3,1005,Shortest Path,0.005,50.0
+doc,2,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1005,LinUCB,0.05,50.0
+doc,2,S3,1005,LinUCB,0.03,50.0
+doc,2,S3,1005,LinUCB,0.02,50.0
+doc,2,S3,1005,LinUCB,0.01,50.0
+doc,2,S3,1005,LinUCB,0.005,50.0
+doc,2,S3,1005,dLinUCB,0.05,50.0
+doc,2,S3,1005,dLinUCB,0.03,50.0
+doc,2,S3,1005,dLinUCB,0.02,50.0
+doc,2,S3,1005,dLinUCB,0.01,50.0
+doc,2,S3,1005,dLinUCB,0.005,50.0
+doc,2,S3,1006,Shortest Path,0.05,50.0
+doc,2,S3,1006,Shortest Path,0.03,50.0
+doc,2,S3,1006,Shortest Path,0.02,50.0
+doc,2,S3,1006,Shortest Path,0.01,50.0
+doc,2,S3,1006,Shortest Path,0.005,50.0
+doc,2,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1006,LinUCB,0.05,50.0
+doc,2,S3,1006,LinUCB,0.03,50.0
+doc,2,S3,1006,LinUCB,0.02,50.0
+doc,2,S3,1006,LinUCB,0.01,50.0
+doc,2,S3,1006,LinUCB,0.005,50.0
+doc,2,S3,1006,dLinUCB,0.05,50.0
+doc,2,S3,1006,dLinUCB,0.03,50.0
+doc,2,S3,1006,dLinUCB,0.02,50.0
+doc,2,S3,1006,dLinUCB,0.01,50.0
+doc,2,S3,1006,dLinUCB,0.005,50.0
+doc,2,S3,1007,Shortest Path,0.05,50.0
+doc,2,S3,1007,Shortest Path,0.03,50.0
+doc,2,S3,1007,Shortest Path,0.02,50.0
+doc,2,S3,1007,Shortest Path,0.01,50.0
+doc,2,S3,1007,Shortest Path,0.005,50.0
+doc,2,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1007,LinUCB,0.05,50.0
+doc,2,S3,1007,LinUCB,0.03,50.0
+doc,2,S3,1007,LinUCB,0.02,50.0
+doc,2,S3,1007,LinUCB,0.01,50.0
+doc,2,S3,1007,LinUCB,0.005,50.0
+doc,2,S3,1007,dLinUCB,0.05,50.0
+doc,2,S3,1007,dLinUCB,0.03,50.0
+doc,2,S3,1007,dLinUCB,0.02,50.0
+doc,2,S3,1007,dLinUCB,0.01,50.0
+doc,2,S3,1007,dLinUCB,0.005,50.0
+doc,2,S3,1008,Shortest Path,0.05,50.0
+doc,2,S3,1008,Shortest Path,0.03,50.0
+doc,2,S3,1008,Shortest Path,0.02,50.0
+doc,2,S3,1008,Shortest Path,0.01,50.0
+doc,2,S3,1008,Shortest Path,0.005,50.0
+doc,2,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1008,LinUCB,0.05,50.0
+doc,2,S3,1008,LinUCB,0.03,50.0
+doc,2,S3,1008,LinUCB,0.02,50.0
+doc,2,S3,1008,LinUCB,0.01,50.0
+doc,2,S3,1008,LinUCB,0.005,50.0
+doc,2,S3,1008,dLinUCB,0.05,50.0
+doc,2,S3,1008,dLinUCB,0.03,50.0
+doc,2,S3,1008,dLinUCB,0.02,50.0
+doc,2,S3,1008,dLinUCB,0.01,50.0
+doc,2,S3,1008,dLinUCB,0.005,50.0
+doc,2,S3,1009,Shortest Path,0.05,50.0
+doc,2,S3,1009,Shortest Path,0.03,50.0
+doc,2,S3,1009,Shortest Path,0.02,50.0
+doc,2,S3,1009,Shortest Path,0.01,50.0
+doc,2,S3,1009,Shortest Path,0.005,50.0
+doc,2,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,2,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,2,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,2,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,2,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,2,S3,1009,LinUCB,0.05,50.0
+doc,2,S3,1009,LinUCB,0.03,50.0
+doc,2,S3,1009,LinUCB,0.02,50.0
+doc,2,S3,1009,LinUCB,0.01,50.0
+doc,2,S3,1009,LinUCB,0.005,50.0
+doc,2,S3,1009,dLinUCB,0.05,50.0
+doc,2,S3,1009,dLinUCB,0.03,50.0
+doc,2,S3,1009,dLinUCB,0.02,50.0
+doc,2,S3,1009,dLinUCB,0.01,50.0
+doc,2,S3,1009,dLinUCB,0.005,50.0
+doc,3,S2,1000,Shortest Path,0.05,50.0
+doc,3,S2,1000,Shortest Path,0.03,50.0
+doc,3,S2,1000,Shortest Path,0.02,50.0
+doc,3,S2,1000,Shortest Path,0.01,50.0
+doc,3,S2,1000,Shortest Path,0.005,50.0
+doc,3,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1000,LinUCB,0.05,50.0
+doc,3,S2,1000,LinUCB,0.03,50.0
+doc,3,S2,1000,LinUCB,0.02,50.0
+doc,3,S2,1000,LinUCB,0.01,50.0
+doc,3,S2,1000,LinUCB,0.005,353.0
+doc,3,S2,1000,dLinUCB,0.05,50.0
+doc,3,S2,1000,dLinUCB,0.03,50.0
+doc,3,S2,1000,dLinUCB,0.02,50.0
+doc,3,S2,1000,dLinUCB,0.01,86.0
+doc,3,S2,1000,dLinUCB,0.005,806.0
+doc,3,S2,1001,Shortest Path,0.05,50.0
+doc,3,S2,1001,Shortest Path,0.03,50.0
+doc,3,S2,1001,Shortest Path,0.02,50.0
+doc,3,S2,1001,Shortest Path,0.01,50.0
+doc,3,S2,1001,Shortest Path,0.005,50.0
+doc,3,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1001,LinUCB,0.05,50.0
+doc,3,S2,1001,LinUCB,0.03,50.0
+doc,3,S2,1001,LinUCB,0.02,50.0
+doc,3,S2,1001,LinUCB,0.01,50.0
+doc,3,S2,1001,LinUCB,0.005,402.0
+doc,3,S2,1001,dLinUCB,0.05,50.0
+doc,3,S2,1001,dLinUCB,0.03,50.0
+doc,3,S2,1001,dLinUCB,0.02,50.0
+doc,3,S2,1001,dLinUCB,0.01,50.0
+doc,3,S2,1001,dLinUCB,0.005,402.0
+doc,3,S2,1002,Shortest Path,0.05,50.0
+doc,3,S2,1002,Shortest Path,0.03,50.0
+doc,3,S2,1002,Shortest Path,0.02,50.0
+doc,3,S2,1002,Shortest Path,0.01,50.0
+doc,3,S2,1002,Shortest Path,0.005,50.0
+doc,3,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1002,LinUCB,0.05,50.0
+doc,3,S2,1002,LinUCB,0.03,50.0
+doc,3,S2,1002,LinUCB,0.02,50.0
+doc,3,S2,1002,LinUCB,0.01,50.0
+doc,3,S2,1002,LinUCB,0.005,66.0
+doc,3,S2,1002,dLinUCB,0.05,50.0
+doc,3,S2,1002,dLinUCB,0.03,50.0
+doc,3,S2,1002,dLinUCB,0.02,50.0
+doc,3,S2,1002,dLinUCB,0.01,50.0
+doc,3,S2,1002,dLinUCB,0.005,58.0
+doc,3,S2,1003,Shortest Path,0.05,50.0
+doc,3,S2,1003,Shortest Path,0.03,50.0
+doc,3,S2,1003,Shortest Path,0.02,50.0
+doc,3,S2,1003,Shortest Path,0.01,50.0
+doc,3,S2,1003,Shortest Path,0.005,50.0
+doc,3,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1003,LinUCB,0.05,50.0
+doc,3,S2,1003,LinUCB,0.03,50.0
+doc,3,S2,1003,LinUCB,0.02,50.0
+doc,3,S2,1003,LinUCB,0.01,50.0
+doc,3,S2,1003,LinUCB,0.005,70.0
+doc,3,S2,1003,dLinUCB,0.05,50.0
+doc,3,S2,1003,dLinUCB,0.03,50.0
+doc,3,S2,1003,dLinUCB,0.02,50.0
+doc,3,S2,1003,dLinUCB,0.01,50.0
+doc,3,S2,1003,dLinUCB,0.005,491.0
+doc,3,S2,1004,Shortest Path,0.05,50.0
+doc,3,S2,1004,Shortest Path,0.03,50.0
+doc,3,S2,1004,Shortest Path,0.02,50.0
+doc,3,S2,1004,Shortest Path,0.01,50.0
+doc,3,S2,1004,Shortest Path,0.005,50.0
+doc,3,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1004,LinUCB,0.05,50.0
+doc,3,S2,1004,LinUCB,0.03,50.0
+doc,3,S2,1004,LinUCB,0.02,50.0
+doc,3,S2,1004,LinUCB,0.01,50.0
+doc,3,S2,1004,LinUCB,0.005,335.0
+doc,3,S2,1004,dLinUCB,0.05,50.0
+doc,3,S2,1004,dLinUCB,0.03,50.0
+doc,3,S2,1004,dLinUCB,0.02,50.0
+doc,3,S2,1004,dLinUCB,0.01,50.0
+doc,3,S2,1004,dLinUCB,0.005,335.0
+doc,3,S2,1005,Shortest Path,0.05,50.0
+doc,3,S2,1005,Shortest Path,0.03,50.0
+doc,3,S2,1005,Shortest Path,0.02,50.0
+doc,3,S2,1005,Shortest Path,0.01,50.0
+doc,3,S2,1005,Shortest Path,0.005,50.0
+doc,3,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1005,LinUCB,0.05,50.0
+doc,3,S2,1005,LinUCB,0.03,50.0
+doc,3,S2,1005,LinUCB,0.02,50.0
+doc,3,S2,1005,LinUCB,0.01,185.0
+doc,3,S2,1005,LinUCB,0.005,547.0
+doc,3,S2,1005,dLinUCB,0.05,50.0
+doc,3,S2,1005,dLinUCB,0.03,50.0
+doc,3,S2,1005,dLinUCB,0.02,50.0
+doc,3,S2,1005,dLinUCB,0.01,186.0
+doc,3,S2,1005,dLinUCB,0.005,732.0
+doc,3,S2,1006,Shortest Path,0.05,50.0
+doc,3,S2,1006,Shortest Path,0.03,50.0
+doc,3,S2,1006,Shortest Path,0.02,50.0
+doc,3,S2,1006,Shortest Path,0.01,50.0
+doc,3,S2,1006,Shortest Path,0.005,50.0
+doc,3,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1006,LinUCB,0.05,50.0
+doc,3,S2,1006,LinUCB,0.03,50.0
+doc,3,S2,1006,LinUCB,0.02,50.0
+doc,3,S2,1006,LinUCB,0.01,50.0
+doc,3,S2,1006,LinUCB,0.005,100.0
+doc,3,S2,1006,dLinUCB,0.05,50.0
+doc,3,S2,1006,dLinUCB,0.03,50.0
+doc,3,S2,1006,dLinUCB,0.02,50.0
+doc,3,S2,1006,dLinUCB,0.01,50.0
+doc,3,S2,1006,dLinUCB,0.005,377.0
+doc,3,S2,1007,Shortest Path,0.05,50.0
+doc,3,S2,1007,Shortest Path,0.03,50.0
+doc,3,S2,1007,Shortest Path,0.02,50.0
+doc,3,S2,1007,Shortest Path,0.01,50.0
+doc,3,S2,1007,Shortest Path,0.005,50.0
+doc,3,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1007,LinUCB,0.05,50.0
+doc,3,S2,1007,LinUCB,0.03,50.0
+doc,3,S2,1007,LinUCB,0.02,50.0
+doc,3,S2,1007,LinUCB,0.01,50.0
+doc,3,S2,1007,LinUCB,0.005,684.0
+doc,3,S2,1007,dLinUCB,0.05,50.0
+doc,3,S2,1007,dLinUCB,0.03,50.0
+doc,3,S2,1007,dLinUCB,0.02,50.0
+doc,3,S2,1007,dLinUCB,0.01,50.0
+doc,3,S2,1007,dLinUCB,0.005,684.0
+doc,3,S2,1008,Shortest Path,0.05,50.0
+doc,3,S2,1008,Shortest Path,0.03,50.0
+doc,3,S2,1008,Shortest Path,0.02,50.0
+doc,3,S2,1008,Shortest Path,0.01,50.0
+doc,3,S2,1008,Shortest Path,0.005,50.0
+doc,3,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1008,LinUCB,0.05,50.0
+doc,3,S2,1008,LinUCB,0.03,50.0
+doc,3,S2,1008,LinUCB,0.02,50.0
+doc,3,S2,1008,LinUCB,0.01,50.0
+doc,3,S2,1008,LinUCB,0.005,227.0
+doc,3,S2,1008,dLinUCB,0.05,50.0
+doc,3,S2,1008,dLinUCB,0.03,50.0
+doc,3,S2,1008,dLinUCB,0.02,50.0
+doc,3,S2,1008,dLinUCB,0.01,119.0
+doc,3,S2,1008,dLinUCB,0.005,230.0
+doc,3,S2,1009,Shortest Path,0.05,50.0
+doc,3,S2,1009,Shortest Path,0.03,50.0
+doc,3,S2,1009,Shortest Path,0.02,50.0
+doc,3,S2,1009,Shortest Path,0.01,50.0
+doc,3,S2,1009,Shortest Path,0.005,50.0
+doc,3,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S2,1009,LinUCB,0.05,50.0
+doc,3,S2,1009,LinUCB,0.03,50.0
+doc,3,S2,1009,LinUCB,0.02,50.0
+doc,3,S2,1009,LinUCB,0.01,50.0
+doc,3,S2,1009,LinUCB,0.005,55.0
+doc,3,S2,1009,dLinUCB,0.05,50.0
+doc,3,S2,1009,dLinUCB,0.03,50.0
+doc,3,S2,1009,dLinUCB,0.02,50.0
+doc,3,S2,1009,dLinUCB,0.01,50.0
+doc,3,S2,1009,dLinUCB,0.005,50.0
+doc,3,S3,1000,Shortest Path,0.05,50.0
+doc,3,S3,1000,Shortest Path,0.03,50.0
+doc,3,S3,1000,Shortest Path,0.02,50.0
+doc,3,S3,1000,Shortest Path,0.01,50.0
+doc,3,S3,1000,Shortest Path,0.005,50.0
+doc,3,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1000,LinUCB,0.05,50.0
+doc,3,S3,1000,LinUCB,0.03,50.0
+doc,3,S3,1000,LinUCB,0.02,50.0
+doc,3,S3,1000,LinUCB,0.01,50.0
+doc,3,S3,1000,LinUCB,0.005,475.0
+doc,3,S3,1000,dLinUCB,0.05,50.0
+doc,3,S3,1000,dLinUCB,0.03,50.0
+doc,3,S3,1000,dLinUCB,0.02,50.0
+doc,3,S3,1000,dLinUCB,0.01,50.0
+doc,3,S3,1000,dLinUCB,0.005,556.0
+doc,3,S3,1001,Shortest Path,0.05,50.0
+doc,3,S3,1001,Shortest Path,0.03,50.0
+doc,3,S3,1001,Shortest Path,0.02,50.0
+doc,3,S3,1001,Shortest Path,0.01,50.0
+doc,3,S3,1001,Shortest Path,0.005,50.0
+doc,3,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1001,LinUCB,0.05,50.0
+doc,3,S3,1001,LinUCB,0.03,50.0
+doc,3,S3,1001,LinUCB,0.02,50.0
+doc,3,S3,1001,LinUCB,0.01,50.0
+doc,3,S3,1001,LinUCB,0.005,152.0
+doc,3,S3,1001,dLinUCB,0.05,50.0
+doc,3,S3,1001,dLinUCB,0.03,50.0
+doc,3,S3,1001,dLinUCB,0.02,50.0
+doc,3,S3,1001,dLinUCB,0.01,50.0
+doc,3,S3,1001,dLinUCB,0.005,152.0
+doc,3,S3,1002,Shortest Path,0.05,50.0
+doc,3,S3,1002,Shortest Path,0.03,50.0
+doc,3,S3,1002,Shortest Path,0.02,50.0
+doc,3,S3,1002,Shortest Path,0.01,50.0
+doc,3,S3,1002,Shortest Path,0.005,50.0
+doc,3,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1002,LinUCB,0.05,50.0
+doc,3,S3,1002,LinUCB,0.03,50.0
+doc,3,S3,1002,LinUCB,0.02,50.0
+doc,3,S3,1002,LinUCB,0.01,50.0
+doc,3,S3,1002,LinUCB,0.005,79.0
+doc,3,S3,1002,dLinUCB,0.05,50.0
+doc,3,S3,1002,dLinUCB,0.03,50.0
+doc,3,S3,1002,dLinUCB,0.02,50.0
+doc,3,S3,1002,dLinUCB,0.01,50.0
+doc,3,S3,1002,dLinUCB,0.005,79.0
+doc,3,S3,1003,Shortest Path,0.05,50.0
+doc,3,S3,1003,Shortest Path,0.03,50.0
+doc,3,S3,1003,Shortest Path,0.02,50.0
+doc,3,S3,1003,Shortest Path,0.01,50.0
+doc,3,S3,1003,Shortest Path,0.005,50.0
+doc,3,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1003,LinUCB,0.05,50.0
+doc,3,S3,1003,LinUCB,0.03,50.0
+doc,3,S3,1003,LinUCB,0.02,50.0
+doc,3,S3,1003,LinUCB,0.01,50.0
+doc,3,S3,1003,LinUCB,0.005,241.0
+doc,3,S3,1003,dLinUCB,0.05,50.0
+doc,3,S3,1003,dLinUCB,0.03,50.0
+doc,3,S3,1003,dLinUCB,0.02,50.0
+doc,3,S3,1003,dLinUCB,0.01,50.0
+doc,3,S3,1003,dLinUCB,0.005,241.0
+doc,3,S3,1004,Shortest Path,0.05,50.0
+doc,3,S3,1004,Shortest Path,0.03,50.0
+doc,3,S3,1004,Shortest Path,0.02,50.0
+doc,3,S3,1004,Shortest Path,0.01,50.0
+doc,3,S3,1004,Shortest Path,0.005,50.0
+doc,3,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1004,LinUCB,0.05,50.0
+doc,3,S3,1004,LinUCB,0.03,50.0
+doc,3,S3,1004,LinUCB,0.02,50.0
+doc,3,S3,1004,LinUCB,0.01,50.0
+doc,3,S3,1004,LinUCB,0.005,66.0
+doc,3,S3,1004,dLinUCB,0.05,50.0
+doc,3,S3,1004,dLinUCB,0.03,50.0
+doc,3,S3,1004,dLinUCB,0.02,50.0
+doc,3,S3,1004,dLinUCB,0.01,50.0
+doc,3,S3,1004,dLinUCB,0.005,85.0
+doc,3,S3,1005,Shortest Path,0.05,50.0
+doc,3,S3,1005,Shortest Path,0.03,50.0
+doc,3,S3,1005,Shortest Path,0.02,50.0
+doc,3,S3,1005,Shortest Path,0.01,50.0
+doc,3,S3,1005,Shortest Path,0.005,50.0
+doc,3,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1005,LinUCB,0.05,50.0
+doc,3,S3,1005,LinUCB,0.03,50.0
+doc,3,S3,1005,LinUCB,0.02,50.0
+doc,3,S3,1005,LinUCB,0.01,50.0
+doc,3,S3,1005,LinUCB,0.005,297.0
+doc,3,S3,1005,dLinUCB,0.05,50.0
+doc,3,S3,1005,dLinUCB,0.03,50.0
+doc,3,S3,1005,dLinUCB,0.02,50.0
+doc,3,S3,1005,dLinUCB,0.01,50.0
+doc,3,S3,1005,dLinUCB,0.005,474.0
+doc,3,S3,1006,Shortest Path,0.05,50.0
+doc,3,S3,1006,Shortest Path,0.03,50.0
+doc,3,S3,1006,Shortest Path,0.02,50.0
+doc,3,S3,1006,Shortest Path,0.01,50.0
+doc,3,S3,1006,Shortest Path,0.005,50.0
+doc,3,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1006,LinUCB,0.05,50.0
+doc,3,S3,1006,LinUCB,0.03,50.0
+doc,3,S3,1006,LinUCB,0.02,50.0
+doc,3,S3,1006,LinUCB,0.01,50.0
+doc,3,S3,1006,LinUCB,0.005,50.0
+doc,3,S3,1006,dLinUCB,0.05,50.0
+doc,3,S3,1006,dLinUCB,0.03,50.0
+doc,3,S3,1006,dLinUCB,0.02,50.0
+doc,3,S3,1006,dLinUCB,0.01,50.0
+doc,3,S3,1006,dLinUCB,0.005,50.0
+doc,3,S3,1007,Shortest Path,0.05,50.0
+doc,3,S3,1007,Shortest Path,0.03,50.0
+doc,3,S3,1007,Shortest Path,0.02,50.0
+doc,3,S3,1007,Shortest Path,0.01,50.0
+doc,3,S3,1007,Shortest Path,0.005,50.0
+doc,3,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1007,LinUCB,0.05,50.0
+doc,3,S3,1007,LinUCB,0.03,50.0
+doc,3,S3,1007,LinUCB,0.02,50.0
+doc,3,S3,1007,LinUCB,0.01,77.0
+doc,3,S3,1007,LinUCB,0.005,434.0
+doc,3,S3,1007,dLinUCB,0.05,50.0
+doc,3,S3,1007,dLinUCB,0.03,50.0
+doc,3,S3,1007,dLinUCB,0.02,50.0
+doc,3,S3,1007,dLinUCB,0.01,77.0
+doc,3,S3,1007,dLinUCB,0.005,436.0
+doc,3,S3,1008,Shortest Path,0.05,50.0
+doc,3,S3,1008,Shortest Path,0.03,50.0
+doc,3,S3,1008,Shortest Path,0.02,50.0
+doc,3,S3,1008,Shortest Path,0.01,50.0
+doc,3,S3,1008,Shortest Path,0.005,50.0
+doc,3,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1008,LinUCB,0.05,50.0
+doc,3,S3,1008,LinUCB,0.03,50.0
+doc,3,S3,1008,LinUCB,0.02,50.0
+doc,3,S3,1008,LinUCB,0.01,50.0
+doc,3,S3,1008,LinUCB,0.005,50.0
+doc,3,S3,1008,dLinUCB,0.05,50.0
+doc,3,S3,1008,dLinUCB,0.03,50.0
+doc,3,S3,1008,dLinUCB,0.02,50.0
+doc,3,S3,1008,dLinUCB,0.01,50.0
+doc,3,S3,1008,dLinUCB,0.005,318.0
+doc,3,S3,1009,Shortest Path,0.05,50.0
+doc,3,S3,1009,Shortest Path,0.03,50.0
+doc,3,S3,1009,Shortest Path,0.02,50.0
+doc,3,S3,1009,Shortest Path,0.01,50.0
+doc,3,S3,1009,Shortest Path,0.005,50.0
+doc,3,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,3,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,3,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,3,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,3,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,3,S3,1009,LinUCB,0.05,50.0
+doc,3,S3,1009,LinUCB,0.03,50.0
+doc,3,S3,1009,LinUCB,0.02,50.0
+doc,3,S3,1009,LinUCB,0.01,50.0
+doc,3,S3,1009,LinUCB,0.005,50.0
+doc,3,S3,1009,dLinUCB,0.05,50.0
+doc,3,S3,1009,dLinUCB,0.03,50.0
+doc,3,S3,1009,dLinUCB,0.02,50.0
+doc,3,S3,1009,dLinUCB,0.01,50.0
+doc,3,S3,1009,dLinUCB,0.005,50.0
+doc,4,S2,1000,Shortest Path,0.05,50.0
+doc,4,S2,1000,Shortest Path,0.03,50.0
+doc,4,S2,1000,Shortest Path,0.02,50.0
+doc,4,S2,1000,Shortest Path,0.01,50.0
+doc,4,S2,1000,Shortest Path,0.005,50.0
+doc,4,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1000,LinUCB,0.05,50.0
+doc,4,S2,1000,LinUCB,0.03,50.0
+doc,4,S2,1000,LinUCB,0.02,50.0
+doc,4,S2,1000,LinUCB,0.01,50.0
+doc,4,S2,1000,LinUCB,0.005,50.0
+doc,4,S2,1000,dLinUCB,0.05,50.0
+doc,4,S2,1000,dLinUCB,0.03,50.0
+doc,4,S2,1000,dLinUCB,0.02,50.0
+doc,4,S2,1000,dLinUCB,0.01,50.0
+doc,4,S2,1000,dLinUCB,0.005,50.0
+doc,4,S2,1001,Shortest Path,0.05,50.0
+doc,4,S2,1001,Shortest Path,0.03,50.0
+doc,4,S2,1001,Shortest Path,0.02,50.0
+doc,4,S2,1001,Shortest Path,0.01,50.0
+doc,4,S2,1001,Shortest Path,0.005,50.0
+doc,4,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1001,LinUCB,0.05,50.0
+doc,4,S2,1001,LinUCB,0.03,50.0
+doc,4,S2,1001,LinUCB,0.02,50.0
+doc,4,S2,1001,LinUCB,0.01,50.0
+doc,4,S2,1001,LinUCB,0.005,50.0
+doc,4,S2,1001,dLinUCB,0.05,50.0
+doc,4,S2,1001,dLinUCB,0.03,50.0
+doc,4,S2,1001,dLinUCB,0.02,50.0
+doc,4,S2,1001,dLinUCB,0.01,50.0
+doc,4,S2,1001,dLinUCB,0.005,50.0
+doc,4,S2,1002,Shortest Path,0.05,50.0
+doc,4,S2,1002,Shortest Path,0.03,50.0
+doc,4,S2,1002,Shortest Path,0.02,50.0
+doc,4,S2,1002,Shortest Path,0.01,50.0
+doc,4,S2,1002,Shortest Path,0.005,50.0
+doc,4,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1002,LinUCB,0.05,50.0
+doc,4,S2,1002,LinUCB,0.03,50.0
+doc,4,S2,1002,LinUCB,0.02,50.0
+doc,4,S2,1002,LinUCB,0.01,50.0
+doc,4,S2,1002,LinUCB,0.005,50.0
+doc,4,S2,1002,dLinUCB,0.05,50.0
+doc,4,S2,1002,dLinUCB,0.03,50.0
+doc,4,S2,1002,dLinUCB,0.02,50.0
+doc,4,S2,1002,dLinUCB,0.01,50.0
+doc,4,S2,1002,dLinUCB,0.005,50.0
+doc,4,S2,1003,Shortest Path,0.05,50.0
+doc,4,S2,1003,Shortest Path,0.03,50.0
+doc,4,S2,1003,Shortest Path,0.02,50.0
+doc,4,S2,1003,Shortest Path,0.01,50.0
+doc,4,S2,1003,Shortest Path,0.005,50.0
+doc,4,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1003,LinUCB,0.05,50.0
+doc,4,S2,1003,LinUCB,0.03,50.0
+doc,4,S2,1003,LinUCB,0.02,50.0
+doc,4,S2,1003,LinUCB,0.01,50.0
+doc,4,S2,1003,LinUCB,0.005,50.0
+doc,4,S2,1003,dLinUCB,0.05,50.0
+doc,4,S2,1003,dLinUCB,0.03,50.0
+doc,4,S2,1003,dLinUCB,0.02,50.0
+doc,4,S2,1003,dLinUCB,0.01,50.0
+doc,4,S2,1003,dLinUCB,0.005,50.0
+doc,4,S2,1004,Shortest Path,0.05,50.0
+doc,4,S2,1004,Shortest Path,0.03,50.0
+doc,4,S2,1004,Shortest Path,0.02,50.0
+doc,4,S2,1004,Shortest Path,0.01,50.0
+doc,4,S2,1004,Shortest Path,0.005,50.0
+doc,4,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1004,LinUCB,0.05,50.0
+doc,4,S2,1004,LinUCB,0.03,50.0
+doc,4,S2,1004,LinUCB,0.02,50.0
+doc,4,S2,1004,LinUCB,0.01,50.0
+doc,4,S2,1004,LinUCB,0.005,50.0
+doc,4,S2,1004,dLinUCB,0.05,50.0
+doc,4,S2,1004,dLinUCB,0.03,50.0
+doc,4,S2,1004,dLinUCB,0.02,50.0
+doc,4,S2,1004,dLinUCB,0.01,50.0
+doc,4,S2,1004,dLinUCB,0.005,50.0
+doc,4,S2,1005,Shortest Path,0.05,50.0
+doc,4,S2,1005,Shortest Path,0.03,50.0
+doc,4,S2,1005,Shortest Path,0.02,50.0
+doc,4,S2,1005,Shortest Path,0.01,50.0
+doc,4,S2,1005,Shortest Path,0.005,50.0
+doc,4,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1005,LinUCB,0.05,50.0
+doc,4,S2,1005,LinUCB,0.03,50.0
+doc,4,S2,1005,LinUCB,0.02,50.0
+doc,4,S2,1005,LinUCB,0.01,50.0
+doc,4,S2,1005,LinUCB,0.005,60.0
+doc,4,S2,1005,dLinUCB,0.05,50.0
+doc,4,S2,1005,dLinUCB,0.03,50.0
+doc,4,S2,1005,dLinUCB,0.02,50.0
+doc,4,S2,1005,dLinUCB,0.01,50.0
+doc,4,S2,1005,dLinUCB,0.005,60.0
+doc,4,S2,1006,Shortest Path,0.05,50.0
+doc,4,S2,1006,Shortest Path,0.03,50.0
+doc,4,S2,1006,Shortest Path,0.02,50.0
+doc,4,S2,1006,Shortest Path,0.01,50.0
+doc,4,S2,1006,Shortest Path,0.005,50.0
+doc,4,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1006,LinUCB,0.05,50.0
+doc,4,S2,1006,LinUCB,0.03,50.0
+doc,4,S2,1006,LinUCB,0.02,50.0
+doc,4,S2,1006,LinUCB,0.01,50.0
+doc,4,S2,1006,LinUCB,0.005,50.0
+doc,4,S2,1006,dLinUCB,0.05,50.0
+doc,4,S2,1006,dLinUCB,0.03,50.0
+doc,4,S2,1006,dLinUCB,0.02,50.0
+doc,4,S2,1006,dLinUCB,0.01,50.0
+doc,4,S2,1006,dLinUCB,0.005,50.0
+doc,4,S2,1007,Shortest Path,0.05,50.0
+doc,4,S2,1007,Shortest Path,0.03,50.0
+doc,4,S2,1007,Shortest Path,0.02,50.0
+doc,4,S2,1007,Shortest Path,0.01,50.0
+doc,4,S2,1007,Shortest Path,0.005,50.0
+doc,4,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1007,LinUCB,0.05,50.0
+doc,4,S2,1007,LinUCB,0.03,50.0
+doc,4,S2,1007,LinUCB,0.02,50.0
+doc,4,S2,1007,LinUCB,0.01,50.0
+doc,4,S2,1007,LinUCB,0.005,50.0
+doc,4,S2,1007,dLinUCB,0.05,50.0
+doc,4,S2,1007,dLinUCB,0.03,50.0
+doc,4,S2,1007,dLinUCB,0.02,50.0
+doc,4,S2,1007,dLinUCB,0.01,50.0
+doc,4,S2,1007,dLinUCB,0.005,50.0
+doc,4,S2,1008,Shortest Path,0.05,50.0
+doc,4,S2,1008,Shortest Path,0.03,50.0
+doc,4,S2,1008,Shortest Path,0.02,50.0
+doc,4,S2,1008,Shortest Path,0.01,50.0
+doc,4,S2,1008,Shortest Path,0.005,50.0
+doc,4,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1008,LinUCB,0.05,50.0
+doc,4,S2,1008,LinUCB,0.03,50.0
+doc,4,S2,1008,LinUCB,0.02,50.0
+doc,4,S2,1008,LinUCB,0.01,50.0
+doc,4,S2,1008,LinUCB,0.005,50.0
+doc,4,S2,1008,dLinUCB,0.05,50.0
+doc,4,S2,1008,dLinUCB,0.03,50.0
+doc,4,S2,1008,dLinUCB,0.02,50.0
+doc,4,S2,1008,dLinUCB,0.01,50.0
+doc,4,S2,1008,dLinUCB,0.005,50.0
+doc,4,S2,1009,Shortest Path,0.05,50.0
+doc,4,S2,1009,Shortest Path,0.03,50.0
+doc,4,S2,1009,Shortest Path,0.02,50.0
+doc,4,S2,1009,Shortest Path,0.01,50.0
+doc,4,S2,1009,Shortest Path,0.005,50.0
+doc,4,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S2,1009,LinUCB,0.05,50.0
+doc,4,S2,1009,LinUCB,0.03,50.0
+doc,4,S2,1009,LinUCB,0.02,50.0
+doc,4,S2,1009,LinUCB,0.01,50.0
+doc,4,S2,1009,LinUCB,0.005,50.0
+doc,4,S2,1009,dLinUCB,0.05,50.0
+doc,4,S2,1009,dLinUCB,0.03,50.0
+doc,4,S2,1009,dLinUCB,0.02,50.0
+doc,4,S2,1009,dLinUCB,0.01,50.0
+doc,4,S2,1009,dLinUCB,0.005,50.0
+doc,4,S3,1000,Shortest Path,0.05,50.0
+doc,4,S3,1000,Shortest Path,0.03,50.0
+doc,4,S3,1000,Shortest Path,0.02,50.0
+doc,4,S3,1000,Shortest Path,0.01,50.0
+doc,4,S3,1000,Shortest Path,0.005,50.0
+doc,4,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1000,LinUCB,0.05,50.0
+doc,4,S3,1000,LinUCB,0.03,50.0
+doc,4,S3,1000,LinUCB,0.02,50.0
+doc,4,S3,1000,LinUCB,0.01,50.0
+doc,4,S3,1000,LinUCB,0.005,50.0
+doc,4,S3,1000,dLinUCB,0.05,50.0
+doc,4,S3,1000,dLinUCB,0.03,50.0
+doc,4,S3,1000,dLinUCB,0.02,50.0
+doc,4,S3,1000,dLinUCB,0.01,50.0
+doc,4,S3,1000,dLinUCB,0.005,50.0
+doc,4,S3,1001,Shortest Path,0.05,50.0
+doc,4,S3,1001,Shortest Path,0.03,50.0
+doc,4,S3,1001,Shortest Path,0.02,50.0
+doc,4,S3,1001,Shortest Path,0.01,50.0
+doc,4,S3,1001,Shortest Path,0.005,50.0
+doc,4,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1001,LinUCB,0.05,50.0
+doc,4,S3,1001,LinUCB,0.03,50.0
+doc,4,S3,1001,LinUCB,0.02,50.0
+doc,4,S3,1001,LinUCB,0.01,50.0
+doc,4,S3,1001,LinUCB,0.005,50.0
+doc,4,S3,1001,dLinUCB,0.05,50.0
+doc,4,S3,1001,dLinUCB,0.03,50.0
+doc,4,S3,1001,dLinUCB,0.02,50.0
+doc,4,S3,1001,dLinUCB,0.01,50.0
+doc,4,S3,1001,dLinUCB,0.005,50.0
+doc,4,S3,1002,Shortest Path,0.05,50.0
+doc,4,S3,1002,Shortest Path,0.03,50.0
+doc,4,S3,1002,Shortest Path,0.02,50.0
+doc,4,S3,1002,Shortest Path,0.01,50.0
+doc,4,S3,1002,Shortest Path,0.005,50.0
+doc,4,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1002,LinUCB,0.05,50.0
+doc,4,S3,1002,LinUCB,0.03,50.0
+doc,4,S3,1002,LinUCB,0.02,50.0
+doc,4,S3,1002,LinUCB,0.01,50.0
+doc,4,S3,1002,LinUCB,0.005,50.0
+doc,4,S3,1002,dLinUCB,0.05,50.0
+doc,4,S3,1002,dLinUCB,0.03,50.0
+doc,4,S3,1002,dLinUCB,0.02,50.0
+doc,4,S3,1002,dLinUCB,0.01,50.0
+doc,4,S3,1002,dLinUCB,0.005,50.0
+doc,4,S3,1003,Shortest Path,0.05,50.0
+doc,4,S3,1003,Shortest Path,0.03,50.0
+doc,4,S3,1003,Shortest Path,0.02,50.0
+doc,4,S3,1003,Shortest Path,0.01,50.0
+doc,4,S3,1003,Shortest Path,0.005,50.0
+doc,4,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1003,LinUCB,0.05,50.0
+doc,4,S3,1003,LinUCB,0.03,50.0
+doc,4,S3,1003,LinUCB,0.02,50.0
+doc,4,S3,1003,LinUCB,0.01,50.0
+doc,4,S3,1003,LinUCB,0.005,50.0
+doc,4,S3,1003,dLinUCB,0.05,50.0
+doc,4,S3,1003,dLinUCB,0.03,50.0
+doc,4,S3,1003,dLinUCB,0.02,50.0
+doc,4,S3,1003,dLinUCB,0.01,50.0
+doc,4,S3,1003,dLinUCB,0.005,50.0
+doc,4,S3,1004,Shortest Path,0.05,50.0
+doc,4,S3,1004,Shortest Path,0.03,50.0
+doc,4,S3,1004,Shortest Path,0.02,50.0
+doc,4,S3,1004,Shortest Path,0.01,50.0
+doc,4,S3,1004,Shortest Path,0.005,50.0
+doc,4,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1004,LinUCB,0.05,50.0
+doc,4,S3,1004,LinUCB,0.03,50.0
+doc,4,S3,1004,LinUCB,0.02,50.0
+doc,4,S3,1004,LinUCB,0.01,50.0
+doc,4,S3,1004,LinUCB,0.005,50.0
+doc,4,S3,1004,dLinUCB,0.05,50.0
+doc,4,S3,1004,dLinUCB,0.03,50.0
+doc,4,S3,1004,dLinUCB,0.02,50.0
+doc,4,S3,1004,dLinUCB,0.01,50.0
+doc,4,S3,1004,dLinUCB,0.005,50.0
+doc,4,S3,1005,Shortest Path,0.05,50.0
+doc,4,S3,1005,Shortest Path,0.03,50.0
+doc,4,S3,1005,Shortest Path,0.02,50.0
+doc,4,S3,1005,Shortest Path,0.01,50.0
+doc,4,S3,1005,Shortest Path,0.005,50.0
+doc,4,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1005,LinUCB,0.05,50.0
+doc,4,S3,1005,LinUCB,0.03,50.0
+doc,4,S3,1005,LinUCB,0.02,50.0
+doc,4,S3,1005,LinUCB,0.01,50.0
+doc,4,S3,1005,LinUCB,0.005,50.0
+doc,4,S3,1005,dLinUCB,0.05,50.0
+doc,4,S3,1005,dLinUCB,0.03,50.0
+doc,4,S3,1005,dLinUCB,0.02,50.0
+doc,4,S3,1005,dLinUCB,0.01,50.0
+doc,4,S3,1005,dLinUCB,0.005,50.0
+doc,4,S3,1006,Shortest Path,0.05,50.0
+doc,4,S3,1006,Shortest Path,0.03,50.0
+doc,4,S3,1006,Shortest Path,0.02,50.0
+doc,4,S3,1006,Shortest Path,0.01,50.0
+doc,4,S3,1006,Shortest Path,0.005,50.0
+doc,4,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1006,LinUCB,0.05,50.0
+doc,4,S3,1006,LinUCB,0.03,50.0
+doc,4,S3,1006,LinUCB,0.02,50.0
+doc,4,S3,1006,LinUCB,0.01,50.0
+doc,4,S3,1006,LinUCB,0.005,50.0
+doc,4,S3,1006,dLinUCB,0.05,50.0
+doc,4,S3,1006,dLinUCB,0.03,50.0
+doc,4,S3,1006,dLinUCB,0.02,50.0
+doc,4,S3,1006,dLinUCB,0.01,50.0
+doc,4,S3,1006,dLinUCB,0.005,50.0
+doc,4,S3,1007,Shortest Path,0.05,50.0
+doc,4,S3,1007,Shortest Path,0.03,50.0
+doc,4,S3,1007,Shortest Path,0.02,50.0
+doc,4,S3,1007,Shortest Path,0.01,50.0
+doc,4,S3,1007,Shortest Path,0.005,50.0
+doc,4,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1007,LinUCB,0.05,50.0
+doc,4,S3,1007,LinUCB,0.03,50.0
+doc,4,S3,1007,LinUCB,0.02,50.0
+doc,4,S3,1007,LinUCB,0.01,50.0
+doc,4,S3,1007,LinUCB,0.005,50.0
+doc,4,S3,1007,dLinUCB,0.05,50.0
+doc,4,S3,1007,dLinUCB,0.03,50.0
+doc,4,S3,1007,dLinUCB,0.02,50.0
+doc,4,S3,1007,dLinUCB,0.01,50.0
+doc,4,S3,1007,dLinUCB,0.005,50.0
+doc,4,S3,1008,Shortest Path,0.05,50.0
+doc,4,S3,1008,Shortest Path,0.03,50.0
+doc,4,S3,1008,Shortest Path,0.02,50.0
+doc,4,S3,1008,Shortest Path,0.01,50.0
+doc,4,S3,1008,Shortest Path,0.005,50.0
+doc,4,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1008,LinUCB,0.05,50.0
+doc,4,S3,1008,LinUCB,0.03,50.0
+doc,4,S3,1008,LinUCB,0.02,50.0
+doc,4,S3,1008,LinUCB,0.01,50.0
+doc,4,S3,1008,LinUCB,0.005,50.0
+doc,4,S3,1008,dLinUCB,0.05,50.0
+doc,4,S3,1008,dLinUCB,0.03,50.0
+doc,4,S3,1008,dLinUCB,0.02,50.0
+doc,4,S3,1008,dLinUCB,0.01,50.0
+doc,4,S3,1008,dLinUCB,0.005,50.0
+doc,4,S3,1009,Shortest Path,0.05,50.0
+doc,4,S3,1009,Shortest Path,0.03,50.0
+doc,4,S3,1009,Shortest Path,0.02,50.0
+doc,4,S3,1009,Shortest Path,0.01,50.0
+doc,4,S3,1009,Shortest Path,0.005,50.0
+doc,4,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+doc,4,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+doc,4,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+doc,4,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+doc,4,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+doc,4,S3,1009,LinUCB,0.05,50.0
+doc,4,S3,1009,LinUCB,0.03,50.0
+doc,4,S3,1009,LinUCB,0.02,50.0
+doc,4,S3,1009,LinUCB,0.01,50.0
+doc,4,S3,1009,LinUCB,0.005,50.0
+doc,4,S3,1009,dLinUCB,0.05,50.0
+doc,4,S3,1009,dLinUCB,0.03,50.0
+doc,4,S3,1009,dLinUCB,0.02,50.0
+doc,4,S3,1009,dLinUCB,0.01,50.0
+doc,4,S3,1009,dLinUCB,0.005,50.0
+calibrated,0,S2,1000,Shortest Path,0.05,50.0
+calibrated,0,S2,1000,Shortest Path,0.03,50.0
+calibrated,0,S2,1000,Shortest Path,0.02,50.0
+calibrated,0,S2,1000,Shortest Path,0.01,50.0
+calibrated,0,S2,1000,Shortest Path,0.005,50.0
+calibrated,0,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1000,LinUCB,0.05,61.0
+calibrated,0,S2,1000,LinUCB,0.03,63.0
+calibrated,0,S2,1000,LinUCB,0.02,78.0
+calibrated,0,S2,1000,LinUCB,0.01,139.0
+calibrated,0,S2,1000,LinUCB,0.005,141.0
+calibrated,0,S2,1000,dLinUCB,0.05,174.0
+calibrated,0,S2,1000,dLinUCB,0.03,176.0
+calibrated,0,S2,1000,dLinUCB,0.02,177.0
+calibrated,0,S2,1000,dLinUCB,0.01,199.0
+calibrated,0,S2,1000,dLinUCB,0.005,199.0
+calibrated,0,S2,1001,Shortest Path,0.05,50.0
+calibrated,0,S2,1001,Shortest Path,0.03,50.0
+calibrated,0,S2,1001,Shortest Path,0.02,50.0
+calibrated,0,S2,1001,Shortest Path,0.01,50.0
+calibrated,0,S2,1001,Shortest Path,0.005,50.0
+calibrated,0,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1001,LinUCB,0.05,60.0
+calibrated,0,S2,1001,LinUCB,0.03,77.0
+calibrated,0,S2,1001,LinUCB,0.02,78.0
+calibrated,0,S2,1001,LinUCB,0.01,79.0
+calibrated,0,S2,1001,LinUCB,0.005,80.0
+calibrated,0,S2,1001,dLinUCB,0.05,77.0
+calibrated,0,S2,1001,dLinUCB,0.03,79.0
+calibrated,0,S2,1001,dLinUCB,0.02,139.0
+calibrated,0,S2,1001,dLinUCB,0.01,140.0
+calibrated,0,S2,1001,dLinUCB,0.005,154.0
+calibrated,0,S2,1002,Shortest Path,0.05,50.0
+calibrated,0,S2,1002,Shortest Path,0.03,50.0
+calibrated,0,S2,1002,Shortest Path,0.02,50.0
+calibrated,0,S2,1002,Shortest Path,0.01,50.0
+calibrated,0,S2,1002,Shortest Path,0.005,50.0
+calibrated,0,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1002,LinUCB,0.05,57.0
+calibrated,0,S2,1002,LinUCB,0.03,60.0
+calibrated,0,S2,1002,LinUCB,0.02,76.0
+calibrated,0,S2,1002,LinUCB,0.01,77.0
+calibrated,0,S2,1002,LinUCB,0.005,78.0
+calibrated,0,S2,1002,dLinUCB,0.05,140.0
+calibrated,0,S2,1002,dLinUCB,0.03,154.0
+calibrated,0,S2,1002,dLinUCB,0.02,155.0
+calibrated,0,S2,1002,dLinUCB,0.01,156.0
+calibrated,0,S2,1002,dLinUCB,0.005,235.0
+calibrated,0,S2,1003,Shortest Path,0.05,50.0
+calibrated,0,S2,1003,Shortest Path,0.03,50.0
+calibrated,0,S2,1003,Shortest Path,0.02,50.0
+calibrated,0,S2,1003,Shortest Path,0.01,50.0
+calibrated,0,S2,1003,Shortest Path,0.005,50.0
+calibrated,0,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1003,LinUCB,0.05,59.0
+calibrated,0,S2,1003,LinUCB,0.03,61.0
+calibrated,0,S2,1003,LinUCB,0.02,78.0
+calibrated,0,S2,1003,LinUCB,0.01,137.0
+calibrated,0,S2,1003,LinUCB,0.005,138.0
+calibrated,0,S2,1003,dLinUCB,0.05,138.0
+calibrated,0,S2,1003,dLinUCB,0.03,141.0
+calibrated,0,S2,1003,dLinUCB,0.02,155.0
+calibrated,0,S2,1003,dLinUCB,0.01,160.0
+calibrated,0,S2,1003,dLinUCB,0.005,160.0
+calibrated,0,S2,1004,Shortest Path,0.05,50.0
+calibrated,0,S2,1004,Shortest Path,0.03,50.0
+calibrated,0,S2,1004,Shortest Path,0.02,50.0
+calibrated,0,S2,1004,Shortest Path,0.01,50.0
+calibrated,0,S2,1004,Shortest Path,0.005,50.0
+calibrated,0,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1004,LinUCB,0.05,50.0
+calibrated,0,S2,1004,LinUCB,0.03,50.0
+calibrated,0,S2,1004,LinUCB,0.02,57.0
+calibrated,0,S2,1004,LinUCB,0.01,58.0
+calibrated,0,S2,1004,LinUCB,0.005,77.0
+calibrated,0,S2,1004,dLinUCB,0.05,57.0
+calibrated,0,S2,1004,dLinUCB,0.03,60.0
+calibrated,0,S2,1004,dLinUCB,0.02,138.0
+calibrated,0,S2,1004,dLinUCB,0.01,154.0
+calibrated,0,S2,1004,dLinUCB,0.005,154.0
+calibrated,0,S2,1005,Shortest Path,0.05,50.0
+calibrated,0,S2,1005,Shortest Path,0.03,50.0
+calibrated,0,S2,1005,Shortest Path,0.02,50.0
+calibrated,0,S2,1005,Shortest Path,0.01,50.0
+calibrated,0,S2,1005,Shortest Path,0.005,50.0
+calibrated,0,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1005,LinUCB,0.05,61.0
+calibrated,0,S2,1005,LinUCB,0.03,78.0
+calibrated,0,S2,1005,LinUCB,0.02,79.0
+calibrated,0,S2,1005,LinUCB,0.01,80.0
+calibrated,0,S2,1005,LinUCB,0.005,140.0
+calibrated,0,S2,1005,dLinUCB,0.05,61.0
+calibrated,0,S2,1005,dLinUCB,0.03,78.0
+calibrated,0,S2,1005,dLinUCB,0.02,79.0
+calibrated,0,S2,1005,dLinUCB,0.01,132.0
+calibrated,0,S2,1005,dLinUCB,0.005,132.0
+calibrated,0,S2,1006,Shortest Path,0.05,50.0
+calibrated,0,S2,1006,Shortest Path,0.03,50.0
+calibrated,0,S2,1006,Shortest Path,0.02,50.0
+calibrated,0,S2,1006,Shortest Path,0.01,50.0
+calibrated,0,S2,1006,Shortest Path,0.005,50.0
+calibrated,0,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1006,LinUCB,0.05,61.0
+calibrated,0,S2,1006,LinUCB,0.03,77.0
+calibrated,0,S2,1006,LinUCB,0.02,78.0
+calibrated,0,S2,1006,LinUCB,0.01,139.0
+calibrated,0,S2,1006,LinUCB,0.005,140.0
+calibrated,0,S2,1006,dLinUCB,0.05,174.0
+calibrated,0,S2,1006,dLinUCB,0.03,176.0
+calibrated,0,S2,1006,dLinUCB,0.02,177.0
+calibrated,0,S2,1006,dLinUCB,0.01,180.0
+calibrated,0,S2,1006,dLinUCB,0.005,180.0
+calibrated,0,S2,1007,Shortest Path,0.05,50.0
+calibrated,0,S2,1007,Shortest Path,0.03,50.0
+calibrated,0,S2,1007,Shortest Path,0.02,50.0
+calibrated,0,S2,1007,Shortest Path,0.01,50.0
+calibrated,0,S2,1007,Shortest Path,0.005,50.0
+calibrated,0,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1007,LinUCB,0.05,76.0
+calibrated,0,S2,1007,LinUCB,0.03,78.0
+calibrated,0,S2,1007,LinUCB,0.02,138.0
+calibrated,0,S2,1007,LinUCB,0.01,139.0
+calibrated,0,S2,1007,LinUCB,0.005,140.0
+calibrated,0,S2,1007,dLinUCB,0.05,153.0
+calibrated,0,S2,1007,dLinUCB,0.03,155.0
+calibrated,0,S2,1007,dLinUCB,0.02,156.0
+calibrated,0,S2,1007,dLinUCB,0.01,157.0
+calibrated,0,S2,1007,dLinUCB,0.005,173.0
+calibrated,0,S2,1008,Shortest Path,0.05,50.0
+calibrated,0,S2,1008,Shortest Path,0.03,50.0
+calibrated,0,S2,1008,Shortest Path,0.02,50.0
+calibrated,0,S2,1008,Shortest Path,0.01,50.0
+calibrated,0,S2,1008,Shortest Path,0.005,50.0
+calibrated,0,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1008,LinUCB,0.05,59.0
+calibrated,0,S2,1008,LinUCB,0.03,61.0
+calibrated,0,S2,1008,LinUCB,0.02,78.0
+calibrated,0,S2,1008,LinUCB,0.01,79.0
+calibrated,0,S2,1008,LinUCB,0.005,140.0
+calibrated,0,S2,1008,dLinUCB,0.05,139.0
+calibrated,0,S2,1008,dLinUCB,0.03,153.0
+calibrated,0,S2,1008,dLinUCB,0.02,155.0
+calibrated,0,S2,1008,dLinUCB,0.01,161.0
+calibrated,0,S2,1008,dLinUCB,0.005,161.0
+calibrated,0,S2,1009,Shortest Path,0.05,50.0
+calibrated,0,S2,1009,Shortest Path,0.03,50.0
+calibrated,0,S2,1009,Shortest Path,0.02,50.0
+calibrated,0,S2,1009,Shortest Path,0.01,50.0
+calibrated,0,S2,1009,Shortest Path,0.005,50.0
+calibrated,0,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S2,1009,LinUCB,0.05,60.0
+calibrated,0,S2,1009,LinUCB,0.03,77.0
+calibrated,0,S2,1009,LinUCB,0.02,78.0
+calibrated,0,S2,1009,LinUCB,0.01,137.0
+calibrated,0,S2,1009,LinUCB,0.005,139.0
+calibrated,0,S2,1009,dLinUCB,0.05,156.0
+calibrated,0,S2,1009,dLinUCB,0.03,174.0
+calibrated,0,S2,1009,dLinUCB,0.02,175.0
+calibrated,0,S2,1009,dLinUCB,0.01,176.0
+calibrated,0,S2,1009,dLinUCB,0.005,234.0
+calibrated,0,S3,1000,Shortest Path,0.05,50.0
+calibrated,0,S3,1000,Shortest Path,0.03,50.0
+calibrated,0,S3,1000,Shortest Path,0.02,50.0
+calibrated,0,S3,1000,Shortest Path,0.01,50.0
+calibrated,0,S3,1000,Shortest Path,0.005,50.0
+calibrated,0,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1000,LinUCB,0.05,50.0
+calibrated,0,S3,1000,LinUCB,0.03,50.0
+calibrated,0,S3,1000,LinUCB,0.02,50.0
+calibrated,0,S3,1000,LinUCB,0.01,50.0
+calibrated,0,S3,1000,LinUCB,0.005,50.0
+calibrated,0,S3,1000,dLinUCB,0.05,50.0
+calibrated,0,S3,1000,dLinUCB,0.03,50.0
+calibrated,0,S3,1000,dLinUCB,0.02,50.0
+calibrated,0,S3,1000,dLinUCB,0.01,50.0
+calibrated,0,S3,1000,dLinUCB,0.005,50.0
+calibrated,0,S3,1001,Shortest Path,0.05,50.0
+calibrated,0,S3,1001,Shortest Path,0.03,50.0
+calibrated,0,S3,1001,Shortest Path,0.02,50.0
+calibrated,0,S3,1001,Shortest Path,0.01,50.0
+calibrated,0,S3,1001,Shortest Path,0.005,50.0
+calibrated,0,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1001,LinUCB,0.05,50.0
+calibrated,0,S3,1001,LinUCB,0.03,50.0
+calibrated,0,S3,1001,LinUCB,0.02,50.0
+calibrated,0,S3,1001,LinUCB,0.01,50.0
+calibrated,0,S3,1001,LinUCB,0.005,50.0
+calibrated,0,S3,1001,dLinUCB,0.05,50.0
+calibrated,0,S3,1001,dLinUCB,0.03,50.0
+calibrated,0,S3,1001,dLinUCB,0.02,50.0
+calibrated,0,S3,1001,dLinUCB,0.01,50.0
+calibrated,0,S3,1001,dLinUCB,0.005,50.0
+calibrated,0,S3,1002,Shortest Path,0.05,50.0
+calibrated,0,S3,1002,Shortest Path,0.03,50.0
+calibrated,0,S3,1002,Shortest Path,0.02,50.0
+calibrated,0,S3,1002,Shortest Path,0.01,50.0
+calibrated,0,S3,1002,Shortest Path,0.005,50.0
+calibrated,0,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1002,LinUCB,0.05,50.0
+calibrated,0,S3,1002,LinUCB,0.03,50.0
+calibrated,0,S3,1002,LinUCB,0.02,50.0
+calibrated,0,S3,1002,LinUCB,0.01,50.0
+calibrated,0,S3,1002,LinUCB,0.005,50.0
+calibrated,0,S3,1002,dLinUCB,0.05,50.0
+calibrated,0,S3,1002,dLinUCB,0.03,50.0
+calibrated,0,S3,1002,dLinUCB,0.02,50.0
+calibrated,0,S3,1002,dLinUCB,0.01,73.0
+calibrated,0,S3,1002,dLinUCB,0.005,73.0
+calibrated,0,S3,1003,Shortest Path,0.05,50.0
+calibrated,0,S3,1003,Shortest Path,0.03,50.0
+calibrated,0,S3,1003,Shortest Path,0.02,50.0
+calibrated,0,S3,1003,Shortest Path,0.01,50.0
+calibrated,0,S3,1003,Shortest Path,0.005,50.0
+calibrated,0,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1003,LinUCB,0.05,50.0
+calibrated,0,S3,1003,LinUCB,0.03,50.0
+calibrated,0,S3,1003,LinUCB,0.02,50.0
+calibrated,0,S3,1003,LinUCB,0.01,50.0
+calibrated,0,S3,1003,LinUCB,0.005,50.0
+calibrated,0,S3,1003,dLinUCB,0.05,50.0
+calibrated,0,S3,1003,dLinUCB,0.03,50.0
+calibrated,0,S3,1003,dLinUCB,0.02,50.0
+calibrated,0,S3,1003,dLinUCB,0.01,50.0
+calibrated,0,S3,1003,dLinUCB,0.005,50.0
+calibrated,0,S3,1004,Shortest Path,0.05,50.0
+calibrated,0,S3,1004,Shortest Path,0.03,50.0
+calibrated,0,S3,1004,Shortest Path,0.02,50.0
+calibrated,0,S3,1004,Shortest Path,0.01,50.0
+calibrated,0,S3,1004,Shortest Path,0.005,50.0
+calibrated,0,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1004,LinUCB,0.05,50.0
+calibrated,0,S3,1004,LinUCB,0.03,50.0
+calibrated,0,S3,1004,LinUCB,0.02,50.0
+calibrated,0,S3,1004,LinUCB,0.01,50.0
+calibrated,0,S3,1004,LinUCB,0.005,50.0
+calibrated,0,S3,1004,dLinUCB,0.05,50.0
+calibrated,0,S3,1004,dLinUCB,0.03,50.0
+calibrated,0,S3,1004,dLinUCB,0.02,50.0
+calibrated,0,S3,1004,dLinUCB,0.01,50.0
+calibrated,0,S3,1004,dLinUCB,0.005,50.0
+calibrated,0,S3,1005,Shortest Path,0.05,50.0
+calibrated,0,S3,1005,Shortest Path,0.03,50.0
+calibrated,0,S3,1005,Shortest Path,0.02,50.0
+calibrated,0,S3,1005,Shortest Path,0.01,50.0
+calibrated,0,S3,1005,Shortest Path,0.005,50.0
+calibrated,0,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1005,LinUCB,0.05,50.0
+calibrated,0,S3,1005,LinUCB,0.03,50.0
+calibrated,0,S3,1005,LinUCB,0.02,50.0
+calibrated,0,S3,1005,LinUCB,0.01,50.0
+calibrated,0,S3,1005,LinUCB,0.005,50.0
+calibrated,0,S3,1005,dLinUCB,0.05,50.0
+calibrated,0,S3,1005,dLinUCB,0.03,50.0
+calibrated,0,S3,1005,dLinUCB,0.02,50.0
+calibrated,0,S3,1005,dLinUCB,0.01,50.0
+calibrated,0,S3,1005,dLinUCB,0.005,50.0
+calibrated,0,S3,1006,Shortest Path,0.05,50.0
+calibrated,0,S3,1006,Shortest Path,0.03,50.0
+calibrated,0,S3,1006,Shortest Path,0.02,50.0
+calibrated,0,S3,1006,Shortest Path,0.01,50.0
+calibrated,0,S3,1006,Shortest Path,0.005,50.0
+calibrated,0,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1006,LinUCB,0.05,50.0
+calibrated,0,S3,1006,LinUCB,0.03,50.0
+calibrated,0,S3,1006,LinUCB,0.02,50.0
+calibrated,0,S3,1006,LinUCB,0.01,50.0
+calibrated,0,S3,1006,LinUCB,0.005,50.0
+calibrated,0,S3,1006,dLinUCB,0.05,50.0
+calibrated,0,S3,1006,dLinUCB,0.03,50.0
+calibrated,0,S3,1006,dLinUCB,0.02,50.0
+calibrated,0,S3,1006,dLinUCB,0.01,50.0
+calibrated,0,S3,1006,dLinUCB,0.005,50.0
+calibrated,0,S3,1007,Shortest Path,0.05,50.0
+calibrated,0,S3,1007,Shortest Path,0.03,50.0
+calibrated,0,S3,1007,Shortest Path,0.02,50.0
+calibrated,0,S3,1007,Shortest Path,0.01,50.0
+calibrated,0,S3,1007,Shortest Path,0.005,50.0
+calibrated,0,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1007,LinUCB,0.05,50.0
+calibrated,0,S3,1007,LinUCB,0.03,50.0
+calibrated,0,S3,1007,LinUCB,0.02,50.0
+calibrated,0,S3,1007,LinUCB,0.01,50.0
+calibrated,0,S3,1007,LinUCB,0.005,50.0
+calibrated,0,S3,1007,dLinUCB,0.05,50.0
+calibrated,0,S3,1007,dLinUCB,0.03,50.0
+calibrated,0,S3,1007,dLinUCB,0.02,50.0
+calibrated,0,S3,1007,dLinUCB,0.01,50.0
+calibrated,0,S3,1007,dLinUCB,0.005,50.0
+calibrated,0,S3,1008,Shortest Path,0.05,50.0
+calibrated,0,S3,1008,Shortest Path,0.03,50.0
+calibrated,0,S3,1008,Shortest Path,0.02,50.0
+calibrated,0,S3,1008,Shortest Path,0.01,50.0
+calibrated,0,S3,1008,Shortest Path,0.005,50.0
+calibrated,0,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1008,LinUCB,0.05,50.0
+calibrated,0,S3,1008,LinUCB,0.03,50.0
+calibrated,0,S3,1008,LinUCB,0.02,50.0
+calibrated,0,S3,1008,LinUCB,0.01,50.0
+calibrated,0,S3,1008,LinUCB,0.005,50.0
+calibrated,0,S3,1008,dLinUCB,0.05,50.0
+calibrated,0,S3,1008,dLinUCB,0.03,50.0
+calibrated,0,S3,1008,dLinUCB,0.02,50.0
+calibrated,0,S3,1008,dLinUCB,0.01,50.0
+calibrated,0,S3,1008,dLinUCB,0.005,50.0
+calibrated,0,S3,1009,Shortest Path,0.05,50.0
+calibrated,0,S3,1009,Shortest Path,0.03,50.0
+calibrated,0,S3,1009,Shortest Path,0.02,50.0
+calibrated,0,S3,1009,Shortest Path,0.01,50.0
+calibrated,0,S3,1009,Shortest Path,0.005,50.0
+calibrated,0,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,0,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,0,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,0,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,0,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,0,S3,1009,LinUCB,0.05,50.0
+calibrated,0,S3,1009,LinUCB,0.03,50.0
+calibrated,0,S3,1009,LinUCB,0.02,50.0
+calibrated,0,S3,1009,LinUCB,0.01,50.0
+calibrated,0,S3,1009,LinUCB,0.005,50.0
+calibrated,0,S3,1009,dLinUCB,0.05,50.0
+calibrated,0,S3,1009,dLinUCB,0.03,50.0
+calibrated,0,S3,1009,dLinUCB,0.02,50.0
+calibrated,0,S3,1009,dLinUCB,0.01,50.0
+calibrated,0,S3,1009,dLinUCB,0.005,50.0
+calibrated,1,S2,1000,Shortest Path,0.05,50.0
+calibrated,1,S2,1000,Shortest Path,0.03,50.0
+calibrated,1,S2,1000,Shortest Path,0.02,50.0
+calibrated,1,S2,1000,Shortest Path,0.01,50.0
+calibrated,1,S2,1000,Shortest Path,0.005,50.0
+calibrated,1,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1000,LinUCB,0.05,50.0
+calibrated,1,S2,1000,LinUCB,0.03,50.0
+calibrated,1,S2,1000,LinUCB,0.02,55.0
+calibrated,1,S2,1000,LinUCB,0.01,189.0
+calibrated,1,S2,1000,LinUCB,0.005,233.0
+calibrated,1,S2,1000,dLinUCB,0.05,50.0
+calibrated,1,S2,1000,dLinUCB,0.03,50.0
+calibrated,1,S2,1000,dLinUCB,0.02,73.0
+calibrated,1,S2,1000,dLinUCB,0.01,189.0
+calibrated,1,S2,1000,dLinUCB,0.005,461.0
+calibrated,1,S2,1001,Shortest Path,0.05,50.0
+calibrated,1,S2,1001,Shortest Path,0.03,50.0
+calibrated,1,S2,1001,Shortest Path,0.02,50.0
+calibrated,1,S2,1001,Shortest Path,0.01,50.0
+calibrated,1,S2,1001,Shortest Path,0.005,50.0
+calibrated,1,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1001,LinUCB,0.05,50.0
+calibrated,1,S2,1001,LinUCB,0.03,50.0
+calibrated,1,S2,1001,LinUCB,0.02,50.0
+calibrated,1,S2,1001,LinUCB,0.01,50.0
+calibrated,1,S2,1001,LinUCB,0.005,167.0
+calibrated,1,S2,1001,dLinUCB,0.05,50.0
+calibrated,1,S2,1001,dLinUCB,0.03,50.0
+calibrated,1,S2,1001,dLinUCB,0.02,50.0
+calibrated,1,S2,1001,dLinUCB,0.01,50.0
+calibrated,1,S2,1001,dLinUCB,0.005,257.0
+calibrated,1,S2,1002,Shortest Path,0.05,50.0
+calibrated,1,S2,1002,Shortest Path,0.03,50.0
+calibrated,1,S2,1002,Shortest Path,0.02,50.0
+calibrated,1,S2,1002,Shortest Path,0.01,50.0
+calibrated,1,S2,1002,Shortest Path,0.005,50.0
+calibrated,1,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1002,LinUCB,0.05,50.0
+calibrated,1,S2,1002,LinUCB,0.03,50.0
+calibrated,1,S2,1002,LinUCB,0.02,135.0
+calibrated,1,S2,1002,LinUCB,0.01,219.0
+calibrated,1,S2,1002,LinUCB,0.005,329.0
+calibrated,1,S2,1002,dLinUCB,0.05,50.0
+calibrated,1,S2,1002,dLinUCB,0.03,160.0
+calibrated,1,S2,1002,dLinUCB,0.02,183.0
+calibrated,1,S2,1002,dLinUCB,0.01,192.0
+calibrated,1,S2,1002,dLinUCB,0.005,192.0
+calibrated,1,S2,1003,Shortest Path,0.05,50.0
+calibrated,1,S2,1003,Shortest Path,0.03,50.0
+calibrated,1,S2,1003,Shortest Path,0.02,50.0
+calibrated,1,S2,1003,Shortest Path,0.01,50.0
+calibrated,1,S2,1003,Shortest Path,0.005,50.0
+calibrated,1,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1003,LinUCB,0.05,50.0
+calibrated,1,S2,1003,LinUCB,0.03,50.0
+calibrated,1,S2,1003,LinUCB,0.02,103.0
+calibrated,1,S2,1003,LinUCB,0.01,182.0
+calibrated,1,S2,1003,LinUCB,0.005,227.0
+calibrated,1,S2,1003,dLinUCB,0.05,50.0
+calibrated,1,S2,1003,dLinUCB,0.03,50.0
+calibrated,1,S2,1003,dLinUCB,0.02,109.0
+calibrated,1,S2,1003,dLinUCB,0.01,428.0
+calibrated,1,S2,1003,dLinUCB,0.005,623.0
+calibrated,1,S2,1004,Shortest Path,0.05,50.0
+calibrated,1,S2,1004,Shortest Path,0.03,50.0
+calibrated,1,S2,1004,Shortest Path,0.02,50.0
+calibrated,1,S2,1004,Shortest Path,0.01,50.0
+calibrated,1,S2,1004,Shortest Path,0.005,50.0
+calibrated,1,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1004,LinUCB,0.05,50.0
+calibrated,1,S2,1004,LinUCB,0.03,50.0
+calibrated,1,S2,1004,LinUCB,0.02,50.0
+calibrated,1,S2,1004,LinUCB,0.01,150.0
+calibrated,1,S2,1004,LinUCB,0.005,164.0
+calibrated,1,S2,1004,dLinUCB,0.05,50.0
+calibrated,1,S2,1004,dLinUCB,0.03,50.0
+calibrated,1,S2,1004,dLinUCB,0.02,50.0
+calibrated,1,S2,1004,dLinUCB,0.01,164.0
+calibrated,1,S2,1004,dLinUCB,0.005,350.0
+calibrated,1,S2,1005,Shortest Path,0.05,50.0
+calibrated,1,S2,1005,Shortest Path,0.03,50.0
+calibrated,1,S2,1005,Shortest Path,0.02,50.0
+calibrated,1,S2,1005,Shortest Path,0.01,50.0
+calibrated,1,S2,1005,Shortest Path,0.005,50.0
+calibrated,1,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1005,LinUCB,0.05,50.0
+calibrated,1,S2,1005,LinUCB,0.03,50.0
+calibrated,1,S2,1005,LinUCB,0.02,73.0
+calibrated,1,S2,1005,LinUCB,0.01,219.0
+calibrated,1,S2,1005,LinUCB,0.005,261.0
+calibrated,1,S2,1005,dLinUCB,0.05,50.0
+calibrated,1,S2,1005,dLinUCB,0.03,50.0
+calibrated,1,S2,1005,dLinUCB,0.02,72.0
+calibrated,1,S2,1005,dLinUCB,0.01,271.0
+calibrated,1,S2,1005,dLinUCB,0.005,271.0
+calibrated,1,S2,1006,Shortest Path,0.05,50.0
+calibrated,1,S2,1006,Shortest Path,0.03,50.0
+calibrated,1,S2,1006,Shortest Path,0.02,50.0
+calibrated,1,S2,1006,Shortest Path,0.01,50.0
+calibrated,1,S2,1006,Shortest Path,0.005,50.0
+calibrated,1,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1006,LinUCB,0.05,50.0
+calibrated,1,S2,1006,LinUCB,0.03,50.0
+calibrated,1,S2,1006,LinUCB,0.02,132.0
+calibrated,1,S2,1006,LinUCB,0.01,333.0
+calibrated,1,S2,1006,LinUCB,0.005,347.0
+calibrated,1,S2,1006,dLinUCB,0.05,50.0
+calibrated,1,S2,1006,dLinUCB,0.03,69.0
+calibrated,1,S2,1006,dLinUCB,0.02,323.0
+calibrated,1,S2,1006,dLinUCB,0.01,358.0
+calibrated,1,S2,1006,dLinUCB,0.005,515.0
+calibrated,1,S2,1007,Shortest Path,0.05,50.0
+calibrated,1,S2,1007,Shortest Path,0.03,50.0
+calibrated,1,S2,1007,Shortest Path,0.02,50.0
+calibrated,1,S2,1007,Shortest Path,0.01,50.0
+calibrated,1,S2,1007,Shortest Path,0.005,50.0
+calibrated,1,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1007,LinUCB,0.05,50.0
+calibrated,1,S2,1007,LinUCB,0.03,50.0
+calibrated,1,S2,1007,LinUCB,0.02,50.0
+calibrated,1,S2,1007,LinUCB,0.01,59.0
+calibrated,1,S2,1007,LinUCB,0.005,154.0
+calibrated,1,S2,1007,dLinUCB,0.05,50.0
+calibrated,1,S2,1007,dLinUCB,0.03,50.0
+calibrated,1,S2,1007,dLinUCB,0.02,50.0
+calibrated,1,S2,1007,dLinUCB,0.01,59.0
+calibrated,1,S2,1007,dLinUCB,0.005,256.0
+calibrated,1,S2,1008,Shortest Path,0.05,50.0
+calibrated,1,S2,1008,Shortest Path,0.03,50.0
+calibrated,1,S2,1008,Shortest Path,0.02,50.0
+calibrated,1,S2,1008,Shortest Path,0.01,50.0
+calibrated,1,S2,1008,Shortest Path,0.005,50.0
+calibrated,1,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1008,LinUCB,0.05,50.0
+calibrated,1,S2,1008,LinUCB,0.03,50.0
+calibrated,1,S2,1008,LinUCB,0.02,50.0
+calibrated,1,S2,1008,LinUCB,0.01,148.0
+calibrated,1,S2,1008,LinUCB,0.005,256.0
+calibrated,1,S2,1008,dLinUCB,0.05,50.0
+calibrated,1,S2,1008,dLinUCB,0.03,50.0
+calibrated,1,S2,1008,dLinUCB,0.02,115.0
+calibrated,1,S2,1008,dLinUCB,0.01,236.0
+calibrated,1,S2,1008,dLinUCB,0.005,236.0
+calibrated,1,S2,1009,Shortest Path,0.05,50.0
+calibrated,1,S2,1009,Shortest Path,0.03,50.0
+calibrated,1,S2,1009,Shortest Path,0.02,50.0
+calibrated,1,S2,1009,Shortest Path,0.01,50.0
+calibrated,1,S2,1009,Shortest Path,0.005,50.0
+calibrated,1,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S2,1009,LinUCB,0.05,50.0
+calibrated,1,S2,1009,LinUCB,0.03,50.0
+calibrated,1,S2,1009,LinUCB,0.02,50.0
+calibrated,1,S2,1009,LinUCB,0.01,122.0
+calibrated,1,S2,1009,LinUCB,0.005,241.0
+calibrated,1,S2,1009,dLinUCB,0.05,50.0
+calibrated,1,S2,1009,dLinUCB,0.03,50.0
+calibrated,1,S2,1009,dLinUCB,0.02,50.0
+calibrated,1,S2,1009,dLinUCB,0.01,122.0
+calibrated,1,S2,1009,dLinUCB,0.005,275.0
+calibrated,1,S3,1000,Shortest Path,0.05,50.0
+calibrated,1,S3,1000,Shortest Path,0.03,50.0
+calibrated,1,S3,1000,Shortest Path,0.02,50.0
+calibrated,1,S3,1000,Shortest Path,0.01,50.0
+calibrated,1,S3,1000,Shortest Path,0.005,50.0
+calibrated,1,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1000,LinUCB,0.05,50.0
+calibrated,1,S3,1000,LinUCB,0.03,50.0
+calibrated,1,S3,1000,LinUCB,0.02,50.0
+calibrated,1,S3,1000,LinUCB,0.01,50.0
+calibrated,1,S3,1000,LinUCB,0.005,50.0
+calibrated,1,S3,1000,dLinUCB,0.05,50.0
+calibrated,1,S3,1000,dLinUCB,0.03,50.0
+calibrated,1,S3,1000,dLinUCB,0.02,50.0
+calibrated,1,S3,1000,dLinUCB,0.01,50.0
+calibrated,1,S3,1000,dLinUCB,0.005,81.0
+calibrated,1,S3,1001,Shortest Path,0.05,50.0
+calibrated,1,S3,1001,Shortest Path,0.03,50.0
+calibrated,1,S3,1001,Shortest Path,0.02,50.0
+calibrated,1,S3,1001,Shortest Path,0.01,50.0
+calibrated,1,S3,1001,Shortest Path,0.005,50.0
+calibrated,1,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1001,LinUCB,0.05,50.0
+calibrated,1,S3,1001,LinUCB,0.03,50.0
+calibrated,1,S3,1001,LinUCB,0.02,50.0
+calibrated,1,S3,1001,LinUCB,0.01,50.0
+calibrated,1,S3,1001,LinUCB,0.005,50.0
+calibrated,1,S3,1001,dLinUCB,0.05,50.0
+calibrated,1,S3,1001,dLinUCB,0.03,50.0
+calibrated,1,S3,1001,dLinUCB,0.02,50.0
+calibrated,1,S3,1001,dLinUCB,0.01,50.0
+calibrated,1,S3,1001,dLinUCB,0.005,50.0
+calibrated,1,S3,1002,Shortest Path,0.05,50.0
+calibrated,1,S3,1002,Shortest Path,0.03,50.0
+calibrated,1,S3,1002,Shortest Path,0.02,50.0
+calibrated,1,S3,1002,Shortest Path,0.01,50.0
+calibrated,1,S3,1002,Shortest Path,0.005,50.0
+calibrated,1,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1002,LinUCB,0.05,50.0
+calibrated,1,S3,1002,LinUCB,0.03,50.0
+calibrated,1,S3,1002,LinUCB,0.02,50.0
+calibrated,1,S3,1002,LinUCB,0.01,50.0
+calibrated,1,S3,1002,LinUCB,0.005,89.0
+calibrated,1,S3,1002,dLinUCB,0.05,50.0
+calibrated,1,S3,1002,dLinUCB,0.03,50.0
+calibrated,1,S3,1002,dLinUCB,0.02,50.0
+calibrated,1,S3,1002,dLinUCB,0.01,50.0
+calibrated,1,S3,1002,dLinUCB,0.005,50.0
+calibrated,1,S3,1003,Shortest Path,0.05,50.0
+calibrated,1,S3,1003,Shortest Path,0.03,50.0
+calibrated,1,S3,1003,Shortest Path,0.02,50.0
+calibrated,1,S3,1003,Shortest Path,0.01,50.0
+calibrated,1,S3,1003,Shortest Path,0.005,50.0
+calibrated,1,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1003,LinUCB,0.05,50.0
+calibrated,1,S3,1003,LinUCB,0.03,50.0
+calibrated,1,S3,1003,LinUCB,0.02,50.0
+calibrated,1,S3,1003,LinUCB,0.01,82.0
+calibrated,1,S3,1003,LinUCB,0.005,99.0
+calibrated,1,S3,1003,dLinUCB,0.05,50.0
+calibrated,1,S3,1003,dLinUCB,0.03,50.0
+calibrated,1,S3,1003,dLinUCB,0.02,50.0
+calibrated,1,S3,1003,dLinUCB,0.01,87.0
+calibrated,1,S3,1003,dLinUCB,0.005,192.0
+calibrated,1,S3,1004,Shortest Path,0.05,50.0
+calibrated,1,S3,1004,Shortest Path,0.03,50.0
+calibrated,1,S3,1004,Shortest Path,0.02,50.0
+calibrated,1,S3,1004,Shortest Path,0.01,50.0
+calibrated,1,S3,1004,Shortest Path,0.005,50.0
+calibrated,1,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1004,LinUCB,0.05,50.0
+calibrated,1,S3,1004,LinUCB,0.03,50.0
+calibrated,1,S3,1004,LinUCB,0.02,50.0
+calibrated,1,S3,1004,LinUCB,0.01,50.0
+calibrated,1,S3,1004,LinUCB,0.005,50.0
+calibrated,1,S3,1004,dLinUCB,0.05,50.0
+calibrated,1,S3,1004,dLinUCB,0.03,50.0
+calibrated,1,S3,1004,dLinUCB,0.02,50.0
+calibrated,1,S3,1004,dLinUCB,0.01,50.0
+calibrated,1,S3,1004,dLinUCB,0.005,118.0
+calibrated,1,S3,1005,Shortest Path,0.05,50.0
+calibrated,1,S3,1005,Shortest Path,0.03,50.0
+calibrated,1,S3,1005,Shortest Path,0.02,50.0
+calibrated,1,S3,1005,Shortest Path,0.01,50.0
+calibrated,1,S3,1005,Shortest Path,0.005,50.0
+calibrated,1,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1005,LinUCB,0.05,50.0
+calibrated,1,S3,1005,LinUCB,0.03,50.0
+calibrated,1,S3,1005,LinUCB,0.02,50.0
+calibrated,1,S3,1005,LinUCB,0.01,50.0
+calibrated,1,S3,1005,LinUCB,0.005,50.0
+calibrated,1,S3,1005,dLinUCB,0.05,50.0
+calibrated,1,S3,1005,dLinUCB,0.03,50.0
+calibrated,1,S3,1005,dLinUCB,0.02,50.0
+calibrated,1,S3,1005,dLinUCB,0.01,50.0
+calibrated,1,S3,1005,dLinUCB,0.005,50.0
+calibrated,1,S3,1006,Shortest Path,0.05,50.0
+calibrated,1,S3,1006,Shortest Path,0.03,50.0
+calibrated,1,S3,1006,Shortest Path,0.02,50.0
+calibrated,1,S3,1006,Shortest Path,0.01,50.0
+calibrated,1,S3,1006,Shortest Path,0.005,50.0
+calibrated,1,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1006,LinUCB,0.05,50.0
+calibrated,1,S3,1006,LinUCB,0.03,50.0
+calibrated,1,S3,1006,LinUCB,0.02,50.0
+calibrated,1,S3,1006,LinUCB,0.01,83.0
+calibrated,1,S3,1006,LinUCB,0.005,97.0
+calibrated,1,S3,1006,dLinUCB,0.05,50.0
+calibrated,1,S3,1006,dLinUCB,0.03,50.0
+calibrated,1,S3,1006,dLinUCB,0.02,73.0
+calibrated,1,S3,1006,dLinUCB,0.01,108.0
+calibrated,1,S3,1006,dLinUCB,0.005,265.0
+calibrated,1,S3,1007,Shortest Path,0.05,50.0
+calibrated,1,S3,1007,Shortest Path,0.03,50.0
+calibrated,1,S3,1007,Shortest Path,0.02,50.0
+calibrated,1,S3,1007,Shortest Path,0.01,50.0
+calibrated,1,S3,1007,Shortest Path,0.005,50.0
+calibrated,1,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1007,LinUCB,0.05,50.0
+calibrated,1,S3,1007,LinUCB,0.03,50.0
+calibrated,1,S3,1007,LinUCB,0.02,50.0
+calibrated,1,S3,1007,LinUCB,0.01,50.0
+calibrated,1,S3,1007,LinUCB,0.005,50.0
+calibrated,1,S3,1007,dLinUCB,0.05,50.0
+calibrated,1,S3,1007,dLinUCB,0.03,50.0
+calibrated,1,S3,1007,dLinUCB,0.02,50.0
+calibrated,1,S3,1007,dLinUCB,0.01,50.0
+calibrated,1,S3,1007,dLinUCB,0.005,50.0
+calibrated,1,S3,1008,Shortest Path,0.05,50.0
+calibrated,1,S3,1008,Shortest Path,0.03,50.0
+calibrated,1,S3,1008,Shortest Path,0.02,50.0
+calibrated,1,S3,1008,Shortest Path,0.01,50.0
+calibrated,1,S3,1008,Shortest Path,0.005,50.0
+calibrated,1,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1008,LinUCB,0.05,50.0
+calibrated,1,S3,1008,LinUCB,0.03,50.0
+calibrated,1,S3,1008,LinUCB,0.02,50.0
+calibrated,1,S3,1008,LinUCB,0.01,50.0
+calibrated,1,S3,1008,LinUCB,0.005,50.0
+calibrated,1,S3,1008,dLinUCB,0.05,50.0
+calibrated,1,S3,1008,dLinUCB,0.03,50.0
+calibrated,1,S3,1008,dLinUCB,0.02,88.0
+calibrated,1,S3,1008,dLinUCB,0.01,96.0
+calibrated,1,S3,1008,dLinUCB,0.005,96.0
+calibrated,1,S3,1009,Shortest Path,0.05,50.0
+calibrated,1,S3,1009,Shortest Path,0.03,50.0
+calibrated,1,S3,1009,Shortest Path,0.02,50.0
+calibrated,1,S3,1009,Shortest Path,0.01,50.0
+calibrated,1,S3,1009,Shortest Path,0.005,50.0
+calibrated,1,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,1,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,1,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,1,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,1,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,1,S3,1009,LinUCB,0.05,50.0
+calibrated,1,S3,1009,LinUCB,0.03,50.0
+calibrated,1,S3,1009,LinUCB,0.02,50.0
+calibrated,1,S3,1009,LinUCB,0.01,50.0
+calibrated,1,S3,1009,LinUCB,0.005,50.0
+calibrated,1,S3,1009,dLinUCB,0.05,50.0
+calibrated,1,S3,1009,dLinUCB,0.03,50.0
+calibrated,1,S3,1009,dLinUCB,0.02,50.0
+calibrated,1,S3,1009,dLinUCB,0.01,118.0
+calibrated,1,S3,1009,dLinUCB,0.005,118.0
+calibrated,2,S2,1000,Shortest Path,0.05,50.0
+calibrated,2,S2,1000,Shortest Path,0.03,50.0
+calibrated,2,S2,1000,Shortest Path,0.02,50.0
+calibrated,2,S2,1000,Shortest Path,0.01,50.0
+calibrated,2,S2,1000,Shortest Path,0.005,50.0
+calibrated,2,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1000,LinUCB,0.05,50.0
+calibrated,2,S2,1000,LinUCB,0.03,50.0
+calibrated,2,S2,1000,LinUCB,0.02,50.0
+calibrated,2,S2,1000,LinUCB,0.01,58.0
+calibrated,2,S2,1000,LinUCB,0.005,60.0
+calibrated,2,S2,1000,dLinUCB,0.05,50.0
+calibrated,2,S2,1000,dLinUCB,0.03,50.0
+calibrated,2,S2,1000,dLinUCB,0.02,50.0
+calibrated,2,S2,1000,dLinUCB,0.01,150.0
+calibrated,2,S2,1000,dLinUCB,0.005,150.0
+calibrated,2,S2,1001,Shortest Path,0.05,50.0
+calibrated,2,S2,1001,Shortest Path,0.03,50.0
+calibrated,2,S2,1001,Shortest Path,0.02,50.0
+calibrated,2,S2,1001,Shortest Path,0.01,50.0
+calibrated,2,S2,1001,Shortest Path,0.005,50.0
+calibrated,2,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1001,LinUCB,0.05,50.0
+calibrated,2,S2,1001,LinUCB,0.03,50.0
+calibrated,2,S2,1001,LinUCB,0.02,50.0
+calibrated,2,S2,1001,LinUCB,0.01,59.0
+calibrated,2,S2,1001,LinUCB,0.005,138.0
+calibrated,2,S2,1001,dLinUCB,0.05,50.0
+calibrated,2,S2,1001,dLinUCB,0.03,50.0
+calibrated,2,S2,1001,dLinUCB,0.02,59.0
+calibrated,2,S2,1001,dLinUCB,0.01,136.0
+calibrated,2,S2,1001,dLinUCB,0.005,136.0
+calibrated,2,S2,1002,Shortest Path,0.05,50.0
+calibrated,2,S2,1002,Shortest Path,0.03,50.0
+calibrated,2,S2,1002,Shortest Path,0.02,50.0
+calibrated,2,S2,1002,Shortest Path,0.01,50.0
+calibrated,2,S2,1002,Shortest Path,0.005,50.0
+calibrated,2,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1002,LinUCB,0.05,50.0
+calibrated,2,S2,1002,LinUCB,0.03,58.0
+calibrated,2,S2,1002,LinUCB,0.02,60.0
+calibrated,2,S2,1002,LinUCB,0.01,155.0
+calibrated,2,S2,1002,LinUCB,0.005,156.0
+calibrated,2,S2,1002,dLinUCB,0.05,156.0
+calibrated,2,S2,1002,dLinUCB,0.03,160.0
+calibrated,2,S2,1002,dLinUCB,0.02,173.0
+calibrated,2,S2,1002,dLinUCB,0.01,177.0
+calibrated,2,S2,1002,dLinUCB,0.005,177.0
+calibrated,2,S2,1003,Shortest Path,0.05,50.0
+calibrated,2,S2,1003,Shortest Path,0.03,50.0
+calibrated,2,S2,1003,Shortest Path,0.02,50.0
+calibrated,2,S2,1003,Shortest Path,0.01,50.0
+calibrated,2,S2,1003,Shortest Path,0.005,50.0
+calibrated,2,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1003,LinUCB,0.05,57.0
+calibrated,2,S2,1003,LinUCB,0.03,61.0
+calibrated,2,S2,1003,LinUCB,0.02,77.0
+calibrated,2,S2,1003,LinUCB,0.01,79.0
+calibrated,2,S2,1003,LinUCB,0.005,136.0
+calibrated,2,S2,1003,dLinUCB,0.05,58.0
+calibrated,2,S2,1003,dLinUCB,0.03,174.0
+calibrated,2,S2,1003,dLinUCB,0.02,176.0
+calibrated,2,S2,1003,dLinUCB,0.01,179.0
+calibrated,2,S2,1003,dLinUCB,0.005,179.0
+calibrated,2,S2,1004,Shortest Path,0.05,50.0
+calibrated,2,S2,1004,Shortest Path,0.03,50.0
+calibrated,2,S2,1004,Shortest Path,0.02,50.0
+calibrated,2,S2,1004,Shortest Path,0.01,50.0
+calibrated,2,S2,1004,Shortest Path,0.005,50.0
+calibrated,2,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1004,LinUCB,0.05,50.0
+calibrated,2,S2,1004,LinUCB,0.03,59.0
+calibrated,2,S2,1004,LinUCB,0.02,62.0
+calibrated,2,S2,1004,LinUCB,0.01,140.0
+calibrated,2,S2,1004,LinUCB,0.005,155.0
+calibrated,2,S2,1004,dLinUCB,0.05,52.0
+calibrated,2,S2,1004,dLinUCB,0.03,134.0
+calibrated,2,S2,1004,dLinUCB,0.02,140.0
+calibrated,2,S2,1004,dLinUCB,0.01,152.0
+calibrated,2,S2,1004,dLinUCB,0.005,155.0
+calibrated,2,S2,1005,Shortest Path,0.05,50.0
+calibrated,2,S2,1005,Shortest Path,0.03,50.0
+calibrated,2,S2,1005,Shortest Path,0.02,50.0
+calibrated,2,S2,1005,Shortest Path,0.01,50.0
+calibrated,2,S2,1005,Shortest Path,0.005,50.0
+calibrated,2,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1005,LinUCB,0.05,50.0
+calibrated,2,S2,1005,LinUCB,0.03,61.0
+calibrated,2,S2,1005,LinUCB,0.02,74.0
+calibrated,2,S2,1005,LinUCB,0.01,137.0
+calibrated,2,S2,1005,LinUCB,0.005,138.0
+calibrated,2,S2,1005,dLinUCB,0.05,50.0
+calibrated,2,S2,1005,dLinUCB,0.03,61.0
+calibrated,2,S2,1005,dLinUCB,0.02,74.0
+calibrated,2,S2,1005,dLinUCB,0.01,137.0
+calibrated,2,S2,1005,dLinUCB,0.005,137.0
+calibrated,2,S2,1006,Shortest Path,0.05,50.0
+calibrated,2,S2,1006,Shortest Path,0.03,50.0
+calibrated,2,S2,1006,Shortest Path,0.02,50.0
+calibrated,2,S2,1006,Shortest Path,0.01,50.0
+calibrated,2,S2,1006,Shortest Path,0.005,50.0
+calibrated,2,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1006,LinUCB,0.05,78.0
+calibrated,2,S2,1006,LinUCB,0.03,137.0
+calibrated,2,S2,1006,LinUCB,0.02,143.0
+calibrated,2,S2,1006,LinUCB,0.01,239.0
+calibrated,2,S2,1006,LinUCB,0.005,250.0
+calibrated,2,S2,1006,dLinUCB,0.05,78.0
+calibrated,2,S2,1006,dLinUCB,0.03,136.0
+calibrated,2,S2,1006,dLinUCB,0.02,138.0
+calibrated,2,S2,1006,dLinUCB,0.01,154.0
+calibrated,2,S2,1006,dLinUCB,0.005,239.0
+calibrated,2,S2,1007,Shortest Path,0.05,50.0
+calibrated,2,S2,1007,Shortest Path,0.03,50.0
+calibrated,2,S2,1007,Shortest Path,0.02,50.0
+calibrated,2,S2,1007,Shortest Path,0.01,50.0
+calibrated,2,S2,1007,Shortest Path,0.005,50.0
+calibrated,2,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1007,LinUCB,0.05,50.0
+calibrated,2,S2,1007,LinUCB,0.03,50.0
+calibrated,2,S2,1007,LinUCB,0.02,50.0
+calibrated,2,S2,1007,LinUCB,0.01,58.0
+calibrated,2,S2,1007,LinUCB,0.005,80.0
+calibrated,2,S2,1007,dLinUCB,0.05,58.0
+calibrated,2,S2,1007,dLinUCB,0.03,80.0
+calibrated,2,S2,1007,dLinUCB,0.02,82.0
+calibrated,2,S2,1007,dLinUCB,0.01,95.0
+calibrated,2,S2,1007,dLinUCB,0.005,95.0
+calibrated,2,S2,1008,Shortest Path,0.05,50.0
+calibrated,2,S2,1008,Shortest Path,0.03,50.0
+calibrated,2,S2,1008,Shortest Path,0.02,50.0
+calibrated,2,S2,1008,Shortest Path,0.01,50.0
+calibrated,2,S2,1008,Shortest Path,0.005,50.0
+calibrated,2,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1008,LinUCB,0.05,50.0
+calibrated,2,S2,1008,LinUCB,0.03,58.0
+calibrated,2,S2,1008,LinUCB,0.02,62.0
+calibrated,2,S2,1008,LinUCB,0.01,141.0
+calibrated,2,S2,1008,LinUCB,0.005,153.0
+calibrated,2,S2,1008,dLinUCB,0.05,50.0
+calibrated,2,S2,1008,dLinUCB,0.03,139.0
+calibrated,2,S2,1008,dLinUCB,0.02,141.0
+calibrated,2,S2,1008,dLinUCB,0.01,146.0
+calibrated,2,S2,1008,dLinUCB,0.005,146.0
+calibrated,2,S2,1009,Shortest Path,0.05,50.0
+calibrated,2,S2,1009,Shortest Path,0.03,50.0
+calibrated,2,S2,1009,Shortest Path,0.02,50.0
+calibrated,2,S2,1009,Shortest Path,0.01,50.0
+calibrated,2,S2,1009,Shortest Path,0.005,50.0
+calibrated,2,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S2,1009,LinUCB,0.05,50.0
+calibrated,2,S2,1009,LinUCB,0.03,50.0
+calibrated,2,S2,1009,LinUCB,0.02,50.0
+calibrated,2,S2,1009,LinUCB,0.01,58.0
+calibrated,2,S2,1009,LinUCB,0.005,141.0
+calibrated,2,S2,1009,dLinUCB,0.05,50.0
+calibrated,2,S2,1009,dLinUCB,0.03,59.0
+calibrated,2,S2,1009,dLinUCB,0.02,78.0
+calibrated,2,S2,1009,dLinUCB,0.01,141.0
+calibrated,2,S2,1009,dLinUCB,0.005,143.0
+calibrated,2,S3,1000,Shortest Path,0.05,50.0
+calibrated,2,S3,1000,Shortest Path,0.03,50.0
+calibrated,2,S3,1000,Shortest Path,0.02,50.0
+calibrated,2,S3,1000,Shortest Path,0.01,50.0
+calibrated,2,S3,1000,Shortest Path,0.005,50.0
+calibrated,2,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1000,LinUCB,0.05,50.0
+calibrated,2,S3,1000,LinUCB,0.03,50.0
+calibrated,2,S3,1000,LinUCB,0.02,50.0
+calibrated,2,S3,1000,LinUCB,0.01,50.0
+calibrated,2,S3,1000,LinUCB,0.005,50.0
+calibrated,2,S3,1000,dLinUCB,0.05,50.0
+calibrated,2,S3,1000,dLinUCB,0.03,50.0
+calibrated,2,S3,1000,dLinUCB,0.02,50.0
+calibrated,2,S3,1000,dLinUCB,0.01,50.0
+calibrated,2,S3,1000,dLinUCB,0.005,50.0
+calibrated,2,S3,1001,Shortest Path,0.05,50.0
+calibrated,2,S3,1001,Shortest Path,0.03,50.0
+calibrated,2,S3,1001,Shortest Path,0.02,50.0
+calibrated,2,S3,1001,Shortest Path,0.01,50.0
+calibrated,2,S3,1001,Shortest Path,0.005,50.0
+calibrated,2,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1001,LinUCB,0.05,50.0
+calibrated,2,S3,1001,LinUCB,0.03,50.0
+calibrated,2,S3,1001,LinUCB,0.02,50.0
+calibrated,2,S3,1001,LinUCB,0.01,50.0
+calibrated,2,S3,1001,LinUCB,0.005,50.0
+calibrated,2,S3,1001,dLinUCB,0.05,50.0
+calibrated,2,S3,1001,dLinUCB,0.03,50.0
+calibrated,2,S3,1001,dLinUCB,0.02,50.0
+calibrated,2,S3,1001,dLinUCB,0.01,50.0
+calibrated,2,S3,1001,dLinUCB,0.005,50.0
+calibrated,2,S3,1002,Shortest Path,0.05,50.0
+calibrated,2,S3,1002,Shortest Path,0.03,50.0
+calibrated,2,S3,1002,Shortest Path,0.02,50.0
+calibrated,2,S3,1002,Shortest Path,0.01,50.0
+calibrated,2,S3,1002,Shortest Path,0.005,50.0
+calibrated,2,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1002,LinUCB,0.05,50.0
+calibrated,2,S3,1002,LinUCB,0.03,50.0
+calibrated,2,S3,1002,LinUCB,0.02,50.0
+calibrated,2,S3,1002,LinUCB,0.01,50.0
+calibrated,2,S3,1002,LinUCB,0.005,50.0
+calibrated,2,S3,1002,dLinUCB,0.05,50.0
+calibrated,2,S3,1002,dLinUCB,0.03,50.0
+calibrated,2,S3,1002,dLinUCB,0.02,50.0
+calibrated,2,S3,1002,dLinUCB,0.01,50.0
+calibrated,2,S3,1002,dLinUCB,0.005,50.0
+calibrated,2,S3,1003,Shortest Path,0.05,50.0
+calibrated,2,S3,1003,Shortest Path,0.03,50.0
+calibrated,2,S3,1003,Shortest Path,0.02,50.0
+calibrated,2,S3,1003,Shortest Path,0.01,50.0
+calibrated,2,S3,1003,Shortest Path,0.005,50.0
+calibrated,2,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1003,LinUCB,0.05,50.0
+calibrated,2,S3,1003,LinUCB,0.03,50.0
+calibrated,2,S3,1003,LinUCB,0.02,50.0
+calibrated,2,S3,1003,LinUCB,0.01,50.0
+calibrated,2,S3,1003,LinUCB,0.005,50.0
+calibrated,2,S3,1003,dLinUCB,0.05,50.0
+calibrated,2,S3,1003,dLinUCB,0.03,50.0
+calibrated,2,S3,1003,dLinUCB,0.02,50.0
+calibrated,2,S3,1003,dLinUCB,0.01,50.0
+calibrated,2,S3,1003,dLinUCB,0.005,50.0
+calibrated,2,S3,1004,Shortest Path,0.05,50.0
+calibrated,2,S3,1004,Shortest Path,0.03,50.0
+calibrated,2,S3,1004,Shortest Path,0.02,50.0
+calibrated,2,S3,1004,Shortest Path,0.01,50.0
+calibrated,2,S3,1004,Shortest Path,0.005,50.0
+calibrated,2,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1004,LinUCB,0.05,50.0
+calibrated,2,S3,1004,LinUCB,0.03,50.0
+calibrated,2,S3,1004,LinUCB,0.02,50.0
+calibrated,2,S3,1004,LinUCB,0.01,50.0
+calibrated,2,S3,1004,LinUCB,0.005,50.0
+calibrated,2,S3,1004,dLinUCB,0.05,50.0
+calibrated,2,S3,1004,dLinUCB,0.03,50.0
+calibrated,2,S3,1004,dLinUCB,0.02,50.0
+calibrated,2,S3,1004,dLinUCB,0.01,50.0
+calibrated,2,S3,1004,dLinUCB,0.005,50.0
+calibrated,2,S3,1005,Shortest Path,0.05,50.0
+calibrated,2,S3,1005,Shortest Path,0.03,50.0
+calibrated,2,S3,1005,Shortest Path,0.02,50.0
+calibrated,2,S3,1005,Shortest Path,0.01,50.0
+calibrated,2,S3,1005,Shortest Path,0.005,50.0
+calibrated,2,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1005,LinUCB,0.05,50.0
+calibrated,2,S3,1005,LinUCB,0.03,50.0
+calibrated,2,S3,1005,LinUCB,0.02,50.0
+calibrated,2,S3,1005,LinUCB,0.01,50.0
+calibrated,2,S3,1005,LinUCB,0.005,50.0
+calibrated,2,S3,1005,dLinUCB,0.05,50.0
+calibrated,2,S3,1005,dLinUCB,0.03,50.0
+calibrated,2,S3,1005,dLinUCB,0.02,50.0
+calibrated,2,S3,1005,dLinUCB,0.01,50.0
+calibrated,2,S3,1005,dLinUCB,0.005,50.0
+calibrated,2,S3,1006,Shortest Path,0.05,50.0
+calibrated,2,S3,1006,Shortest Path,0.03,50.0
+calibrated,2,S3,1006,Shortest Path,0.02,50.0
+calibrated,2,S3,1006,Shortest Path,0.01,50.0
+calibrated,2,S3,1006,Shortest Path,0.005,50.0
+calibrated,2,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1006,LinUCB,0.05,50.0
+calibrated,2,S3,1006,LinUCB,0.03,50.0
+calibrated,2,S3,1006,LinUCB,0.02,50.0
+calibrated,2,S3,1006,LinUCB,0.01,50.0
+calibrated,2,S3,1006,LinUCB,0.005,50.0
+calibrated,2,S3,1006,dLinUCB,0.05,50.0
+calibrated,2,S3,1006,dLinUCB,0.03,50.0
+calibrated,2,S3,1006,dLinUCB,0.02,50.0
+calibrated,2,S3,1006,dLinUCB,0.01,50.0
+calibrated,2,S3,1006,dLinUCB,0.005,50.0
+calibrated,2,S3,1007,Shortest Path,0.05,50.0
+calibrated,2,S3,1007,Shortest Path,0.03,50.0
+calibrated,2,S3,1007,Shortest Path,0.02,50.0
+calibrated,2,S3,1007,Shortest Path,0.01,50.0
+calibrated,2,S3,1007,Shortest Path,0.005,50.0
+calibrated,2,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1007,LinUCB,0.05,50.0
+calibrated,2,S3,1007,LinUCB,0.03,50.0
+calibrated,2,S3,1007,LinUCB,0.02,50.0
+calibrated,2,S3,1007,LinUCB,0.01,50.0
+calibrated,2,S3,1007,LinUCB,0.005,50.0
+calibrated,2,S3,1007,dLinUCB,0.05,50.0
+calibrated,2,S3,1007,dLinUCB,0.03,50.0
+calibrated,2,S3,1007,dLinUCB,0.02,50.0
+calibrated,2,S3,1007,dLinUCB,0.01,50.0
+calibrated,2,S3,1007,dLinUCB,0.005,50.0
+calibrated,2,S3,1008,Shortest Path,0.05,50.0
+calibrated,2,S3,1008,Shortest Path,0.03,50.0
+calibrated,2,S3,1008,Shortest Path,0.02,50.0
+calibrated,2,S3,1008,Shortest Path,0.01,50.0
+calibrated,2,S3,1008,Shortest Path,0.005,50.0
+calibrated,2,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1008,LinUCB,0.05,50.0
+calibrated,2,S3,1008,LinUCB,0.03,50.0
+calibrated,2,S3,1008,LinUCB,0.02,50.0
+calibrated,2,S3,1008,LinUCB,0.01,50.0
+calibrated,2,S3,1008,LinUCB,0.005,50.0
+calibrated,2,S3,1008,dLinUCB,0.05,50.0
+calibrated,2,S3,1008,dLinUCB,0.03,50.0
+calibrated,2,S3,1008,dLinUCB,0.02,50.0
+calibrated,2,S3,1008,dLinUCB,0.01,50.0
+calibrated,2,S3,1008,dLinUCB,0.005,50.0
+calibrated,2,S3,1009,Shortest Path,0.05,50.0
+calibrated,2,S3,1009,Shortest Path,0.03,50.0
+calibrated,2,S3,1009,Shortest Path,0.02,50.0
+calibrated,2,S3,1009,Shortest Path,0.01,50.0
+calibrated,2,S3,1009,Shortest Path,0.005,50.0
+calibrated,2,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,2,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,2,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,2,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,2,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,2,S3,1009,LinUCB,0.05,50.0
+calibrated,2,S3,1009,LinUCB,0.03,50.0
+calibrated,2,S3,1009,LinUCB,0.02,50.0
+calibrated,2,S3,1009,LinUCB,0.01,50.0
+calibrated,2,S3,1009,LinUCB,0.005,50.0
+calibrated,2,S3,1009,dLinUCB,0.05,50.0
+calibrated,2,S3,1009,dLinUCB,0.03,50.0
+calibrated,2,S3,1009,dLinUCB,0.02,50.0
+calibrated,2,S3,1009,dLinUCB,0.01,50.0
+calibrated,2,S3,1009,dLinUCB,0.005,50.0
+calibrated,3,S2,1000,Shortest Path,0.05,50.0
+calibrated,3,S2,1000,Shortest Path,0.03,50.0
+calibrated,3,S2,1000,Shortest Path,0.02,50.0
+calibrated,3,S2,1000,Shortest Path,0.01,50.0
+calibrated,3,S2,1000,Shortest Path,0.005,50.0
+calibrated,3,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1000,LinUCB,0.05,50.0
+calibrated,3,S2,1000,LinUCB,0.03,50.0
+calibrated,3,S2,1000,LinUCB,0.02,50.0
+calibrated,3,S2,1000,LinUCB,0.01,596.0
+calibrated,3,S2,1000,LinUCB,0.005,801.0
+calibrated,3,S2,1000,dLinUCB,0.05,50.0
+calibrated,3,S2,1000,dLinUCB,0.03,50.0
+calibrated,3,S2,1000,dLinUCB,0.02,161.0
+calibrated,3,S2,1000,dLinUCB,0.01,175.0
+calibrated,3,S2,1000,dLinUCB,0.005,175.0
+calibrated,3,S2,1001,Shortest Path,0.05,50.0
+calibrated,3,S2,1001,Shortest Path,0.03,50.0
+calibrated,3,S2,1001,Shortest Path,0.02,50.0
+calibrated,3,S2,1001,Shortest Path,0.01,50.0
+calibrated,3,S2,1001,Shortest Path,0.005,50.0
+calibrated,3,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1001,LinUCB,0.05,50.0
+calibrated,3,S2,1001,LinUCB,0.03,50.0
+calibrated,3,S2,1001,LinUCB,0.02,50.0
+calibrated,3,S2,1001,LinUCB,0.01,784.0
+calibrated,3,S2,1001,LinUCB,0.005,
+calibrated,3,S2,1001,dLinUCB,0.05,50.0
+calibrated,3,S2,1001,dLinUCB,0.03,50.0
+calibrated,3,S2,1001,dLinUCB,0.02,50.0
+calibrated,3,S2,1001,dLinUCB,0.01,174.0
+calibrated,3,S2,1001,dLinUCB,0.005,174.0
+calibrated,3,S2,1002,Shortest Path,0.05,50.0
+calibrated,3,S2,1002,Shortest Path,0.03,50.0
+calibrated,3,S2,1002,Shortest Path,0.02,50.0
+calibrated,3,S2,1002,Shortest Path,0.01,50.0
+calibrated,3,S2,1002,Shortest Path,0.005,50.0
+calibrated,3,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1002,LinUCB,0.05,50.0
+calibrated,3,S2,1002,LinUCB,0.03,50.0
+calibrated,3,S2,1002,LinUCB,0.02,50.0
+calibrated,3,S2,1002,LinUCB,0.01,64.0
+calibrated,3,S2,1002,LinUCB,0.005,610.0
+calibrated,3,S2,1002,dLinUCB,0.05,50.0
+calibrated,3,S2,1002,dLinUCB,0.03,50.0
+calibrated,3,S2,1002,dLinUCB,0.02,50.0
+calibrated,3,S2,1002,dLinUCB,0.01,157.0
+calibrated,3,S2,1002,dLinUCB,0.005,157.0
+calibrated,3,S2,1003,Shortest Path,0.05,50.0
+calibrated,3,S2,1003,Shortest Path,0.03,50.0
+calibrated,3,S2,1003,Shortest Path,0.02,50.0
+calibrated,3,S2,1003,Shortest Path,0.01,50.0
+calibrated,3,S2,1003,Shortest Path,0.005,50.0
+calibrated,3,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1003,LinUCB,0.05,50.0
+calibrated,3,S2,1003,LinUCB,0.03,50.0
+calibrated,3,S2,1003,LinUCB,0.02,50.0
+calibrated,3,S2,1003,LinUCB,0.01,181.0
+calibrated,3,S2,1003,LinUCB,0.005,541.0
+calibrated,3,S2,1003,dLinUCB,0.05,50.0
+calibrated,3,S2,1003,dLinUCB,0.03,50.0
+calibrated,3,S2,1003,dLinUCB,0.02,50.0
+calibrated,3,S2,1003,dLinUCB,0.01,154.0
+calibrated,3,S2,1003,dLinUCB,0.005,154.0
+calibrated,3,S2,1004,Shortest Path,0.05,50.0
+calibrated,3,S2,1004,Shortest Path,0.03,50.0
+calibrated,3,S2,1004,Shortest Path,0.02,50.0
+calibrated,3,S2,1004,Shortest Path,0.01,50.0
+calibrated,3,S2,1004,Shortest Path,0.005,50.0
+calibrated,3,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1004,LinUCB,0.05,50.0
+calibrated,3,S2,1004,LinUCB,0.03,50.0
+calibrated,3,S2,1004,LinUCB,0.02,50.0
+calibrated,3,S2,1004,LinUCB,0.01,307.0
+calibrated,3,S2,1004,LinUCB,0.005,461.0
+calibrated,3,S2,1004,dLinUCB,0.05,50.0
+calibrated,3,S2,1004,dLinUCB,0.03,50.0
+calibrated,3,S2,1004,dLinUCB,0.02,50.0
+calibrated,3,S2,1004,dLinUCB,0.01,176.0
+calibrated,3,S2,1004,dLinUCB,0.005,176.0
+calibrated,3,S2,1005,Shortest Path,0.05,50.0
+calibrated,3,S2,1005,Shortest Path,0.03,50.0
+calibrated,3,S2,1005,Shortest Path,0.02,50.0
+calibrated,3,S2,1005,Shortest Path,0.01,50.0
+calibrated,3,S2,1005,Shortest Path,0.005,50.0
+calibrated,3,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1005,LinUCB,0.05,50.0
+calibrated,3,S2,1005,LinUCB,0.03,50.0
+calibrated,3,S2,1005,LinUCB,0.02,50.0
+calibrated,3,S2,1005,LinUCB,0.01,525.0
+calibrated,3,S2,1005,LinUCB,0.005,726.0
+calibrated,3,S2,1005,dLinUCB,0.05,50.0
+calibrated,3,S2,1005,dLinUCB,0.03,50.0
+calibrated,3,S2,1005,dLinUCB,0.02,146.0
+calibrated,3,S2,1005,dLinUCB,0.01,152.0
+calibrated,3,S2,1005,dLinUCB,0.005,152.0
+calibrated,3,S2,1006,Shortest Path,0.05,50.0
+calibrated,3,S2,1006,Shortest Path,0.03,50.0
+calibrated,3,S2,1006,Shortest Path,0.02,50.0
+calibrated,3,S2,1006,Shortest Path,0.01,50.0
+calibrated,3,S2,1006,Shortest Path,0.005,50.0
+calibrated,3,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1006,LinUCB,0.05,50.0
+calibrated,3,S2,1006,LinUCB,0.03,50.0
+calibrated,3,S2,1006,LinUCB,0.02,50.0
+calibrated,3,S2,1006,LinUCB,0.01,377.0
+calibrated,3,S2,1006,LinUCB,0.005,417.0
+calibrated,3,S2,1006,dLinUCB,0.05,50.0
+calibrated,3,S2,1006,dLinUCB,0.03,50.0
+calibrated,3,S2,1006,dLinUCB,0.02,50.0
+calibrated,3,S2,1006,dLinUCB,0.01,176.0
+calibrated,3,S2,1006,dLinUCB,0.005,176.0
+calibrated,3,S2,1007,Shortest Path,0.05,50.0
+calibrated,3,S2,1007,Shortest Path,0.03,50.0
+calibrated,3,S2,1007,Shortest Path,0.02,50.0
+calibrated,3,S2,1007,Shortest Path,0.01,50.0
+calibrated,3,S2,1007,Shortest Path,0.005,50.0
+calibrated,3,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1007,LinUCB,0.05,50.0
+calibrated,3,S2,1007,LinUCB,0.03,50.0
+calibrated,3,S2,1007,LinUCB,0.02,50.0
+calibrated,3,S2,1007,LinUCB,0.01,627.0
+calibrated,3,S2,1007,LinUCB,0.005,
+calibrated,3,S2,1007,dLinUCB,0.05,50.0
+calibrated,3,S2,1007,dLinUCB,0.03,50.0
+calibrated,3,S2,1007,dLinUCB,0.02,50.0
+calibrated,3,S2,1007,dLinUCB,0.01,157.0
+calibrated,3,S2,1007,dLinUCB,0.005,157.0
+calibrated,3,S2,1008,Shortest Path,0.05,50.0
+calibrated,3,S2,1008,Shortest Path,0.03,50.0
+calibrated,3,S2,1008,Shortest Path,0.02,50.0
+calibrated,3,S2,1008,Shortest Path,0.01,50.0
+calibrated,3,S2,1008,Shortest Path,0.005,50.0
+calibrated,3,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1008,LinUCB,0.05,50.0
+calibrated,3,S2,1008,LinUCB,0.03,50.0
+calibrated,3,S2,1008,LinUCB,0.02,50.0
+calibrated,3,S2,1008,LinUCB,0.01,639.0
+calibrated,3,S2,1008,LinUCB,0.005,
+calibrated,3,S2,1008,dLinUCB,0.05,50.0
+calibrated,3,S2,1008,dLinUCB,0.03,50.0
+calibrated,3,S2,1008,dLinUCB,0.02,50.0
+calibrated,3,S2,1008,dLinUCB,0.01,180.0
+calibrated,3,S2,1008,dLinUCB,0.005,180.0
+calibrated,3,S2,1009,Shortest Path,0.05,50.0
+calibrated,3,S2,1009,Shortest Path,0.03,50.0
+calibrated,3,S2,1009,Shortest Path,0.02,50.0
+calibrated,3,S2,1009,Shortest Path,0.01,50.0
+calibrated,3,S2,1009,Shortest Path,0.005,50.0
+calibrated,3,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S2,1009,LinUCB,0.05,50.0
+calibrated,3,S2,1009,LinUCB,0.03,50.0
+calibrated,3,S2,1009,LinUCB,0.02,50.0
+calibrated,3,S2,1009,LinUCB,0.01,287.0
+calibrated,3,S2,1009,LinUCB,0.005,520.0
+calibrated,3,S2,1009,dLinUCB,0.05,50.0
+calibrated,3,S2,1009,dLinUCB,0.03,50.0
+calibrated,3,S2,1009,dLinUCB,0.02,50.0
+calibrated,3,S2,1009,dLinUCB,0.01,158.0
+calibrated,3,S2,1009,dLinUCB,0.005,158.0
+calibrated,3,S3,1000,Shortest Path,0.05,50.0
+calibrated,3,S3,1000,Shortest Path,0.03,50.0
+calibrated,3,S3,1000,Shortest Path,0.02,50.0
+calibrated,3,S3,1000,Shortest Path,0.01,50.0
+calibrated,3,S3,1000,Shortest Path,0.005,50.0
+calibrated,3,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1000,LinUCB,0.05,50.0
+calibrated,3,S3,1000,LinUCB,0.03,50.0
+calibrated,3,S3,1000,LinUCB,0.02,50.0
+calibrated,3,S3,1000,LinUCB,0.01,346.0
+calibrated,3,S3,1000,LinUCB,0.005,
+calibrated,3,S3,1000,dLinUCB,0.05,50.0
+calibrated,3,S3,1000,dLinUCB,0.03,50.0
+calibrated,3,S3,1000,dLinUCB,0.02,82.0
+calibrated,3,S3,1000,dLinUCB,0.01,86.0
+calibrated,3,S3,1000,dLinUCB,0.005,86.0
+calibrated,3,S3,1001,Shortest Path,0.05,50.0
+calibrated,3,S3,1001,Shortest Path,0.03,50.0
+calibrated,3,S3,1001,Shortest Path,0.02,50.0
+calibrated,3,S3,1001,Shortest Path,0.01,50.0
+calibrated,3,S3,1001,Shortest Path,0.005,50.0
+calibrated,3,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1001,LinUCB,0.05,50.0
+calibrated,3,S3,1001,LinUCB,0.03,50.0
+calibrated,3,S3,1001,LinUCB,0.02,50.0
+calibrated,3,S3,1001,LinUCB,0.01,530.0
+calibrated,3,S3,1001,LinUCB,0.005,
+calibrated,3,S3,1001,dLinUCB,0.05,50.0
+calibrated,3,S3,1001,dLinUCB,0.03,50.0
+calibrated,3,S3,1001,dLinUCB,0.02,76.0
+calibrated,3,S3,1001,dLinUCB,0.01,85.0
+calibrated,3,S3,1001,dLinUCB,0.005,85.0
+calibrated,3,S3,1002,Shortest Path,0.05,50.0
+calibrated,3,S3,1002,Shortest Path,0.03,50.0
+calibrated,3,S3,1002,Shortest Path,0.02,50.0
+calibrated,3,S3,1002,Shortest Path,0.01,50.0
+calibrated,3,S3,1002,Shortest Path,0.005,50.0
+calibrated,3,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1002,LinUCB,0.05,50.0
+calibrated,3,S3,1002,LinUCB,0.03,50.0
+calibrated,3,S3,1002,LinUCB,0.02,50.0
+calibrated,3,S3,1002,LinUCB,0.01,50.0
+calibrated,3,S3,1002,LinUCB,0.005,360.0
+calibrated,3,S3,1002,dLinUCB,0.05,50.0
+calibrated,3,S3,1002,dLinUCB,0.03,50.0
+calibrated,3,S3,1002,dLinUCB,0.02,50.0
+calibrated,3,S3,1002,dLinUCB,0.01,79.0
+calibrated,3,S3,1002,dLinUCB,0.005,198.0
+calibrated,3,S3,1003,Shortest Path,0.05,50.0
+calibrated,3,S3,1003,Shortest Path,0.03,50.0
+calibrated,3,S3,1003,Shortest Path,0.02,50.0
+calibrated,3,S3,1003,Shortest Path,0.01,50.0
+calibrated,3,S3,1003,Shortest Path,0.005,50.0
+calibrated,3,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1003,LinUCB,0.05,50.0
+calibrated,3,S3,1003,LinUCB,0.03,50.0
+calibrated,3,S3,1003,LinUCB,0.02,50.0
+calibrated,3,S3,1003,LinUCB,0.01,224.0
+calibrated,3,S3,1003,LinUCB,0.005,291.0
+calibrated,3,S3,1003,dLinUCB,0.05,50.0
+calibrated,3,S3,1003,dLinUCB,0.03,50.0
+calibrated,3,S3,1003,dLinUCB,0.02,50.0
+calibrated,3,S3,1003,dLinUCB,0.01,59.0
+calibrated,3,S3,1003,dLinUCB,0.005,59.0
+calibrated,3,S3,1004,Shortest Path,0.05,50.0
+calibrated,3,S3,1004,Shortest Path,0.03,50.0
+calibrated,3,S3,1004,Shortest Path,0.02,50.0
+calibrated,3,S3,1004,Shortest Path,0.01,50.0
+calibrated,3,S3,1004,Shortest Path,0.005,50.0
+calibrated,3,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1004,LinUCB,0.05,50.0
+calibrated,3,S3,1004,LinUCB,0.03,50.0
+calibrated,3,S3,1004,LinUCB,0.02,50.0
+calibrated,3,S3,1004,LinUCB,0.01,57.0
+calibrated,3,S3,1004,LinUCB,0.005,211.0
+calibrated,3,S3,1004,dLinUCB,0.05,50.0
+calibrated,3,S3,1004,dLinUCB,0.03,50.0
+calibrated,3,S3,1004,dLinUCB,0.02,86.0
+calibrated,3,S3,1004,dLinUCB,0.01,99.0
+calibrated,3,S3,1004,dLinUCB,0.005,99.0
+calibrated,3,S3,1005,Shortest Path,0.05,50.0
+calibrated,3,S3,1005,Shortest Path,0.03,50.0
+calibrated,3,S3,1005,Shortest Path,0.02,50.0
+calibrated,3,S3,1005,Shortest Path,0.01,50.0
+calibrated,3,S3,1005,Shortest Path,0.005,50.0
+calibrated,3,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1005,LinUCB,0.05,50.0
+calibrated,3,S3,1005,LinUCB,0.03,50.0
+calibrated,3,S3,1005,LinUCB,0.02,50.0
+calibrated,3,S3,1005,LinUCB,0.01,381.0
+calibrated,3,S3,1005,LinUCB,0.005,
+calibrated,3,S3,1005,dLinUCB,0.05,50.0
+calibrated,3,S3,1005,dLinUCB,0.03,83.0
+calibrated,3,S3,1005,dLinUCB,0.02,115.0
+calibrated,3,S3,1005,dLinUCB,0.01,123.0
+calibrated,3,S3,1005,dLinUCB,0.005,123.0
+calibrated,3,S3,1006,Shortest Path,0.05,50.0
+calibrated,3,S3,1006,Shortest Path,0.03,50.0
+calibrated,3,S3,1006,Shortest Path,0.02,50.0
+calibrated,3,S3,1006,Shortest Path,0.01,50.0
+calibrated,3,S3,1006,Shortest Path,0.005,50.0
+calibrated,3,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1006,LinUCB,0.05,50.0
+calibrated,3,S3,1006,LinUCB,0.03,50.0
+calibrated,3,S3,1006,LinUCB,0.02,50.0
+calibrated,3,S3,1006,LinUCB,0.01,127.0
+calibrated,3,S3,1006,LinUCB,0.005,167.0
+calibrated,3,S3,1006,dLinUCB,0.05,50.0
+calibrated,3,S3,1006,dLinUCB,0.03,50.0
+calibrated,3,S3,1006,dLinUCB,0.02,50.0
+calibrated,3,S3,1006,dLinUCB,0.01,50.0
+calibrated,3,S3,1006,dLinUCB,0.005,50.0
+calibrated,3,S3,1007,Shortest Path,0.05,50.0
+calibrated,3,S3,1007,Shortest Path,0.03,50.0
+calibrated,3,S3,1007,Shortest Path,0.02,50.0
+calibrated,3,S3,1007,Shortest Path,0.01,50.0
+calibrated,3,S3,1007,Shortest Path,0.005,50.0
+calibrated,3,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1007,LinUCB,0.05,50.0
+calibrated,3,S3,1007,LinUCB,0.03,50.0
+calibrated,3,S3,1007,LinUCB,0.02,79.0
+calibrated,3,S3,1007,LinUCB,0.01,427.0
+calibrated,3,S3,1007,LinUCB,0.005,
+calibrated,3,S3,1007,dLinUCB,0.05,50.0
+calibrated,3,S3,1007,dLinUCB,0.03,50.0
+calibrated,3,S3,1007,dLinUCB,0.02,50.0
+calibrated,3,S3,1007,dLinUCB,0.01,50.0
+calibrated,3,S3,1007,dLinUCB,0.005,50.0
+calibrated,3,S3,1008,Shortest Path,0.05,50.0
+calibrated,3,S3,1008,Shortest Path,0.03,50.0
+calibrated,3,S3,1008,Shortest Path,0.02,50.0
+calibrated,3,S3,1008,Shortest Path,0.01,50.0
+calibrated,3,S3,1008,Shortest Path,0.005,50.0
+calibrated,3,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1008,LinUCB,0.05,50.0
+calibrated,3,S3,1008,LinUCB,0.03,50.0
+calibrated,3,S3,1008,LinUCB,0.02,50.0
+calibrated,3,S3,1008,LinUCB,0.01,409.0
+calibrated,3,S3,1008,LinUCB,0.005,
+calibrated,3,S3,1008,dLinUCB,0.05,50.0
+calibrated,3,S3,1008,dLinUCB,0.03,54.0
+calibrated,3,S3,1008,dLinUCB,0.02,81.0
+calibrated,3,S3,1008,dLinUCB,0.01,87.0
+calibrated,3,S3,1008,dLinUCB,0.005,87.0
+calibrated,3,S3,1009,Shortest Path,0.05,50.0
+calibrated,3,S3,1009,Shortest Path,0.03,50.0
+calibrated,3,S3,1009,Shortest Path,0.02,50.0
+calibrated,3,S3,1009,Shortest Path,0.01,50.0
+calibrated,3,S3,1009,Shortest Path,0.005,50.0
+calibrated,3,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,3,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,3,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,3,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,3,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,3,S3,1009,LinUCB,0.05,50.0
+calibrated,3,S3,1009,LinUCB,0.03,50.0
+calibrated,3,S3,1009,LinUCB,0.02,50.0
+calibrated,3,S3,1009,LinUCB,0.01,50.0
+calibrated,3,S3,1009,LinUCB,0.005,270.0
+calibrated,3,S3,1009,dLinUCB,0.05,50.0
+calibrated,3,S3,1009,dLinUCB,0.03,50.0
+calibrated,3,S3,1009,dLinUCB,0.02,83.0
+calibrated,3,S3,1009,dLinUCB,0.01,100.0
+calibrated,3,S3,1009,dLinUCB,0.005,100.0
+calibrated,4,S2,1000,Shortest Path,0.05,50.0
+calibrated,4,S2,1000,Shortest Path,0.03,50.0
+calibrated,4,S2,1000,Shortest Path,0.02,50.0
+calibrated,4,S2,1000,Shortest Path,0.01,50.0
+calibrated,4,S2,1000,Shortest Path,0.005,50.0
+calibrated,4,S2,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1000,LinUCB,0.05,50.0
+calibrated,4,S2,1000,LinUCB,0.03,50.0
+calibrated,4,S2,1000,LinUCB,0.02,50.0
+calibrated,4,S2,1000,LinUCB,0.01,101.0
+calibrated,4,S2,1000,LinUCB,0.005,136.0
+calibrated,4,S2,1000,dLinUCB,0.05,50.0
+calibrated,4,S2,1000,dLinUCB,0.03,50.0
+calibrated,4,S2,1000,dLinUCB,0.02,50.0
+calibrated,4,S2,1000,dLinUCB,0.01,118.0
+calibrated,4,S2,1000,dLinUCB,0.005,138.0
+calibrated,4,S2,1001,Shortest Path,0.05,50.0
+calibrated,4,S2,1001,Shortest Path,0.03,50.0
+calibrated,4,S2,1001,Shortest Path,0.02,50.0
+calibrated,4,S2,1001,Shortest Path,0.01,50.0
+calibrated,4,S2,1001,Shortest Path,0.005,50.0
+calibrated,4,S2,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1001,LinUCB,0.05,50.0
+calibrated,4,S2,1001,LinUCB,0.03,50.0
+calibrated,4,S2,1001,LinUCB,0.02,50.0
+calibrated,4,S2,1001,LinUCB,0.01,68.0
+calibrated,4,S2,1001,LinUCB,0.005,73.0
+calibrated,4,S2,1001,dLinUCB,0.05,50.0
+calibrated,4,S2,1001,dLinUCB,0.03,50.0
+calibrated,4,S2,1001,dLinUCB,0.02,50.0
+calibrated,4,S2,1001,dLinUCB,0.01,69.0
+calibrated,4,S2,1001,dLinUCB,0.005,156.0
+calibrated,4,S2,1002,Shortest Path,0.05,50.0
+calibrated,4,S2,1002,Shortest Path,0.03,50.0
+calibrated,4,S2,1002,Shortest Path,0.02,50.0
+calibrated,4,S2,1002,Shortest Path,0.01,50.0
+calibrated,4,S2,1002,Shortest Path,0.005,50.0
+calibrated,4,S2,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1002,LinUCB,0.05,50.0
+calibrated,4,S2,1002,LinUCB,0.03,50.0
+calibrated,4,S2,1002,LinUCB,0.02,50.0
+calibrated,4,S2,1002,LinUCB,0.01,110.0
+calibrated,4,S2,1002,LinUCB,0.005,154.0
+calibrated,4,S2,1002,dLinUCB,0.05,50.0
+calibrated,4,S2,1002,dLinUCB,0.03,50.0
+calibrated,4,S2,1002,dLinUCB,0.02,50.0
+calibrated,4,S2,1002,dLinUCB,0.01,175.0
+calibrated,4,S2,1002,dLinUCB,0.005,175.0
+calibrated,4,S2,1003,Shortest Path,0.05,50.0
+calibrated,4,S2,1003,Shortest Path,0.03,50.0
+calibrated,4,S2,1003,Shortest Path,0.02,50.0
+calibrated,4,S2,1003,Shortest Path,0.01,50.0
+calibrated,4,S2,1003,Shortest Path,0.005,50.0
+calibrated,4,S2,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1003,LinUCB,0.05,50.0
+calibrated,4,S2,1003,LinUCB,0.03,50.0
+calibrated,4,S2,1003,LinUCB,0.02,50.0
+calibrated,4,S2,1003,LinUCB,0.01,136.0
+calibrated,4,S2,1003,LinUCB,0.005,192.0
+calibrated,4,S2,1003,dLinUCB,0.05,50.0
+calibrated,4,S2,1003,dLinUCB,0.03,50.0
+calibrated,4,S2,1003,dLinUCB,0.02,54.0
+calibrated,4,S2,1003,dLinUCB,0.01,237.0
+calibrated,4,S2,1003,dLinUCB,0.005,237.0
+calibrated,4,S2,1004,Shortest Path,0.05,50.0
+calibrated,4,S2,1004,Shortest Path,0.03,50.0
+calibrated,4,S2,1004,Shortest Path,0.02,50.0
+calibrated,4,S2,1004,Shortest Path,0.01,50.0
+calibrated,4,S2,1004,Shortest Path,0.005,50.0
+calibrated,4,S2,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1004,LinUCB,0.05,50.0
+calibrated,4,S2,1004,LinUCB,0.03,50.0
+calibrated,4,S2,1004,LinUCB,0.02,50.0
+calibrated,4,S2,1004,LinUCB,0.01,135.0
+calibrated,4,S2,1004,LinUCB,0.005,152.0
+calibrated,4,S2,1004,dLinUCB,0.05,50.0
+calibrated,4,S2,1004,dLinUCB,0.03,50.0
+calibrated,4,S2,1004,dLinUCB,0.02,50.0
+calibrated,4,S2,1004,dLinUCB,0.01,296.0
+calibrated,4,S2,1004,dLinUCB,0.005,323.0
+calibrated,4,S2,1005,Shortest Path,0.05,50.0
+calibrated,4,S2,1005,Shortest Path,0.03,50.0
+calibrated,4,S2,1005,Shortest Path,0.02,50.0
+calibrated,4,S2,1005,Shortest Path,0.01,50.0
+calibrated,4,S2,1005,Shortest Path,0.005,50.0
+calibrated,4,S2,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1005,LinUCB,0.05,50.0
+calibrated,4,S2,1005,LinUCB,0.03,50.0
+calibrated,4,S2,1005,LinUCB,0.02,50.0
+calibrated,4,S2,1005,LinUCB,0.01,60.0
+calibrated,4,S2,1005,LinUCB,0.005,83.0
+calibrated,4,S2,1005,dLinUCB,0.05,50.0
+calibrated,4,S2,1005,dLinUCB,0.03,50.0
+calibrated,4,S2,1005,dLinUCB,0.02,50.0
+calibrated,4,S2,1005,dLinUCB,0.01,230.0
+calibrated,4,S2,1005,dLinUCB,0.005,232.0
+calibrated,4,S2,1006,Shortest Path,0.05,50.0
+calibrated,4,S2,1006,Shortest Path,0.03,50.0
+calibrated,4,S2,1006,Shortest Path,0.02,50.0
+calibrated,4,S2,1006,Shortest Path,0.01,50.0
+calibrated,4,S2,1006,Shortest Path,0.005,50.0
+calibrated,4,S2,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1006,LinUCB,0.05,50.0
+calibrated,4,S2,1006,LinUCB,0.03,50.0
+calibrated,4,S2,1006,LinUCB,0.02,50.0
+calibrated,4,S2,1006,LinUCB,0.01,73.0
+calibrated,4,S2,1006,LinUCB,0.005,153.0
+calibrated,4,S2,1006,dLinUCB,0.05,50.0
+calibrated,4,S2,1006,dLinUCB,0.03,50.0
+calibrated,4,S2,1006,dLinUCB,0.02,50.0
+calibrated,4,S2,1006,dLinUCB,0.01,124.0
+calibrated,4,S2,1006,dLinUCB,0.005,153.0
+calibrated,4,S2,1007,Shortest Path,0.05,50.0
+calibrated,4,S2,1007,Shortest Path,0.03,50.0
+calibrated,4,S2,1007,Shortest Path,0.02,50.0
+calibrated,4,S2,1007,Shortest Path,0.01,50.0
+calibrated,4,S2,1007,Shortest Path,0.005,50.0
+calibrated,4,S2,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1007,LinUCB,0.05,50.0
+calibrated,4,S2,1007,LinUCB,0.03,50.0
+calibrated,4,S2,1007,LinUCB,0.02,50.0
+calibrated,4,S2,1007,LinUCB,0.01,129.0
+calibrated,4,S2,1007,LinUCB,0.005,137.0
+calibrated,4,S2,1007,dLinUCB,0.05,50.0
+calibrated,4,S2,1007,dLinUCB,0.03,50.0
+calibrated,4,S2,1007,dLinUCB,0.02,50.0
+calibrated,4,S2,1007,dLinUCB,0.01,207.0
+calibrated,4,S2,1007,dLinUCB,0.005,207.0
+calibrated,4,S2,1008,Shortest Path,0.05,50.0
+calibrated,4,S2,1008,Shortest Path,0.03,50.0
+calibrated,4,S2,1008,Shortest Path,0.02,50.0
+calibrated,4,S2,1008,Shortest Path,0.01,50.0
+calibrated,4,S2,1008,Shortest Path,0.005,50.0
+calibrated,4,S2,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1008,LinUCB,0.05,50.0
+calibrated,4,S2,1008,LinUCB,0.03,50.0
+calibrated,4,S2,1008,LinUCB,0.02,50.0
+calibrated,4,S2,1008,LinUCB,0.01,50.0
+calibrated,4,S2,1008,LinUCB,0.005,50.0
+calibrated,4,S2,1008,dLinUCB,0.05,50.0
+calibrated,4,S2,1008,dLinUCB,0.03,50.0
+calibrated,4,S2,1008,dLinUCB,0.02,50.0
+calibrated,4,S2,1008,dLinUCB,0.01,50.0
+calibrated,4,S2,1008,dLinUCB,0.005,178.0
+calibrated,4,S2,1009,Shortest Path,0.05,50.0
+calibrated,4,S2,1009,Shortest Path,0.03,50.0
+calibrated,4,S2,1009,Shortest Path,0.02,50.0
+calibrated,4,S2,1009,Shortest Path,0.01,50.0
+calibrated,4,S2,1009,Shortest Path,0.005,50.0
+calibrated,4,S2,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S2,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S2,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S2,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S2,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S2,1009,LinUCB,0.05,50.0
+calibrated,4,S2,1009,LinUCB,0.03,50.0
+calibrated,4,S2,1009,LinUCB,0.02,50.0
+calibrated,4,S2,1009,LinUCB,0.01,82.0
+calibrated,4,S2,1009,LinUCB,0.005,123.0
+calibrated,4,S2,1009,dLinUCB,0.05,50.0
+calibrated,4,S2,1009,dLinUCB,0.03,50.0
+calibrated,4,S2,1009,dLinUCB,0.02,50.0
+calibrated,4,S2,1009,dLinUCB,0.01,122.0
+calibrated,4,S2,1009,dLinUCB,0.005,128.0
+calibrated,4,S3,1000,Shortest Path,0.05,50.0
+calibrated,4,S3,1000,Shortest Path,0.03,50.0
+calibrated,4,S3,1000,Shortest Path,0.02,50.0
+calibrated,4,S3,1000,Shortest Path,0.01,50.0
+calibrated,4,S3,1000,Shortest Path,0.005,50.0
+calibrated,4,S3,1000,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1000,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1000,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1000,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1000,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1000,LinUCB,0.05,50.0
+calibrated,4,S3,1000,LinUCB,0.03,50.0
+calibrated,4,S3,1000,LinUCB,0.02,50.0
+calibrated,4,S3,1000,LinUCB,0.01,50.0
+calibrated,4,S3,1000,LinUCB,0.005,75.0
+calibrated,4,S3,1000,dLinUCB,0.05,50.0
+calibrated,4,S3,1000,dLinUCB,0.03,50.0
+calibrated,4,S3,1000,dLinUCB,0.02,50.0
+calibrated,4,S3,1000,dLinUCB,0.01,50.0
+calibrated,4,S3,1000,dLinUCB,0.005,75.0
+calibrated,4,S3,1001,Shortest Path,0.05,50.0
+calibrated,4,S3,1001,Shortest Path,0.03,50.0
+calibrated,4,S3,1001,Shortest Path,0.02,50.0
+calibrated,4,S3,1001,Shortest Path,0.01,50.0
+calibrated,4,S3,1001,Shortest Path,0.005,50.0
+calibrated,4,S3,1001,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1001,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1001,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1001,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1001,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1001,LinUCB,0.05,50.0
+calibrated,4,S3,1001,LinUCB,0.03,50.0
+calibrated,4,S3,1001,LinUCB,0.02,50.0
+calibrated,4,S3,1001,LinUCB,0.01,50.0
+calibrated,4,S3,1001,LinUCB,0.005,50.0
+calibrated,4,S3,1001,dLinUCB,0.05,50.0
+calibrated,4,S3,1001,dLinUCB,0.03,50.0
+calibrated,4,S3,1001,dLinUCB,0.02,50.0
+calibrated,4,S3,1001,dLinUCB,0.01,50.0
+calibrated,4,S3,1001,dLinUCB,0.005,50.0
+calibrated,4,S3,1002,Shortest Path,0.05,50.0
+calibrated,4,S3,1002,Shortest Path,0.03,50.0
+calibrated,4,S3,1002,Shortest Path,0.02,50.0
+calibrated,4,S3,1002,Shortest Path,0.01,50.0
+calibrated,4,S3,1002,Shortest Path,0.005,50.0
+calibrated,4,S3,1002,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1002,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1002,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1002,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1002,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1002,LinUCB,0.05,50.0
+calibrated,4,S3,1002,LinUCB,0.03,50.0
+calibrated,4,S3,1002,LinUCB,0.02,50.0
+calibrated,4,S3,1002,LinUCB,0.01,50.0
+calibrated,4,S3,1002,LinUCB,0.005,53.0
+calibrated,4,S3,1002,dLinUCB,0.05,50.0
+calibrated,4,S3,1002,dLinUCB,0.03,50.0
+calibrated,4,S3,1002,dLinUCB,0.02,50.0
+calibrated,4,S3,1002,dLinUCB,0.01,50.0
+calibrated,4,S3,1002,dLinUCB,0.005,53.0
+calibrated,4,S3,1003,Shortest Path,0.05,50.0
+calibrated,4,S3,1003,Shortest Path,0.03,50.0
+calibrated,4,S3,1003,Shortest Path,0.02,50.0
+calibrated,4,S3,1003,Shortest Path,0.01,50.0
+calibrated,4,S3,1003,Shortest Path,0.005,50.0
+calibrated,4,S3,1003,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1003,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1003,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1003,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1003,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1003,LinUCB,0.05,50.0
+calibrated,4,S3,1003,LinUCB,0.03,50.0
+calibrated,4,S3,1003,LinUCB,0.02,50.0
+calibrated,4,S3,1003,LinUCB,0.01,50.0
+calibrated,4,S3,1003,LinUCB,0.005,123.0
+calibrated,4,S3,1003,dLinUCB,0.05,50.0
+calibrated,4,S3,1003,dLinUCB,0.03,50.0
+calibrated,4,S3,1003,dLinUCB,0.02,88.0
+calibrated,4,S3,1003,dLinUCB,0.01,97.0
+calibrated,4,S3,1003,dLinUCB,0.005,97.0
+calibrated,4,S3,1004,Shortest Path,0.05,50.0
+calibrated,4,S3,1004,Shortest Path,0.03,50.0
+calibrated,4,S3,1004,Shortest Path,0.02,50.0
+calibrated,4,S3,1004,Shortest Path,0.01,50.0
+calibrated,4,S3,1004,Shortest Path,0.005,50.0
+calibrated,4,S3,1004,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1004,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1004,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1004,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1004,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1004,LinUCB,0.05,50.0
+calibrated,4,S3,1004,LinUCB,0.03,50.0
+calibrated,4,S3,1004,LinUCB,0.02,50.0
+calibrated,4,S3,1004,LinUCB,0.01,50.0
+calibrated,4,S3,1004,LinUCB,0.005,50.0
+calibrated,4,S3,1004,dLinUCB,0.05,50.0
+calibrated,4,S3,1004,dLinUCB,0.03,50.0
+calibrated,4,S3,1004,dLinUCB,0.02,50.0
+calibrated,4,S3,1004,dLinUCB,0.01,50.0
+calibrated,4,S3,1004,dLinUCB,0.005,50.0
+calibrated,4,S3,1005,Shortest Path,0.05,50.0
+calibrated,4,S3,1005,Shortest Path,0.03,50.0
+calibrated,4,S3,1005,Shortest Path,0.02,50.0
+calibrated,4,S3,1005,Shortest Path,0.01,50.0
+calibrated,4,S3,1005,Shortest Path,0.005,50.0
+calibrated,4,S3,1005,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1005,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1005,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1005,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1005,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1005,LinUCB,0.05,50.0
+calibrated,4,S3,1005,LinUCB,0.03,50.0
+calibrated,4,S3,1005,LinUCB,0.02,50.0
+calibrated,4,S3,1005,LinUCB,0.01,50.0
+calibrated,4,S3,1005,LinUCB,0.005,50.0
+calibrated,4,S3,1005,dLinUCB,0.05,50.0
+calibrated,4,S3,1005,dLinUCB,0.03,50.0
+calibrated,4,S3,1005,dLinUCB,0.02,50.0
+calibrated,4,S3,1005,dLinUCB,0.01,50.0
+calibrated,4,S3,1005,dLinUCB,0.005,98.0
+calibrated,4,S3,1006,Shortest Path,0.05,50.0
+calibrated,4,S3,1006,Shortest Path,0.03,50.0
+calibrated,4,S3,1006,Shortest Path,0.02,50.0
+calibrated,4,S3,1006,Shortest Path,0.01,50.0
+calibrated,4,S3,1006,Shortest Path,0.005,50.0
+calibrated,4,S3,1006,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1006,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1006,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1006,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1006,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1006,LinUCB,0.05,50.0
+calibrated,4,S3,1006,LinUCB,0.03,50.0
+calibrated,4,S3,1006,LinUCB,0.02,50.0
+calibrated,4,S3,1006,LinUCB,0.01,50.0
+calibrated,4,S3,1006,LinUCB,0.005,50.0
+calibrated,4,S3,1006,dLinUCB,0.05,50.0
+calibrated,4,S3,1006,dLinUCB,0.03,50.0
+calibrated,4,S3,1006,dLinUCB,0.02,50.0
+calibrated,4,S3,1006,dLinUCB,0.01,108.0
+calibrated,4,S3,1006,dLinUCB,0.005,108.0
+calibrated,4,S3,1007,Shortest Path,0.05,50.0
+calibrated,4,S3,1007,Shortest Path,0.03,50.0
+calibrated,4,S3,1007,Shortest Path,0.02,50.0
+calibrated,4,S3,1007,Shortest Path,0.01,50.0
+calibrated,4,S3,1007,Shortest Path,0.005,50.0
+calibrated,4,S3,1007,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1007,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1007,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1007,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1007,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1007,LinUCB,0.05,50.0
+calibrated,4,S3,1007,LinUCB,0.03,50.0
+calibrated,4,S3,1007,LinUCB,0.02,50.0
+calibrated,4,S3,1007,LinUCB,0.01,50.0
+calibrated,4,S3,1007,LinUCB,0.005,137.0
+calibrated,4,S3,1007,dLinUCB,0.05,50.0
+calibrated,4,S3,1007,dLinUCB,0.03,50.0
+calibrated,4,S3,1007,dLinUCB,0.02,50.0
+calibrated,4,S3,1007,dLinUCB,0.01,50.0
+calibrated,4,S3,1007,dLinUCB,0.005,50.0
+calibrated,4,S3,1008,Shortest Path,0.05,50.0
+calibrated,4,S3,1008,Shortest Path,0.03,50.0
+calibrated,4,S3,1008,Shortest Path,0.02,50.0
+calibrated,4,S3,1008,Shortest Path,0.01,50.0
+calibrated,4,S3,1008,Shortest Path,0.005,50.0
+calibrated,4,S3,1008,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1008,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1008,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1008,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1008,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1008,LinUCB,0.05,50.0
+calibrated,4,S3,1008,LinUCB,0.03,50.0
+calibrated,4,S3,1008,LinUCB,0.02,50.0
+calibrated,4,S3,1008,LinUCB,0.01,50.0
+calibrated,4,S3,1008,LinUCB,0.005,50.0
+calibrated,4,S3,1008,dLinUCB,0.05,50.0
+calibrated,4,S3,1008,dLinUCB,0.03,50.0
+calibrated,4,S3,1008,dLinUCB,0.02,50.0
+calibrated,4,S3,1008,dLinUCB,0.01,50.0
+calibrated,4,S3,1008,dLinUCB,0.005,50.0
+calibrated,4,S3,1009,Shortest Path,0.05,50.0
+calibrated,4,S3,1009,Shortest Path,0.03,50.0
+calibrated,4,S3,1009,Shortest Path,0.02,50.0
+calibrated,4,S3,1009,Shortest Path,0.01,50.0
+calibrated,4,S3,1009,Shortest Path,0.005,50.0
+calibrated,4,S3,1009,Fixed Context-Weighted Score,0.05,50.0
+calibrated,4,S3,1009,Fixed Context-Weighted Score,0.03,50.0
+calibrated,4,S3,1009,Fixed Context-Weighted Score,0.02,50.0
+calibrated,4,S3,1009,Fixed Context-Weighted Score,0.01,50.0
+calibrated,4,S3,1009,Fixed Context-Weighted Score,0.005,50.0
+calibrated,4,S3,1009,LinUCB,0.05,50.0
+calibrated,4,S3,1009,LinUCB,0.03,50.0
+calibrated,4,S3,1009,LinUCB,0.02,50.0
+calibrated,4,S3,1009,LinUCB,0.01,50.0
+calibrated,4,S3,1009,LinUCB,0.005,50.0
+calibrated,4,S3,1009,dLinUCB,0.05,50.0
+calibrated,4,S3,1009,dLinUCB,0.03,50.0
+calibrated,4,S3,1009,dLinUCB,0.02,50.0
+calibrated,4,S3,1009,dLinUCB,0.01,50.0
+calibrated,4,S3,1009,dLinUCB,0.005,50.0

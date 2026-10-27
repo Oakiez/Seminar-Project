@@ -1,7 +1,7 @@
 # Dynamic GIS Recommender: demo ประกอบการเสนอเค้าโครง
 
 ต้นแบบตามเอกสาร `เค้าโครงโครงงานฉบับสมบูรณ์` (ข้อ 3.1–3.4, 5.1–5.9, 6) แนะนำเส้นทางเดินภายในมหาวิทยาลัยขอนแก่น
-เปรียบเทียบ Shortest Path, Fixed Context-Weighted Score, LinUCB และ dLinUCB บนข้อมูลจำลอง
+เปรียบเทียบ Shortest Path, Fixed Context-Weighted Score, LinUCB และการปรับใช้ตามแนวคิด dLinUCB บนข้อมูลจำลอง
 
 ## วิธีเปิด
 
@@ -17,6 +17,7 @@
 .venv/Scripts/python experiments.py calibrate   # สอบเทียบด้วย Seed 1000–1009 เท่านั้น (ข้อ 5.5, 5.7)
 .venv/Scripts/python experiments.py run         # ทดลองจริง Seed 0–29
 .venv/Scripts/python experiments.py analyze     # ตัดสิน H1–H3 ตามตารางที่ 6
+.venv/Scripts/python experiments.py sensitivity # ความไวของ ε ใน Adaptation Time บน Seed สอบเทียบ (ไม่ใช่ผลหลัก)
 ```
 
 ชุดทดสอบ:
@@ -43,5 +44,5 @@ PYTHONPATH=. .venv/Scripts/python -m pytest -q tests
 - ตัวเลขเป็นผลนำร่องด้วยค่าเบื้องต้น ไม่ใช่ผลการทดลองฉบับสมบูรณ์ (ตามแผน การทดลองจริงอยู่ช่วง ม.ค.–ก.พ. 2570)
 - มีสองชุดค่า: "ตามเอกสาร" ใช้ตารางที่ 4 ตรงตัว ซึ่งทำให้ทางสั้นที่สุดดีที่สุดเกือบทุกรอบ จึงมีชุด "หลังสอบเทียบ" ตามข้อ 5.6
   เหตุผลและเกณฑ์อยู่ในหน้า ⑤ ของ demo และใน `config.yaml`
-- dLinUCB ทำตาม Algorithm 1 ของ Wu, Iyer และ Wang (2018) โดยการเลือกเส้นทางใช้ α ที่สอบเทียบ (ตารางที่ 3)
+- เรียกว่า "การปรับใช้ตามแนวคิด dLinUCB" ตามข้อ 5.5 เพราะดัดแปลงจาก Algorithm 1 ของ Wu, Iyer และ Wang (2018): การเลือกเส้นทางใช้ α ที่สอบเทียบ (ตารางที่ 3) ส่วนการทดสอบความผิดพลาดใช้ขอบความเชื่อมั่นตามต้นฉบับ
 - ไม่ได้ทำ: กรณีแนะนำสถานที่ และการวิเคราะห์ H2 ตามขนาดการเปลี่ยนของ θ

@@ -45,7 +45,9 @@ POLICY_COLORS = {"Shortest Path": "#7f7f7f", "Fixed Context-Weighted Score": "#b
                  "LinUCB": "#1f77b4", "dLinUCB": "#d62728"}
 POLICY_TH = {"Shortest Path": "Shortest Path (ไม่เรียนรู้)",
              "Fixed Context-Weighted Score": "Fixed Context-Weighted Score (ไม่เรียนรู้)",
-             "LinUCB": "LinUCB (เรียนรู้)", "dLinUCB": "dLinUCB (เรียนรู้ + ตรวจจับการเปลี่ยนแปลง)"}
+             "LinUCB": "LinUCB (เรียนรู้)", "dLinUCB": "การปรับใช้ตามแนวคิด dLinUCB (เรียนรู้ + ตรวจจับการเปลี่ยนแปลง)"}
+DL = "การปรับใช้ตามแนวคิด dLinUCB"   # proposal 5.5: name used when dLinUCB is adapted
+SHORT = {"LinUCB": "LinUCB", "dLinUCB": DL}
 SET_TH = {"doc": "ค่าตามเอกสาร (ตารางที่ 4)", "calibrated": "ค่าหลังสอบเทียบ (ข้อ 5.6)"}
 
 
@@ -139,7 +141,7 @@ def fmt(v, nd=2):
 G, D, base, cat_places, cat_pairs, exp_pairs, exp_routes, exp_index, background, meta = campus()
 st.sidebar.title("ข้อมูลนำเข้าของต้นแบบ")
 st.sidebar.caption("ตามเอกสารข้อ 5.1.2: เลือกจากรายการที่เตรียมไว้ล่วงหน้า ไม่รับพิกัดอิสระ")
-set_name = st.sidebar.radio("ชุดค่าสถานการณ์", list(CAL["sets"]), format_func=lambda k: SET_TH[k],
+set_name = st.sidebar.radio("ชุดค่าสถานการณ์", list(CAL["sets"]), index=list(CAL["sets"]).index("calibrated"), format_func=lambda k: SET_TH[k],
                             help="ค่าตามเอกสารทำให้ทางสั้นที่สุดดีที่สุดเกือบทุกรอบ จึงมีชุดที่สอบเทียบตามข้อ 5.6 เพิ่ม")
 names = list(cat_places)
 EXP_MARK = " ★"
@@ -153,7 +155,7 @@ d_name = st.sidebar.selectbox("(ก) ปลายทาง", dest_ok, index=dest
 exp_labels = [f"{p['origin']} → {p['destination']}" for p in exp_pairs]
 pair_label = f"{o_name} → {d_name}"
 pair_id = exp_index.get((o_name, d_name))
-sc_key = st.sidebar.radio("(ข) สถานการณ์", list(CFG["experiment"]["scenarios"]),
+sc_key = st.sidebar.radio("(ข) สถานการณ์", list(CFG["experiment"]["scenarios"]), index=list(CFG["experiment"]["scenarios"]).index("S2"),
                           format_func=lambda k: CFG["experiment"]["scenarios"][k]["label"])
 seed = st.sidebar.selectbox("(ค) Random Seed (ชุดทดลองจริง 0–29)", list(range(CFG["evaluation"]["test_seeds"])), index=0)
 r0, r1 = st.sidebar.slider("(ง) ช่วงของรอบที่ต้องการดู", 0, T - 1, (0, T - 1), 10)
@@ -175,6 +177,10 @@ st.title("The Dynamic GIS Recommender: Demo")
 st.caption("ต้นแบบประกอบการเสนอเค้าโครง · ความหนาแน่นของผู้คนและความชอบของผู้ใช้เป็น**ค่าจำลอง** · "
            "ตัวเลขเป็น**ผลนำร่องด้วยค่าเบื้องต้น** ไม่ใช่ผลการทดลองฉบับสมบูรณ์ · " + meta["attribution"])
 
+if set_name == "calibrated":
+    st.info(f"กำลังดูชุดค่าหลังสอบเทียบ (ข้อ 5.6): น้ำหนัก θ ในตารางที่ 4 เปลี่ยนจาก 0.3 เป็น {CAL['sets']['calibrated']['length_weight']} "
+            "เพราะเมื่อใช้ค่าในตารางที่ 4 ตรงตัว เส้นทางทุกเส้นยาวใกล้กันมาก ทางที่สั้นที่สุดจึงดีที่สุดเกือบทุกรอบ "
+            "และไม่มีอะไรให้อัลกอริทึมเรียนรู้ ค่าตามตารางที่ 4 กดดูได้ที่แถบซ้าย")
 STEPS = ["① ระบบและเส้นทางทางเลือก", "② การตัดสินใจทีละรอบ", "③ ผลของรันนี้", "④ ผล 30 Seed และสมมติฐาน", "⑤ ตรวจเทียบกับเอกสาร"]
 step = st.radio("ขั้นตอน", STEPS, horizontal=True, label_visibility="collapsed")
 
@@ -222,7 +228,7 @@ if step == STEPS[1]:
             st.session_state.t = int(np.clip(st.session_state.t + dv, r0, r1))
     t = st.slider("รอบที่", r0, r1, key="t")
     cc = st.columns([2, 2, 2])
-    learner = cc[0].radio("ดูการตัดสินใจของ", ["LinUCB", "dLinUCB"], horizontal=True)
+    learner = cc[0].radio("ดูการตัดสินใจของ", ["LinUCB", "dLinUCB"], horizontal=True, format_func=lambda x: SHORT[x])
     show_all2 = cc[1].checkbox("แสดงเส้นทางทางเลือกอื่นแบบจาง", False)
     show_best2 = cc[2].checkbox("แสดงเส้นทางที่ดีที่สุดจริง (Oracle)", True)
     P = pol[learner]
@@ -252,17 +258,17 @@ if step == STEPS[1]:
                 folium.PolyLine(line, color=ROUTE_COLORS[i], weight=3, opacity=0.35).add_to(m)
         if show_best2:
             folium.PolyLine(lines_p[best], color="black", weight=9, opacity=0.35, tooltip="เส้นทางที่ดีที่สุดจริง (Oracle)").add_to(m)
-        folium.PolyLine(lines_p[a], color=ROUTE_COLORS[a], weight=6, opacity=1, tooltip=f"{learner} เลือกเส้นทาง {ROUTE_NAMES[a]}").add_to(m)
+        folium.PolyLine(lines_p[a], color=ROUTE_COLORS[a], weight=6, opacity=1, tooltip=f"{SHORT[learner]} เลือกเส้นทาง {ROUTE_NAMES[a]}").add_to(m)
         add_od(m, o_place, d_place)
         fit(m, lines_p)
         st_folium(m, height=440, returned_objects=[], use_container_width=True, key=f"m2_{key}_{learner}_{t}_{show_all2}_{show_best2}")
-        st.caption(f"เส้นสี = เส้นทางที่ {learner} เลือก · เงาสีดำ = เส้นทางที่ดีที่สุดจริง (Oracle ใช้ประเมินผลเท่านั้น)")
+        st.caption(f"เส้นสี = เส้นทางที่ {SHORT[learner]} เลือก · เงาสีดำ = เส้นทางที่ดีที่สุดจริง (Oracle ใช้ประเมินผลเท่านั้น)")
     verdict = "ตรงกับเส้นทางที่ดีที่สุด" if a == best else f"เส้นทางที่ดีที่สุดคือ {ROUTE_NAMES[best]}"
-    st.info(f"{learner} เลือกเส้นทาง {ROUTE_NAMES[a]} → ได้ Feedback = {P['reward'][t]:.3f} (เห็นเฉพาะเส้นทางที่เลือก) · "
+    st.info(f"{SHORT[learner]} เลือกเส้นทาง {ROUTE_NAMES[a]} → ได้ Feedback = {P['reward'][t]:.3f} (เห็นเฉพาะเส้นทางที่เลือก) · "
             f"{verdict} · Regret รอบนี้ = {P['regret'][t]:.3f}")
     if learner == "dLinUCB":
         det = [x for x in P["detections"] if x <= t]
-        st.write(f"dLinUCB สร้างแบบจำลองใหม่ไปแล้ว {len(det)} ครั้ง" + (f" (รอบ {', '.join(map(str, det))})" if det else ""))
+        st.write(f"{DL} สร้างแบบจำลองใหม่ไปแล้ว {len(det)} ครั้ง" + (f" (รอบ {', '.join(map(str, det))})" if det else ""))
     st.dataframe(pd.DataFrame([{"นโยบาย": POLICY_TH[n], "เลือกเส้นทาง": ROUTE_NAMES[int(p['choice'][t])],
                                 "Feedback": round(float(p["reward"][t]), 3), "Regret รอบนี้": round(float(p["regret"][t]), 3),
                                 "Regret สะสม": round(float(p["cum_regret"][t]), 2)} for n, p in pol.items()]),
@@ -281,7 +287,7 @@ if step == STEPS[2]:
     mark_change(ax, sc)
     ax.set_xlabel("รอบ")
     ax.set_ylabel("Dynamic Cumulative Regret")
-    ax.set_title("Dynamic Cumulative Regret (ยิ่งต่ำยิ่งดี) · เส้นประสีแดงบาง = รอบที่ dLinUCB สร้างแบบจำลองใหม่")
+    ax.set_title("Dynamic Cumulative Regret (ยิ่งต่ำยิ่งดี) · เส้นประสีแดงบาง = รอบที่สร้างแบบจำลองใหม่")
     ax.legend(fontsize=12, frameon=False)
     st.pyplot(fig, clear_figure=True)
 
@@ -322,7 +328,8 @@ if step == STEPS[2]:
         rows.append(row)
     st.markdown("**ตัวชี้วัดตามตารางที่ 5**")
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
-    st.caption(f"Adaptation Time ใช้ ε = {CFG['evaluation']['adaptation_eps']} และ W = {CFG['evaluation']['adaptation_window']} ตามตารางที่ 5")
+    st.caption(f"Adaptation Time ใช้ ε = {CFG['evaluation']['adaptation_eps']} และ W = {CFG['evaluation']['adaptation_window']} ตามตารางที่ 5 · "
+               "เมื่อใช้ Seed เดิม ทุกค่าในตารางจะเท่าเดิมทุกครั้ง (ข้อ 3.1) ยกเว้น Computation Time ที่วัดจากเวลาจริงของเครื่อง")
 
     # 5.1.3: per-run CSV of every round, and the run configuration in YAML
     log = []
@@ -395,7 +402,7 @@ if step == STEPS[3]:
     st.pyplot(fig, clear_figure=True)
 
     d = df[(df["set"] == set_name) & (df["pair"] == pair_id) & (df["scenario"] == sc_key) & (df["noise_sd"] == noise_sd)]
-    rows = []
+    rows, tau_rows = [], []
     for n in POLICY_COLORS:
         g = d[d["policy"] == n]
         lo, hi = sim.paired_bootstrap_ci(g["dynamic_cumulative_regret"], 2000)[1:]
@@ -403,22 +410,63 @@ if step == STEPS[3]:
                "Average Reward": f"{g['average_reward'].mean():.3f}", "Crowd Exposure": f"{g['crowd_exposure'].mean():.3f}",
                "Route Length (ม.)": f"{g['route_length_m'].mean():.1f}", "เวลา (มิลลิวินาที/รอบ)": f"{g['ms_per_round'].mean():.3f}"}
         if sc["mode"] != "constant":
-            tau = g["adaptation_time"]
-            row["Adaptation Time มัธยฐาน (ไม่ฟื้นตัว/30)"] = f"{np.median(np.where(tau.isna(), np.inf, tau)):.0f} ({int(tau.isna().sum())})"
+            tau = g["adaptation_time"].dropna().to_numpy(dtype=float)
+            nr = int(g["adaptation_time"].isna().sum())
+            if len(tau) >= 2:
+                mt, lo_t, hi_t = sim.paired_bootstrap_ci(tau, 2000)
+                row["Adaptation Time เฉลี่ย [95% CI] (รอบ)"] = f"{mt:.0f} [{lo_t:.0f}, {hi_t:.0f}]"
+                tau_rows.append({"n": n, "mean": mt, "lo": lo_t, "hi": hi_t, "nr": nr, "k": len(g)})
+            else:
+                row["Adaptation Time เฉลี่ย [95% CI] (รอบ)"] = "–"
+                tau_rows.append({"n": n, "mean": np.nan, "lo": np.nan, "hi": np.nan, "nr": nr, "k": len(g)})
+            row["ไม่ฟื้นตัวภายในช่วงทดลอง"] = f"{nr}/{len(g)} ({100 * nr / len(g):.0f}%)"
         rows.append(row)
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
+    if sc["mode"] != "constant":
+        st.caption("Adaptation Time เฉลี่ยจากเฉพาะรันที่ฟื้นตัว (CI 95% ด้วย Bootstrap) และรายงานสัดส่วนที่ไม่ฟื้นตัวแยก "
+                   "ตามข้อ 3.2 และตารางที่ 5 · ε = 0.05, W = 50 ตามเล่ม")
+        # 5.1.3: comparison chart of Adaptation Time between policies
+        fig, ax = plt.subplots(figsize=(11, 3.6))
+        ys = np.arange(len(tau_rows))
+        for y, r in zip(ys, tau_rows):
+            col = POLICY_COLORS[r["n"]]
+            if not np.isnan(r["mean"]):
+                ax.barh(y, r["mean"], color=col, alpha=0.8)
+                ax.errorbar(r["mean"], y, xerr=[[r["mean"] - r["lo"]], [r["hi"] - r["mean"]]], color="black", capsize=4)
+            ax.text((0 if np.isnan(r["mean"]) else r["hi"]) + 3, y, f" ไม่ฟื้นตัว {r['nr']}/{r['k']}", va="center", fontsize=13)
+        ax.set_yticks(ys, [POLICY_TH[r["n"]] for r in tau_rows])
+        ax.invert_yaxis()
+        ax.set_xlabel("Adaptation Time (รอบหลังจุดเปลี่ยน, ยิ่งน้อยยิ่งปรับตัวเร็ว)")
+        ax.set_title("การเปรียบเทียบ Adaptation Time ของแต่ละนโยบาย (ค่าเฉลี่ย 30 Seed พร้อม 95% CI)")
+        st.pyplot(fig, clear_figure=True)
+
+    sens_file = RES / "eps_sensitivity.csv"
+    if sc["mode"] != "constant" and sens_file.exists():
+        with st.expander("การวิเคราะห์ความไว (sensitivity) ของเกณฑ์ ε ใน Adaptation Time · ไม่ใช่ผลหลัก"):
+            sdf = pd.read_csv(sens_file)
+            sdf = sdf[(sdf["set"] == set_name) & (sdf["scenario"] == sc_key)]
+            piv = []
+            for n in POLICY_COLORS:
+                row = {"นโยบาย": POLICY_TH[n]}
+                for eps in CFG["evaluation"]["sensitivity_eps"]:
+                    g = sdf[(sdf["policy"] == n) & (sdf["eps"] == eps)]["adaptation_time"]
+                    row[f"ε = {eps}"] = f"{g.mean():.0f} (ไม่ฟื้นตัว {100 * g.isna().mean():.0f}%)" if g.notna().any() else f"ไม่ฟื้นตัว {100 * g.isna().mean():.0f}%"
+                piv.append(row)
+            st.dataframe(pd.DataFrame(piv), hide_index=True, width="stretch")
+            st.caption("รันบน Seed สอบเทียบ 1000–1009 ทั้ง 5 คู่ (ข้อ 5.7) แยกจากผลหลักที่ใช้ ε = 0.05 ตามตารางที่ 5 · "
+                       f"ค่า {CFG['evaluation']['adaptation_window']} รอบคือค่าต่ำสุดที่วัดได้ (เท่ากับ W) จึงแปลว่าเกณฑ์นั้นหลวมจนแยกนโยบายไม่ออก")
 
     st.subheader("ผลตัดสินสมมติฐานตามตารางที่ 6 (σ = 0.1, Bootstrap แบบจับคู่ 10,000 ครั้ง)")
     h = hyp[set_name][str(pair_id)]
     yes = lambda b: "สนับสนุน" if b else "ไม่สนับสนุน"
     h3 = h["H3"]["by_scenario"]
     table = [
-        {"สมมติฐาน": "H1 (S1)", "เกณฑ์": f"ขอบบน CI ของ R_LinUCB − R_dLinUCB ≤ {h['H1']['threshold']:.2f} (ร้อยละ 5 ของ R_LinUCB)",
+        {"สมมติฐาน": "H1 (S1)", "เกณฑ์": f"ขอบบน CI ของ R_LinUCB − R_dLinUCB(ฉบับปรับใช้) ≤ {h['H1']['threshold']:.2f} (ร้อยละ 5 ของ R_LinUCB)",
          "ผลที่ได้": f"ผลต่างเฉลี่ย {h['H1']['mean_d']:.2f} CI [{h['H1']['ci'][0]:.2f}, {h['H1']['ci'][1]:.2f}] · False Alarm Rate {h['H1']['false_alarm_rate_mean']:.2f}/1,000 รอบ",
          "ผลตัดสิน": yes(h["H1"]["supported"])},
-        {"สมมติฐาน": "H2 (S2)", "เกณฑ์": "CI ของ Regret หลังจุดเปลี่ยน (LinUCB − dLinUCB) > 0 ทั้งช่วง และมัธยฐาน τ ของ dLinUCB น้อยกว่า",
+        {"สมมติฐาน": "H2 (S2)", "เกณฑ์": "CI ของ Regret หลังจุดเปลี่ยน (LinUCB − dLinUCB ฉบับปรับใช้) > 0 ทั้งช่วง และมัธยฐาน τ ของ dLinUCB ฉบับปรับใช้น้อยกว่า",
          "ผลที่ได้": f"ผลต่างเฉลี่ย {h['H2']['mean_diff_after_change']:.2f} CI [{h['H2']['ci'][0]:.2f}, {h['H2']['ci'][1]:.2f}] · "
-                     f"มัธยฐาน τ LinUCB {h['H2']['median_tau_linucb']} / dLinUCB {h['H2']['median_tau_dlinucb']} · ตรวจพบ {h['H2']['detected_runs']}/30 รัน",
+                     f"มัธยฐาน τ LinUCB {h['H2']['median_tau_linucb']} / dLinUCB ฉบับปรับใช้ {h['H2']['median_tau_dlinucb']} · ตรวจพบ {h['H2']['detected_runs']}/30 รัน",
          "ผลตัดสิน": yes(h["H2"]["supported"])},
         {"สมมติฐาน": "H3 ส่วนแรก (S1–S3)", "เกณฑ์": "CI ของ R_Fixed − R_LinUCB > 0 ทั้งช่วง ในทุกสถานการณ์",
          "ผลที่ได้": " · ".join(f"{s}: {h3[s]['mean_diff']:.2f} [{h3[s]['ci'][0]:.2f}, {h3[s]['ci'][1]:.2f}]" for s in ["S1", "S2", "S3"]),
@@ -446,20 +494,20 @@ if step == STEPS[4]:
     st.markdown(f"""
 | เอกสาร | ใน demo |
 |---|---|
-| 3.1 ทำซ้ำได้ และทดสอบอัตโนมัติ 4 รายการ | Seed เดิมได้ผลเดิม · pytest 7 รายการ (4 รายการตามข้อ 3.1 + ตารางที่ 4 + Adaptation Time + False Alarm Rate) |
+| 3.1 ทำซ้ำได้ และทดสอบอัตโนมัติ 4 รายการ | Seed เดิมได้ลำดับทางเลือก Regret และตัวชี้วัดเท่าเดิมทุกค่า (ยกเว้น Computation Time ที่เป็นเวลาจริงของเครื่อง) · pytest 8 รายการ (4 รายการตามข้อ 3.1 + การทำซ้ำของตัวชี้วัด + ตารางที่ 4 + Adaptation Time + False Alarm Rate) |
 | 3.2 4 นโยบาย × 3 สถานการณ์ × 30 Seed | ครบ และเพิ่มกรณีควบคุมตามตารางที่ 4 · รายงานค่าเฉลี่ยพร้อม 95% CI |
 | 3.3 ตัดสิน H1–H3 ตามเกณฑ์ล่วงหน้า | หน้า ④ ใช้เกณฑ์ตามตารางที่ 6 และ Bootstrap จับคู่ 10,000 ครั้ง |
 | 3.4, 5.1.3 แผนที่เส้นทางของ 4 นโยบาย | หน้า ③ จากผลการรันจริง |
 | 5.1.2 ข้อมูลนำเข้าของต้นแบบ | แถบซ้าย: (ก) ต้นทางและปลายทางจากรายการสถานที่ที่เตรียมไว้ (เฉพาะคู่ที่ผ่านเกณฑ์ 3 เส้นของข้อ 5.2.2, เตรียมเส้นทางล่วงหน้าใน `data/route_catalog.json`) (ข) สถานการณ์ (ค) Seed (ง) ช่วงรอบ · ไม่รับพิกัดอิสระ · ผล 30 Seed มีเฉพาะ 5 คู่ที่บันทึกไว้สำหรับการทดลองหลัก (★) |
 | 5.1.3–5.1.4 CSV, YAML, Matplotlib, Folium, pytest, Python 3.12+ | ดาวน์โหลด CSV/YAML ในหน้า ③ · กราฟ Matplotlib · แผนที่ Folium · Python 3.13 |
-| 5.2.1 กราฟทางเดินเท้า ส่วนเชื่อมต่อใหญ่สุด เก็บเมตาดาตา | `data/kku_walk.graphml` และ `data/meta.json` |
+| 5.2.1 กราฟทางเดินเท้า ส่วนเชื่อมต่อใหญ่สุด เก็บเมตาดาตา (ขอบเขตพื้นที่ วันที่ดึง เวอร์ชัน) | `data/kku_walk.graphml` และ `data/meta.json` (มี bbox วันที่ และเวอร์ชัน OSMnx/NetworkX) |
 | 5.2.2 Yen, K = 5, ตัดซ้อนทับ > 80%, ≥ 3 เส้น, บันทึกคู่ล่วงหน้า | `data/od_pairs.json` 5 คู่ (คู่หลัก + 4 คู่) เลือกด้วยระยะทางและการกระจายพื้นที่ ไม่ใช้ผลของนโยบาย |
 | 5.3 ρ = ฐาน × g(t) + ε รายขอบ, Min–Max, 96 รอบ/วัน | ตามสูตร |
 | 5.4 μ = xᵀθ, σ = 0.1, Feedback เฉพาะที่เลือก, Oracle ประเมินผลเท่านั้น | ตามสูตร และมีการทดสอบรองรับ |
-| 5.5, ตารางที่ 3 นโยบาย 4 แบบ | Shortest Path · Fixed w = (−0.5, −0.5) · LinUCB · dLinUCB ตาม Algorithm 1 ของ Wu et al. (2018) |
+| 5.5, ตารางที่ 3 นโยบาย 4 แบบ | Shortest Path · Fixed w = (−0.5, −0.5) · LinUCB · การปรับใช้ตามแนวคิด dLinUCB (Algorithm 1 ของ Wu et al., 2018) ใช้ชื่อนี้ตามข้อ 5.5 เพราะมีการดัดแปลง |
 | 5.5, 5.7 สอบเทียบด้วย Seed แยก งบเท่ากัน | Seed 1000–1009 · 4 ชุดค่าต่อนโยบาย · ทดลองจริงใช้ Seed 0–29 |
 | 5.6, ตารางที่ 4 | T = 2,000 · S1, S2 (รอบ 1,000), S3 (รอบ 750–1,250), กรณีควบคุม · Noise 0.05/0.1/0.2 เป็นส่วนเพิ่มเติม |
-| 5.8, ตารางที่ 5 | ε = 0.05, W = 50 · Detection Delay · False Alarm Rate ต่อ 1,000 รอบ · Average Reward · Crowd Exposure · Route Length · Computation Time |
+| 5.8, ตารางที่ 5 | ε = 0.05, W = 50 (ผลหลัก) · ความไวของ ε วิเคราะห์แยกบน Seed สอบเทียบ (หน้า ④) · Detection Delay · False Alarm Rate ต่อ 1,000 รอบ · Average Reward · Crowd Exposure · Route Length · Computation Time |
 """)
     st.subheader("สิ่งที่ต้องอธิบายกรรมการ")
     st.markdown(f"""
@@ -468,7 +516,7 @@ if step == STEPS[4]:
   ด้วยเกณฑ์ที่ดูเฉพาะตัวจำลอง ได้น้ำหนักความยาว **{CAL['sets']['calibrated']['length_weight']}** (เอกสาร 0.3)
 - **เกณฑ์เลือกน้ำหนัก:** ค่าที่ใกล้ 0.3 ที่สุด ซึ่งใน 3 จาก 5 คู่ (1) ใน S1 ทางที่ดีที่สุดไม่ใช่ทางสั้นสุดอย่างน้อยร้อยละ 10 ของรอบ และ
   (2) ใน S2 สัดส่วนนี้ก่อนกับหลังจุดเปลี่ยนต่างกันอย่างน้อย 10 จุด เกณฑ์ข้อ (2) ถูกแก้หนึ่งครั้งก่อนดูผลของนโยบาย (บันทึกใน `config.yaml`)
-- **dLinUCB:** ทำตาม Algorithm 1 (ตัวแบบย่อยหลายชุด, badness ในหน้าต่าง τ = 200 ตามงานต้นฉบับ, δ₁ δ₂ δ̃₁, เลือกด้วย LCB ของ badness)
+- **การปรับใช้ตามแนวคิด dLinUCB:** ทำตาม Algorithm 1 (ตัวแบบย่อยหลายชุด, badness ในหน้าต่าง τ = 200 ตามงานต้นฉบับ, δ₁ δ₂ δ̃₁, เลือกด้วย LCB ของ badness)
   ส่วนที่ปรับใช้คือ การเลือกเส้นทางใช้ α ที่สอบเทียบเหมือน LinUCB ตามตารางที่ 3 ส่วนการทดสอบความผิดพลาดใช้ขอบความเชื่อมั่นตามสูตรต้นฉบับ
 - **α ที่เลือกได้อยู่ที่ขอบล่างของช่วงที่ลอง (0.05)** ควรขยายช่วงในการทดลองจริง
 - **ไม่ได้ทำ:** กรณีแนะนำสถานที่ (ทางเลือกเป็นคู่สถานที่–เส้นทาง) และการวิเคราะห์ H2 ตามขนาดการเปลี่ยนของ θ
@@ -482,4 +530,6 @@ if step == STEPS[4]:
             for pn, rows in s["grid_results"].items():
                 st.dataframe(pd.DataFrame([{"นโยบาย": pn, **r["params"], "Regret สะสมเฉลี่ย": r["mean_cum_regret"]} for r in rows]),
                              hide_index=True)
-    st.caption(f"ข้อมูลกราฟดึงเมื่อ {meta['fetched_at']} · {meta['nodes']} จุด {meta['edges']} เส้น · OSMnx {meta['osmnx_version']} · {meta['attribution']}")
+    bb = meta.get("bbox", {})
+    st.caption(f"ข้อมูลกราฟดึงเมื่อ {meta['fetched_at']} · {meta['nodes']} จุด {meta['edges']} เส้น · OSMnx {meta['osmnx_version']} · "
+               f"ขอบเขตพื้นที่ (ข้อ 5.2.1): ละติจูด {bb.get('south')}–{bb.get('north')}, ลองจิจูด {bb.get('west')}–{bb.get('east')} · {meta['attribution']}")

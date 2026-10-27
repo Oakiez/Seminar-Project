@@ -3,6 +3,7 @@
     python experiments.py calibrate   # calibration seeds 1000-1009 only
     python experiments.py run         # test seeds 0-29: OD pairs x scenarios x noise levels x scenario sets
     python experiments.py analyze     # Table 6 decision rules -> results/hypotheses.json
+    python experiments.py sensitivity # Adaptation Time under smaller epsilon, calibration seeds only
 
 Two scenario sets are evaluated:
   doc         Table 4 exactly (length weight 0.3)
@@ -210,5 +211,38 @@ def analyze():
             print(sn, pid, "H1", h["H1"]["supported"], "H2", h["H2"]["supported"], "H3", h["H3"]["supported_first_part"])
 
 
+# --------------------------------------------------------------------------- sensitivity of epsilon
+def _sens_job(args):
+    set_name, a, params, pair_id, routes, sc_key, seed = args
+    sc = sim.scenario_set(CFG, a)[sc_key]
+    out = sim.run(routes, sc, seed=seed, policies=sim.make_policies(CFG, params, seed), **env_args(CFG["reward"]["noise_sd"]))
+    tc = sim.change_point(sc)
+    ev = CFG["evaluation"]
+    rows = []
+    for name, p in out["policies"].items():
+        for eps in ev["sensitivity_eps"]:
+            rows.append({"set": set_name, "pair": pair_id, "scenario": sc_key, "seed": seed, "policy": name, "eps": eps,
+                         "adaptation_time": sim.adaptation_time(p["regret"], tc, eps, ev["adaptation_window"])})
+    return rows
+
+
+def sensitivity():
+    """Adaptation Time under smaller thresholds, on calibration seeds only (not the main result)."""
+    pairs, routes = load_routes()
+    cal = load_calibration()
+    jobs = [(sn, s["length_weight"], s["chosen"], i, routes[i], sc, seed)
+            for sn, s in cal["sets"].items() for i in routes for sc in ["S2", "S3"] for seed in CFG["calibration"]["seeds"]]
+    rows = []
+    with ProcessPoolExecutor() as ex:
+        for r in ex.map(_sens_job, jobs, chunksize=2):
+            rows.extend(r)
+    RES.mkdir(exist_ok=True)
+    df = pd.DataFrame(rows)
+    df.to_csv(RES / "eps_sensitivity.csv", index=False, encoding="utf-8-sig")
+    summ = df.groupby(["set", "scenario", "policy", "eps"])["adaptation_time"].agg(
+        mean="mean", not_recovered=lambda x: float(x.isna().mean())).round(2)
+    print(summ.to_string())
+
+
 if __name__ == "__main__":
-    {"calibrate": calibrate, "run": run_all, "analyze": analyze}[sys.argv[1]]()
+    {"calibrate": calibrate, "run": run_all, "analyze": analyze, "sensitivity": sensitivity}[sys.argv[1]]()

@@ -295,7 +295,8 @@ class LinUCB(Policy):
 
 
 class DLinUCB(Policy):
-    """Dynamic Linear UCB following Algorithm 1 of Wu, Iyer, & Wang (2018).
+    """"การปรับใช้ตามแนวคิด dLinUCB" (proposal 5.5): Dynamic Linear UCB following Algorithm 1 of
+    Wu, Iyer, & Wang (2018), with the adaptation described below.
 
     A master keeps a set of LinUCB slave models. After each round, slave m records
     e_t(m) = 1{|x.theta_m - r| > B_t(m, a) + eps}, with eps = sigma * Phi^-1(1 - delta1/2)

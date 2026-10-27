@@ -5,5 +5,12 @@
  "networkx_version": "3.7",
  "nodes": 1567,
  "edges": 4458,
- "attribution": "Map data © OpenStreetMap contributors (ODbL)"
+ "attribution": "Map data © OpenStreetMap contributors (ODbL)",
+ "bbox": {
+  "south": 16.441665,
+  "west": 102.80318,
+  "north": 16.481834,
+  "east": 102.832253,
+  "note": "extent of the walking-graph nodes (WGS84); area queried = OpenStreetMap polygon of \"Khon Kaen University\""
+ }
 }
