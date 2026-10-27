@@ -50,7 +50,11 @@ calibration:                             # 5.5, 5.7
   # route is not the shortest differs by at least 10 points before and after the change.
   # Revision note (2026-10-26): the first version of (2) compared the most frequent best route
   # before and after the change. The quiet route is best only at peak hours (under 50% of rounds),
-  # so that test could never pass; it was replaced before any policy result was looked at.
+  # so that test could never pass. The revision used environment statistics on calibration seeds
+  # only. It was not blind, though: before the rule and the calibration existed, exploratory runs on
+  # test seeds 0-2 (main pair and the Economics -> SC.09 pair, Table 4 theta and theta = (-0.1, -0.9))
+  # had already shown policy results. Calibration and the 30-seed results share one git commit,
+  # so git does not record this order.
   theta_length_weight_candidates: [0.3, 0.25, 0.2, 0.15, 0.1, 0.05]
   theta_rule_min_pairs: 3
   theta_rule_min_share: 0.10
@@ -69,8 +73,8 @@ evaluation:                              # 5.7, 5.8, 5.9, Tables 5-6
   adaptation_eps: 0.05                   # "ค่าเบื้องต้น ε = 0.05"
   adaptation_window: 50                  # "W = 50"
   bootstrap_resamples: 10000             # "Bootstrap (10,000 ครั้ง)"
-  h1_margin: 0.05
+  h1_margin: 0.05                        # "ไม่เกินร้อยละ 5 ของค่าเฉลี่ย R_LinUCB(T)"
   # Sensitivity analysis of the Adaptation Time threshold (reported apart from the main results,
   # which keep epsilon = 0.05 as in Table 5). Runs on the calibration seeds only (5.7).
-  sensitivity_eps: [0.05, 0.03, 0.02, 0.01, 0.005]                        # "ไม่เกินร้อยละ 5 ของค่าเฉลี่ย R_LinUCB(T)"
+  sensitivity_eps: [0.05, 0.03, 0.02, 0.01, 0.005]
   results_dir: "results"
